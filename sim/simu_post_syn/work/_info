@@ -1,0 +1,781 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+d/net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/sim/sim_bhv
+vcolproc
+Z0 V`JN@9S9cnhjKRR_L]QIcM3
+r1
+!s85 0
+31
+!i10b 1
+!s100 1KI]C<4a<2;^9K<4?^=3h2
+IOR8MUK?CROzA3mKS@3Ke60
+Z1 d/net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/sim/simu_post_syn
+Z2 w1732550522
+Z3 8/net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/syn/VGA_syn.v
+Z4 F/net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/syn/VGA_syn.v
+L0 2050
+Z5 OL;L;10.3d;59
+Z6 !s108 1732551594.190812
+Z7 !s107 /net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/syn/VGA_syn.v|
+Z8 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|/net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/syn/VGA_syn.v|
+!i113 0
+Z9 o-work work -L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+vdual_ported_memory_AWIDTH8_DWIDTH24
+R0
+r1
+!s85 0
+31
+!i10b 1
+!s100 :W:nc?mgLdh;d061a<lEP1
+IG<Z8Ln4IUc__X?me7K8:G1
+R1
+R2
+R3
+R4
+L0 6388
+R5
+R6
+R7
+R8
+!i113 0
+R9
+ndual_ported_memory_@a@w@i@d@t@h8_@d@w@i@d@t@h24
+vFIFO_DC_DEPTH256_DWIDTH24
+R0
+r1
+!s85 0
+31
+!i10b 1
+!s100 N6NfZdAJB=I=lBafm6:C62
+INz1n=V]l8L>PY>Ei2o`:g1
+R1
+R2
+R3
+R4
+L0 19555
+R5
+R6
+R7
+R8
+!i113 0
+R9
+n@f@i@f@o_@d@c_@d@e@p@t@h256_@d@w@i@d@t@h24
+vFIFO_DC_DEPTH256_DWIDTH24_DW01_inc_4
+R0
+r1
+!s85 0
+31
+!i10b 1
+!s100 <>5:FN`;`Y5IBSN<A]GNR2
+IYNd2MEFXoShP4Y>0<c3nn3
+R1
+R2
+R3
+R4
+L0 19519
+R5
+R6
+R7
+R8
+!i113 0
+R9
+n@f@i@f@o_@d@c_@d@e@p@t@h256_@d@w@i@d@t@h24_@d@w01_inc_4
+vFIFO_DC_DEPTH256_DWIDTH24_DW01_inc_5
+R0
+r1
+!s85 0
+31
+!i10b 1
+!s100 =GWR`QFkGK`404EdB?mH[1
+IbRYHSoo1Z1TUX9S228Bm50
+R1
+R2
+R3
+R4
+L0 19537
+R5
+R6
+R7
+R8
+!i113 0
+R9
+n@f@i@f@o_@d@c_@d@e@p@t@h256_@d@w@i@d@t@h24_@d@w01_inc_5
+vFIFO_DC_DEPTH256_DWIDTH24_DW01_sub_1
+R0
+r1
+!s85 0
+31
+!i10b 1
+!s100 GiPeo?`hafJnHiNA[P9[j1
+IX<YF9nXU?3JzK_60=5meU1
+R1
+R2
+R3
+R4
+L0 19490
+R5
+R6
+R7
+R8
+!i113 0
+R9
+n@f@i@f@o_@d@c_@d@e@p@t@h256_@d@w@i@d@t@h24_@d@w01_sub_1
+vFIFO_DEPTH16_WIDTH32
+R0
+r1
+!s85 0
+31
+!i10b 1
+!s100 m93TfQ4haOlhe^9AZIGkc3
+I4Q3if5RDjTfd2<^agmD6Z0
+R1
+R2
+R3
+R4
+L0 756
+R5
+R6
+R7
+R8
+!i113 0
+R9
+n@f@i@f@o_@d@e@p@t@h16_@w@i@d@t@h32
+vFIFO_DEPTH8_WIDTH24
+R0
+r1
+!s85 0
+31
+!i10b 1
+!s100 Ih@4Plj?n7TZecIO98ZSm3
+IN?Y9gHEnBT<ojaF^0F4HQ0
+R1
+R2
+R3
+R4
+L0 2557
+R5
+R6
+R7
+R8
+!i113 0
+R9
+n@f@i@f@o_@d@e@p@t@h8_@w@i@d@t@h24
+vPgen
+R0
+r1
+!s85 0
+31
+!i10b 1
+!s100 4ZI1QRY5PlGL<G=oEa`QB3
+In0cLmd5d2I=L^eZPH=i:A3
+R1
+R2
+R3
+R4
+L0 6323
+R5
+R6
+R7
+R8
+!i113 0
+R9
+n@pgen
+vro_cnt_SIZE16_0
+R0
+r1
+!s85 0
+31
+!i10b 1
+!s100 ]2RnE08eZSH8[5oDYSYe90
+IXJFV_I@a;@7n5mN:h3Ke=3
+R1
+R2
+R3
+R4
+L0 6171
+R5
+R6
+R7
+R8
+!i113 0
+R9
+nro_cnt_@s@i@z@e16_0
+vro_cnt_SIZE16_1
+R0
+r1
+!s85 0
+31
+!i10b 1
+!s100 ca[9kE5WcH:J4ODUBiZUI2
+I1AS9aSKYBYM11el<CnNIZ3
+R1
+R2
+R3
+R4
+L0 5819
+R5
+R6
+R7
+R8
+!i113 0
+R9
+nro_cnt_@s@i@z@e16_1
+vro_cnt_SIZE16_2
+R0
+r1
+!s85 0
+31
+!i10b 1
+!s100 =hRD`O<R0N@SS`hS>AA[>3
+IiFN>`4Xi7C>NWA4ZDNVfY1
+R1
+R2
+R3
+R4
+L0 5035
+R5
+R6
+R7
+R8
+!i113 0
+R9
+nro_cnt_@s@i@z@e16_2
+vro_cnt_SIZE16_3
+R0
+r1
+!s85 0
+31
+!i10b 1
+!s100 dWziQedNW5:mK?hh^Y5NX2
+Ik7bMYR5Nka:X6T[?7ezIn1
+R1
+R2
+R3
+R4
+L0 4683
+R5
+R6
+R7
+R8
+!i113 0
+R9
+nro_cnt_@s@i@z@e16_3
+vro_cnt_SIZE8_0
+R0
+r1
+!s85 0
+31
+!i10b 1
+!s100 @=YL@N>Cjk=:=<CNkm__[2
+I5FeR=MCJ@>Rh^RLn]]nOB2
+R1
+R2
+R3
+R4
+L0 5475
+R5
+R6
+R7
+R8
+!i113 0
+R9
+nro_cnt_@s@i@z@e8_0
+vro_cnt_SIZE8_1
+R0
+r1
+!s85 0
+31
+!i10b 1
+!s100 K;XXh6Nf6jndRk_nddcO62
+I[IP:g8Cl<ha4[eoH`2XQ12
+R1
+R2
+R3
+R4
+L0 5288
+R5
+R6
+R7
+R8
+!i113 0
+R9
+nro_cnt_@s@i@z@e8_1
+vro_cnt_SIZE8_2
+R0
+r1
+!s85 0
+31
+!i10b 1
+!s100 @gHObR6:EN4Q5k6PQCR2b2
+Ib=SY_KOk4l;W6EAGKW[f]1
+R1
+R2
+R3
+R4
+L0 4339
+R5
+R6
+R7
+R8
+!i113 0
+R9
+nro_cnt_@s@i@z@e8_2
+vro_cnt_SIZE8_3
+R0
+r1
+!s85 0
+31
+!i10b 1
+!s100 1Dh`[dTDbN7hf?kUWYInk3
+IdB3F=a>Pen@CGMZfM=[i52
+R1
+R2
+R3
+R4
+L0 4151
+R5
+R6
+R7
+R8
+!i113 0
+R9
+nro_cnt_@s@i@z@e8_3
+vsync_check
+R0
+r1
+!s85 0
+31
+!i10b 1
+!s100 WX:9jGHoNd:eAW>_i5Sj42
+I2=>iBL3fC6QR2dI2m5K]`2
+R1
+Z10 w1732540035
+8/net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/bench/verilog/sync_check.v
+F/net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/bench/verilog/sync_check.v
+L0 68
+R5
+!s108 1732551594.660112
+!s107 /net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/bench/verilog/sync_check.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/bench/verilog/sync_check.v|
+!i113 0
+R9
+vtest
+R0
+r1
+!s85 0
+31
+!i10b 1
+!s100 GHzSe6W[51J2ZT<gD<70m3
+IILbJPLo9fCn[`LgNAOGG>2
+R1
+w1732551581
+8/net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/bench/verilog/test_bench_post_syn.v
+F/net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/bench/verilog/test_bench_post_syn.v
+F/net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/bench/verilog/tests.v
+L0 76
+R5
+!s108 1732551595.741666
+!s107 /net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/bench/verilog/tests.v|/net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/bench/verilog/test_bench_post_syn.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/bench/verilog/test_bench_post_syn.v|
+!i113 0
+R9
+vTgen
+R0
+r1
+!s85 0
+31
+!i10b 1
+!s100 2QXELfiL>?^Kjn8UaGFlS0
+I46oIXBhH8H?]7ijG=L^GC0
+R1
+R2
+R3
+R4
+L0 6260
+R5
+R6
+R7
+R8
+!i113 0
+R9
+n@tgen
+vud_cnt_SIZE16_0
+R0
+r1
+!s85 0
+31
+!i10b 1
+!s100 ak:iJE2mmHb6I5^AM]lOC0
+IJNa0zBngjFJSI5mXTMRVR0
+R1
+R2
+R3
+R4
+L0 5849
+R5
+R6
+R7
+R8
+!i113 0
+R9
+nud_cnt_@s@i@z@e16_0
+vud_cnt_SIZE16_1
+R0
+r1
+!s85 0
+31
+!i10b 1
+!s100 Ah`@I=<g:FZj080NV>nYG1
+IJfCFL1cIYlNM;eeF0NiWH2
+R1
+R2
+R3
+R4
+L0 5497
+R5
+R6
+R7
+R8
+!i113 0
+R9
+nud_cnt_@s@i@z@e16_1
+vud_cnt_SIZE16_2
+R0
+r1
+!s85 0
+31
+!i10b 1
+!s100 XkA36X31iY?V3eFSc1H2A3
+I4B0@neQL6X7jEG>7T85fk2
+R1
+R2
+R3
+R4
+L0 4713
+R5
+R6
+R7
+R8
+!i113 0
+R9
+nud_cnt_@s@i@z@e16_2
+vud_cnt_SIZE16_3
+R0
+r1
+!s85 0
+31
+!i10b 1
+!s100 FGV4DfhUPeD:[Xj?>`4Wz3
+INijO3eCn7^fJ8]5URgFKj0
+R1
+R2
+R3
+R4
+L0 4361
+R5
+R6
+R7
+R8
+!i113 0
+R9
+nud_cnt_@s@i@z@e16_3
+vud_cnt_SIZE8_0
+R0
+r1
+!s85 0
+31
+!i10b 1
+!s100 ;Q1kgVehh>N4`cM25V6GN3
+I8IP>3gT::WX:]Y^:TIRz@2
+R1
+R2
+R3
+R4
+L0 5310
+R5
+R6
+R7
+R8
+!i113 0
+R9
+nud_cnt_@s@i@z@e8_0
+vud_cnt_SIZE8_1
+R0
+r1
+!s85 0
+31
+!i10b 1
+!s100 3dS5F_Wfn9]EQUH;_9n6_0
+I;QU?a__YQ5kaF4oH328[l2
+R1
+R2
+R3
+R4
+L0 5123
+R5
+R6
+R7
+R8
+!i113 0
+R9
+nud_cnt_@s@i@z@e8_1
+vud_cnt_SIZE8_2
+R0
+r1
+!s85 0
+31
+!i10b 1
+!s100 2mzH?dk?oLo0je_=Rj1G`2
+IbmmhF@=M9=85Cn4`i^SG@0
+R1
+R2
+R3
+R4
+L0 4173
+R5
+R6
+R7
+R8
+!i113 0
+R9
+nud_cnt_@s@i@z@e8_2
+vud_cnt_SIZE8_3
+R0
+r1
+!s85 0
+31
+!i10b 1
+!s100 I2@oXGdTLLmaUS_ob@;_?2
+I^mKIY7TS5e2a7iV^QRGh]0
+R1
+R2
+R3
+R4
+L0 3986
+R5
+R6
+R7
+R8
+!i113 0
+R9
+nud_cnt_@s@i@z@e8_3
+vVGA
+R0
+r1
+!s85 0
+31
+!i10b 1
+!s100 DQJ87]3lAXH`W9A=SBj^b1
+I0`L811@Eagl4G5_Y:BSPB2
+R1
+R2
+R3
+R4
+L0 19643
+R5
+R6
+R7
+R8
+!i113 0
+R9
+n@v@g@a
+vvtim_0
+R0
+r1
+!s85 0
+31
+!i10b 1
+!s100 a77]WA3Z>dfb=<f;`nT@=0
+I=I4WEM=Y5hnj8gz0H5JLK1
+R1
+R2
+R3
+R4
+L0 6201
+R5
+R6
+R7
+R8
+!i113 0
+R9
+vvtim_1
+R0
+r1
+!s85 0
+31
+!i10b 1
+!s100 aK^6Lm=UmR`b]WAVE9i=k3
+I<`@l81fACl]7jhNjS9^8:3
+R1
+R2
+R3
+R4
+L0 5065
+R5
+R6
+R7
+R8
+!i113 0
+R9
+vwb_b3_check
+R0
+r1
+!s85 0
+31
+!i10b 1
+!s100 z09Bh?UKSDg2P>Cb0MiM[2
+IjZF`jIQ77G2eDl?m:5H9J3
+R1
+R10
+8/net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/bench/verilog/wb_b3_check.v
+F/net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/bench/verilog/wb_b3_check.v
+L0 37
+R5
+!s108 1732551595.486931
+!s107 /net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/bench/verilog/wb_b3_check.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/bench/verilog/wb_b3_check.v|
+!i113 0
+R9
+vwb_mast
+R0
+r1
+!s85 0
+31
+!i10b 1
+!s100 1N;kK9?FiU5eDFXXNbDhf0
+I1HEXhLfzZfo8hEX2me0ee0
+R1
+R10
+8/net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/bench/verilog/wb_mast_model.v
+F/net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/bench/verilog/wb_mast_model.v
+L0 62
+R5
+!s108 1732551595.543063
+!s107 /net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/bench/verilog/wb_model_defines.v|/net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/bench/verilog/wb_mast_model.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/bench/verilog/wb_mast_model.v|
+!i113 0
+R9
+vwb_master
+R0
+r1
+!s85 0
+31
+!i10b 1
+!s100 Jdaf<9@i@h`XZBBhQLhRF0
+Ih3@BY4mToWoY0XoLFFdL82
+R1
+R2
+R3
+R4
+L0 3357
+R5
+R6
+R7
+R8
+!i113 0
+R9
+vwb_master_DW01_dec_0
+R0
+r1
+!s85 0
+31
+!i10b 1
+!s100 BYYlmb^==HVeH3S`T7QC73
+I6=c?K0RaL;>WDJ4?DE10A0
+R1
+R2
+R3
+R4
+L0 3223
+R5
+R6
+R7
+R8
+!i113 0
+R9
+nwb_master_@d@w01_dec_0
+vwb_master_DW01_dec_1
+R0
+r1
+!s85 0
+31
+!i10b 1
+!s100 lQ7:mC1cgaXGCU4zoc[ji3
+IW<KjH^^CZLl[3DlZ[OADD3
+R1
+R2
+R3
+R4
+L0 3290
+R5
+R6
+R7
+R8
+!i113 0
+R9
+nwb_master_@d@w01_dec_1
+vwb_master_DW01_inc_0
+R0
+r1
+!s85 0
+31
+!i10b 1
+!s100 hDK:6GE8DH3kP^WFR^2Rj1
+I?T8=BTO]877@A3ADTO80U0
+R1
+R2
+R3
+R4
+L0 3140
+R5
+R6
+R7
+R8
+!i113 0
+R9
+nwb_master_@d@w01_inc_0
+vwb_slave
+R0
+r1
+!s85 0
+31
+!i10b 1
+!s100 98]HjoYBFV[o1aPm0Se:S2
+IPFeBfMA9:2?NL6<?RH4Tj1
+R1
+R2
+R3
+R4
+L0 2
+R5
+R6
+R7
+R8
+!i113 0
+R9
+vwb_slv
+R0
+r1
+!s85 0
+31
+!i10b 1
+!s100 0=<WnWSXKk>2haV3G6R=63
+IliRN`Sd=z6<EQk<2B<SG11
+R1
+R10
+8/net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/bench/verilog/wb_slv_model.v
+F/net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/bench/verilog/wb_slv_model.v
+L0 65
+R5
+!s108 1732551595.662154
+!s107 /net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/bench/verilog/wb_model_defines.v|/net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/bench/verilog/wb_slv_model.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/bench/verilog/wb_slv_model.v|
+!i113 0
+R9

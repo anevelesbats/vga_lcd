@@ -1,0 +1,20 @@
+ 
+****************************************
+Report : clocks
+Design : VGA
+Version: H-2013.03-SP5
+Date   : Mon Nov 25 16:41:58 2024
+****************************************
+
+Attributes:
+    d - dont_touch_network
+    f - fix_hold
+    p - propagated_clock
+    G - generated_clock
+    g - lib_generated_clock
+
+Clock          Period   Waveform            Attrs     Sources
+--------------------------------------------------------------------------------
+my_clock        10.00   {0 5}               d         {CLK_I}
+--------------------------------------------------------------------------------
+1

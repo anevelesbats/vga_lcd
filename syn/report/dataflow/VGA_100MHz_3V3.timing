@@ -1,0 +1,76 @@
+Information: Updating design information... (UID-85)
+Warning: Design 'VGA' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : VGA
+Version: H-2013.03-SP5
+Date   : Mon Nov 25 16:41:57 2024
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: WORST-MIL   Library: c35_CORELIB_WC
+Wire Load Model Mode: segmented
+
+  Startpoint: u1/ctrl_reg_0
+              (rising edge-triggered flip-flop clocked by my_clock)
+  Endpoint: u2/vgate_cnt_reg_0
+            (rising edge-triggered flip-flop clocked by my_clock)
+  Path Group: my_clock
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  dual_ported_memory_AWIDTH8_DWIDTH24
+                     30k                   c35_CORELIB_WC
+  FIFO_DEPTH8_WIDTH24
+                     10k                   c35_CORELIB_WC
+  colproc            10k                   c35_CORELIB_WC
+  FIFO_DEPTH16_WIDTH32
+                     10k                   c35_CORELIB_WC
+  FIFO_DC_DEPTH256_DWIDTH24
+                     30k                   c35_CORELIB_WC
+  Pgen               10k                   c35_CORELIB_WC
+  wb_master          10k                   c35_CORELIB_WC
+  VGA                30k                   c35_CORELIB_WC
+  wb_slave           10k                   c35_CORELIB_WC
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock my_clock (rise edge)               0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  u1/ctrl_reg_0/C (DFEC1)                  0.00 #     0.00 r
+  u1/ctrl_reg_0/Q (DFEC1)                  1.65       1.65 f
+  u1/Ven (wb_slave)                        0.00       1.65 f
+  U6/Q (BUF2)                              1.15       2.80 f
+  u2/ctrl_Ven (wb_master)                  0.00       2.80 f
+  u2/U6/Q (CLKIN3)                         0.49       3.29 r
+  u2/U37/Q (INV3)                          0.66       3.95 f
+  u2/U9/Q (NAND20)                         1.64       5.59 r
+  u2/U183/Q (OAI212)                       0.28       5.86 f
+  u2/U184/Q (CLKIN3)                       0.39       6.25 r
+  u2/U34/Q (BUF6)                          1.43       7.68 r
+  u2/U180/Q (NAND31)                       0.36       8.04 f
+  u2/U39/Q (INV3)                          1.21       9.26 r
+  u2/U61/Q (AOI221)                        0.35       9.60 f
+  u2/U234/Q (OAI212)                       0.37       9.97 r
+  u2/vgate_cnt_reg_0/D (DF3)               0.00       9.97 r
+  data arrival time                                   9.97
+
+  clock my_clock (rise edge)              10.00      10.00
+  clock network delay (ideal)              0.00      10.00
+  u2/vgate_cnt_reg_0/C (DF3)               0.00      10.00 r
+  library setup time                      -0.02       9.98
+  data required time                                  9.98
+  -----------------------------------------------------------
+  data required time                                  9.98
+  data arrival time                                  -9.97
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+
+1

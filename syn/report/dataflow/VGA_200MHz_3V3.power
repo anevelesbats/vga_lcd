@@ -1,0 +1,95 @@
+Loading db file '/opt/ams/synopsys/c35_3.3V/c35_CORELIB_WC.db'
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+ 
+****************************************
+Report : power
+        -analysis_effort low
+Design : VGA
+Version: H-2013.03-SP5
+Date   : Mon Nov 25 16:38:49 2024
+****************************************
+
+
+Library(s) Used:
+
+    c35_CORELIB_WC (File: /opt/ams/synopsys/c35_3.3V/c35_CORELIB_WC.db)
+
+
+Operating Conditions: WORST-MIL   Library: c35_CORELIB_WC
+Wire Load Model Mode: segmented
+
+Design        Wire Load Model            Library
+------------------------------------------------
+VGA                    30k               c35_CORELIB_WC
+wb_slave               10k               c35_CORELIB_WC
+wb_master              10k               c35_CORELIB_WC
+Pgen                   10k               c35_CORELIB_WC
+FIFO_DC_DEPTH256_DWIDTH24
+                       30k               c35_CORELIB_WC
+FIFO_DEPTH16_WIDTH32   10k               c35_CORELIB_WC
+colproc                10k               c35_CORELIB_WC
+FIFO_DEPTH8_WIDTH24    10k               c35_CORELIB_WC
+Tgen                   10k               c35_CORELIB_WC
+dual_ported_memory_AWIDTH8_DWIDTH24
+                       30k               c35_CORELIB_WC
+vtim_1                 10k               c35_CORELIB_WC
+vtim_0                 10k               c35_CORELIB_WC
+ro_cnt_SIZE8_3         10k               c35_CORELIB_WC
+ro_cnt_SIZE16_3        10k               c35_CORELIB_WC
+ud_cnt_SIZE8_3         10k               c35_CORELIB_WC
+ud_cnt_SIZE16_3        10k               c35_CORELIB_WC
+ro_cnt_SIZE8_0         10k               c35_CORELIB_WC
+ro_cnt_SIZE8_1         10k               c35_CORELIB_WC
+ro_cnt_SIZE8_2         10k               c35_CORELIB_WC
+ro_cnt_SIZE16_0        10k               c35_CORELIB_WC
+ro_cnt_SIZE16_1        10k               c35_CORELIB_WC
+ro_cnt_SIZE16_2        10k               c35_CORELIB_WC
+ud_cnt_SIZE8_0         10k               c35_CORELIB_WC
+ud_cnt_SIZE8_1         10k               c35_CORELIB_WC
+ud_cnt_SIZE8_2         10k               c35_CORELIB_WC
+ud_cnt_SIZE16_0        10k               c35_CORELIB_WC
+ud_cnt_SIZE16_1        10k               c35_CORELIB_WC
+ud_cnt_SIZE16_2        10k               c35_CORELIB_WC
+FIFO_DC_DEPTH256_DWIDTH24_DW01_inc_1
+                       10k               c35_CORELIB_WC
+wb_master_DW01_inc_1   10k               c35_CORELIB_WC
+wb_master_DW01_dec_2   10k               c35_CORELIB_WC
+wb_master_DW01_dec_3   10k               c35_CORELIB_WC
+FIFO_DC_DEPTH256_DWIDTH24_DW01_inc_2
+                       10k               c35_CORELIB_WC
+FIFO_DC_DEPTH256_DWIDTH24_DW01_sub_2
+                       10k               c35_CORELIB_WC
+
+
+Global Operating Voltage = 3    
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000pf
+    Time Units = 1ns
+    Dynamic Power Units = 1mW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+
+  Cell Internal Power  = 392.4341 mW  (100%)
+  Net Switching Power  =   1.9560 mW    (0%)
+                         ---------
+Total Dynamic Power    = 394.3900 mW  (100%)
+
+Cell Leakage Power     =  71.0462 uW
+
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network      0.0000            0.0000            0.0000            0.0000  (   0.00%)
+register         391.4998            0.1699        4.0418e+07          391.6897  (  99.30%)
+sequential         0.4339        9.0096e-04        1.0305e+06            0.4358  (   0.11%)
+combinational      0.5251            1.7852        2.9603e+07            2.3401  (   0.59%)
+--------------------------------------------------------------------------------------------------
+Total            392.4588 mW         1.9560 mW     7.1051e+07 pW       394.4656 mW
+1

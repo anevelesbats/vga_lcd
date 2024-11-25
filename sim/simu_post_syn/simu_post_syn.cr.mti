@@ -1,0 +1,72 @@
+/net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/bench/verilog/wb_slv_model.v {1 {vlog -work work -vopt -stats=none /net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/bench/verilog/wb_slv_model.v
+Model Technology ModelSim SE-64 vlog 10.3d Compiler 2014.10 Oct  6 2014
+-- Compiling module wb_slv
+
+Top level modules:
+	wb_slv
+
+} {} {}} /net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/bench/verilog/wb_mast_model.v {1 {vlog -work work -vopt -stats=none /net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/bench/verilog/wb_mast_model.v
+Model Technology ModelSim SE-64 vlog 10.3d Compiler 2014.10 Oct  6 2014
+-- Compiling module wb_mast
+
+Top level modules:
+	wb_mast
+
+} {} {}} /net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/syn/VGA_syn.v {1 {vlog -work work -vopt -stats=none /net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/syn/VGA_syn.v
+Model Technology ModelSim SE-64 vlog 10.3d Compiler 2014.10 Oct  6 2014
+-- Compiling module wb_slave
+-- Compiling module FIFO_DEPTH16_WIDTH32
+-- Compiling module colproc
+-- Compiling module FIFO_DEPTH8_WIDTH24
+-- Compiling module wb_master_DW01_inc_0
+-- Compiling module wb_master_DW01_dec_0
+-- Compiling module wb_master_DW01_dec_1
+-- Compiling module wb_master
+-- Compiling module ud_cnt_SIZE8_3
+-- Compiling module ro_cnt_SIZE8_3
+-- Compiling module ud_cnt_SIZE8_2
+-- Compiling module ro_cnt_SIZE8_2
+-- Compiling module ud_cnt_SIZE16_3
+-- Compiling module ro_cnt_SIZE16_3
+-- Compiling module ud_cnt_SIZE16_2
+-- Compiling module ro_cnt_SIZE16_2
+-- Compiling module vtim_1
+-- Compiling module ud_cnt_SIZE8_1
+-- Compiling module ro_cnt_SIZE8_1
+-- Compiling module ud_cnt_SIZE8_0
+-- Compiling module ro_cnt_SIZE8_0
+-- Compiling module ud_cnt_SIZE16_1
+-- Compiling module ro_cnt_SIZE16_1
+-- Compiling module ud_cnt_SIZE16_0
+-- Compiling module ro_cnt_SIZE16_0
+-- Compiling module vtim_0
+-- Compiling module Tgen
+-- Compiling module Pgen
+-- Compiling module dual_ported_memory_AWIDTH8_DWIDTH24
+-- Compiling module FIFO_DC_DEPTH256_DWIDTH24_DW01_sub_1
+-- Compiling module FIFO_DC_DEPTH256_DWIDTH24_DW01_inc_4
+-- Compiling module FIFO_DC_DEPTH256_DWIDTH24_DW01_inc_5
+-- Compiling module FIFO_DC_DEPTH256_DWIDTH24
+-- Compiling module VGA
+
+Top level modules:
+	VGA
+
+} {} {}} /net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/bench/verilog/wb_model_defines.v {1 {vlog -work work -vopt -stats=none /net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/bench/verilog/wb_model_defines.v
+Model Technology ModelSim SE-64 vlog 10.3d Compiler 2014.10 Oct  6 2014
+
+} {} {}} /net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/bench/verilog/wb_b3_check.v {1 {vlog -work work -vopt -stats=none /net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/bench/verilog/wb_b3_check.v
+Model Technology ModelSim SE-64 vlog 10.3d Compiler 2014.10 Oct  6 2014
+-- Compiling module wb_b3_check
+
+Top level modules:
+	wb_b3_check
+
+} {} {}} /net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/bench/verilog/sync_check.v {1 {vlog -work work -vopt -stats=none /net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/bench/verilog/sync_check.v
+Model Technology ModelSim SE-64 vlog 10.3d Compiler 2014.10 Oct  6 2014
+-- Compiling module sync_check
+
+Top level modules:
+	sync_check
+
+} {} {}}

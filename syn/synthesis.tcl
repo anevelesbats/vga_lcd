@@ -26,7 +26,7 @@ set MON_ARCHI dataflow
 set CLK_PORT CLK_I
 
 # define the target frequency (MHz)
-set FREQ_MHZ  200
+set FREQ_MHZ  50
 
 # calculte the clock period (ns)
 set CLK_PERIOD [expr 1000.0 / $FREQ_MHZ]
@@ -46,7 +46,7 @@ set OUTPUT_DELAY [expr 0.1 * $CLK_PERIOD]
 ################################################################################################
 
 # "Compilation " of the VHDL description
-analyze -library WORK -f vhdl -autoread -recursive ../rtl/vhdl/$MON_TOP_LEVEL.vhd
+analyze -f vhdl -autoread ../rtl/vhdl/
 
 # first logic synthesis without technology mapping
 elaborate $MON_TOP_LEVEL -arch $MON_ARCHI -lib WORK -update
@@ -66,14 +66,11 @@ set_wire_load_mode segmented
 
 # Time budget
 
-set_input_delay $INPUT_DELAY -max -clock my_clock [remove_from_collection [all_inputs] $CLK_PORT]
-set_output_delay $OUTPUT_DELAY -max -clock my_clock [all_outputs]
-
 set_clock_uncertainty -hold $CLK_UNCERTAINTY $CLK_PORT
 set_clock_uncertainty -setup $CLK_UNCERTAINTY $CLK_PORT
 
-set_input_delay $INPUT_DELAY -clock $CLK_PORT [remove_from_collection [all_inputs] [get_ports $CLK_PORT]]
-set_output_delay $OUTPUT_DELAY -clock $CLK_PORT [remove_from_collection [all_outputs]]
+set_input_delay $INPUT_DELAY -clock my_clock [remove_from_collection [all_inputs] [get_ports $CLK_PORT]]
+set_output_delay $OUTPUT_DELAY -clock my_clock [all_outputs]
 
 # check the generated design
 check_design

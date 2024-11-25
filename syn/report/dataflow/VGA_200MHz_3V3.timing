@@ -1,0 +1,78 @@
+Information: Updating design information... (UID-85)
+Warning: Design 'VGA' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : VGA
+Version: H-2013.03-SP5
+Date   : Mon Nov 25 16:38:48 2024
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: WORST-MIL   Library: c35_CORELIB_WC
+Wire Load Model Mode: segmented
+
+  Startpoint: u4/wptr_reg_0
+              (rising edge-triggered flip-flop clocked by my_clock)
+  Endpoint: u4/mem/mem_reg_219][4
+            (rising edge-triggered flip-flop clocked by my_clock)
+  Path Group: my_clock
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  dual_ported_memory_AWIDTH8_DWIDTH24
+                     30k                   c35_CORELIB_WC
+  FIFO_DEPTH8_WIDTH24
+                     10k                   c35_CORELIB_WC
+  colproc            10k                   c35_CORELIB_WC
+  FIFO_DEPTH16_WIDTH32
+                     10k                   c35_CORELIB_WC
+  FIFO_DC_DEPTH256_DWIDTH24
+                     30k                   c35_CORELIB_WC
+  Pgen               10k                   c35_CORELIB_WC
+  wb_master          10k                   c35_CORELIB_WC
+  VGA                30k                   c35_CORELIB_WC
+  wb_slave           10k                   c35_CORELIB_WC
+  FIFO_DC_DEPTH256_DWIDTH24_DW01_sub_2
+                     10k                   c35_CORELIB_WC
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock my_clock (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u4/wptr_reg_0/C (DFEC3)                                 0.00 #     0.00 r
+  u4/wptr_reg_0/Q (DFEC3)                                 1.53       1.53 f
+  u4/U44/Q (CLKIN6)                                       0.24       1.77 r
+  u4/U5/Q (INV15)                                         0.25       2.02 f
+  u4/mem/waddr_0 (dual_ported_memory_AWIDTH8_DWIDTH24)
+                                                          0.00       2.02 f
+  u4/mem/U306/Q (CLKIN15)                                 0.16       2.18 r
+  u4/mem/U4282/Q (NOR24)                                  0.31       2.49 f
+  u4/mem/U2098/Q (CLKIN12)                                0.19       2.68 r
+  u4/mem/U2103/Q (INV6)                                   0.13       2.81 f
+  u4/mem/U3172/Q (NAND26)                                 0.33       3.14 r
+  u4/mem/U7437/Q (BUF15)                                  0.45       3.59 r
+  u4/mem/U3237/Q (NOR23)                                  0.27       3.86 f
+  u4/mem/U3227/Q (CLKBU15)                                0.53       4.39 f
+  u4/mem/mem_reg_219][4/U3/Q (MUX21)                      0.90       5.29 r
+  u4/mem/mem_reg_219][4/D (DF1)                           0.00       5.29 r
+  data arrival time                                                  5.29
+
+  clock my_clock (rise edge)                              5.00       5.00
+  clock network delay (ideal)                             0.00       5.00
+  u4/mem/mem_reg_219][4/C (DF1)                           0.00       5.00 r
+  library setup time                                     -0.02       4.98
+  data required time                                                 4.98
+  --------------------------------------------------------------------------
+  data required time                                                 4.98
+  data arrival time                                                 -5.29
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.31
+
+
+1

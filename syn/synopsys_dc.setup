@@ -7,7 +7,7 @@ define_design_lib WORK -path "./work"
 ### retrieve AMS directory path and SYNOPSYS path from the environement variables
 #########
 puts "Owner: austriamicrosystems AG  HIT-Kit: Digital"
-set AMSDIR [get_unix_variable AMS_DIR]
+set AMSDIR /opt/ams
 set SYNDIR [get_unix_variable SYNOPSYS]
 
 #########

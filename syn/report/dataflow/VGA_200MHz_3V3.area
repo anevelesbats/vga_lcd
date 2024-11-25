@@ -1,0 +1,30 @@
+ 
+****************************************
+Report : area
+Design : VGA
+Version: H-2013.03-SP5
+Date   : Mon Nov 25 16:38:48 2024
+****************************************
+
+Library(s) Used:
+
+    c35_CORELIB_WC (File: /opt/ams/synopsys/c35_3.3V/c35_CORELIB_WC.db)
+
+Number of ports:                          181
+Number of nets:                           411
+Number of cells:                           16
+Number of combinational cells:              5
+Number of sequential cells:                 7
+Number of macros/black boxes:               0
+Number of buf/inv:                          2
+Number of references:                      10
+
+Combinational area:            1422439.186943
+Buf/Inv area:                   236982.200600
+Noncombinational area:         2181743.203949
+Macro/Black Box area:                0.000000
+Net Interconnect area:          664041.867840
+
+Total cell area:               3604182.390892
+Total area:                    4268224.258732
+1

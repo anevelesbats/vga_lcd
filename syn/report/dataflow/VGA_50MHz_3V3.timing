@@ -1,0 +1,112 @@
+Information: Updating design information... (UID-85)
+Warning: Design 'VGA' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : VGA
+Version: H-2013.03-SP5
+Date   : Mon Nov 25 16:43:24 2024
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: WORST-MIL   Library: c35_CORELIB_WC
+Wire Load Model Mode: segmented
+
+  Startpoint: u2/vmemA_reg_2
+              (rising edge-triggered flip-flop clocked by my_clock)
+  Endpoint: u2/vmemA_reg_31
+            (rising edge-triggered flip-flop clocked by my_clock)
+  Path Group: my_clock
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  dual_ported_memory_AWIDTH8_DWIDTH24
+                     30k                   c35_CORELIB_WC
+  FIFO_DEPTH8_WIDTH24
+                     10k                   c35_CORELIB_WC
+  colproc            10k                   c35_CORELIB_WC
+  FIFO_DEPTH16_WIDTH32
+                     10k                   c35_CORELIB_WC
+  FIFO_DC_DEPTH256_DWIDTH24
+                     30k                   c35_CORELIB_WC
+  Pgen               10k                   c35_CORELIB_WC
+  wb_master          10k                   c35_CORELIB_WC
+  VGA                30k                   c35_CORELIB_WC
+  wb_slave           10k                   c35_CORELIB_WC
+  wb_master_DW01_inc_0
+                     10k                   c35_CORELIB_WC
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock my_clock (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u2/vmemA_reg_2/C (DF3)                                  0.00 #     0.00 r
+  u2/vmemA_reg_2/Q (DF3)                                  1.59       1.59 f
+  u2/add_296/A_0 (wb_master_DW01_inc_0)                   0.00       1.59 f
+  u2/add_296/U1/Q (NAND24)                                0.30       1.89 r
+  u2/add_296/U6/Q (INV3)                                  0.16       2.05 f
+  u2/add_296/U1_1_2/CO (ADD22)                            0.68       2.73 f
+  u2/add_296/U1_1_3/CO (ADD22)                            0.79       3.52 f
+  u2/add_296/U15/Q (NAND22)                               0.34       3.86 r
+  u2/add_296/U14/Q (INV3)                                 0.22       4.08 f
+  u2/add_296/U8/Q (NAND22)                                0.31       4.39 r
+  u2/add_296/U24/Q (INV3)                                 0.21       4.60 f
+  u2/add_296/U5/Q (NAND22)                                0.31       4.91 r
+  u2/add_296/U9/Q (INV3)                                  0.26       5.17 f
+  u2/add_296/U33/Q (NAND24)                               0.29       5.46 r
+  u2/add_296/U21/Q (INV6)                                 0.14       5.60 f
+  u2/add_296/U4/Q (NAND22)                                0.29       5.89 r
+  u2/add_296/U41/Q (INV3)                                 0.17       6.06 f
+  u2/add_296/U1_1_9/CO (ADD22)                            0.68       6.74 f
+  u2/add_296/U1_1_10/CO (ADD22)                           0.71       7.45 f
+  u2/add_296/U1_1_11/CO (ADD22)                           0.71       8.17 f
+  u2/add_296/U1_1_12/CO (ADD22)                           0.71       8.88 f
+  u2/add_296/U1_1_13/CO (ADD22)                           0.71       9.59 f
+  u2/add_296/U1_1_14/CO (ADD22)                           0.71      10.30 f
+  u2/add_296/U1_1_15/CO (ADD22)                           0.71      11.01 f
+  u2/add_296/U1_1_16/CO (ADD22)                           0.71      11.72 f
+  u2/add_296/U1_1_17/CO (ADD22)                           0.71      12.43 f
+  u2/add_296/U1_1_18/CO (ADD22)                           0.71      13.14 f
+  u2/add_296/U1_1_19/CO (ADD22)                           0.71      13.85 f
+  u2/add_296/U1_1_20/CO (ADD22)                           0.79      14.64 f
+  u2/add_296/U17/Q (NAND22)                               0.34      14.98 r
+  u2/add_296/U16/Q (INV3)                                 0.22      15.20 f
+  u2/add_296/U11/Q (NAND22)                               0.31      15.51 r
+  u2/add_296/U25/Q (INV3)                                 0.21      15.72 f
+  u2/add_296/U10/Q (NAND22)                               0.31      16.03 r
+  u2/add_296/U31/Q (INV3)                                 0.21      16.25 f
+  u2/add_296/U3/Q (NAND22)                                0.31      16.55 r
+  u2/add_296/U2/Q (INV3)                                  0.21      16.77 f
+  u2/add_296/U13/Q (NAND22)                               0.31      17.08 r
+  u2/add_296/U12/Q (INV3)                                 0.21      17.29 f
+  u2/add_296/U23/Q (NAND22)                               0.31      17.60 r
+  u2/add_296/U22/Q (INV3)                                 0.21      17.82 f
+  u2/add_296/U30/Q (NAND22)                               0.31      18.13 r
+  u2/add_296/U29/Q (INV3)                                 0.22      18.34 f
+  u2/add_296/U36/Q (NAND22)                               0.31      18.65 r
+  u2/add_296/U43/Q (INV3)                                 0.20      18.85 f
+  u2/add_296/U46/Q (XNR22)                                0.50      19.35 r
+  u2/add_296/SUM_29 (wb_master_DW01_inc_0)                0.00      19.35 r
+  u2/U5/Q (AOI222)                                        0.33      19.68 f
+  u2/U4/Q (NAND23)                                        0.29      19.97 r
+  u2/vmemA_reg_31/D (DF3)                                 0.00      19.97 r
+  data arrival time                                                 19.97
+
+  clock my_clock (rise edge)                             20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  u2/vmemA_reg_31/C (DF3)                                 0.00      20.00 r
+  library setup time                                     -0.02      19.98
+  data required time                                                19.98
+  --------------------------------------------------------------------------
+  data required time                                                19.98
+  data arrival time                                                -19.97
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.01
+
+
+1

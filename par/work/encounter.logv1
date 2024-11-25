@@ -1,0 +1,2105 @@
+Checking out Encounter license ...
+Virtuoso_Digital_Implem_XL 13.1 license checkout succeeded.
+	Maximum number of instance allowed (1 x 50000).
+This Encounter release has been compiled with OA version 22.43-p014.
+Cannot open libm.so, trying libm.so.6
+
+*******************************************************************
+*   Copyright (c)  Cadence Design Systems, Inc.  1996 - 2013.     *
+*                     All rights reserved.                        *
+*                                                                 *
+*                                                                 *
+*                                                                 *
+* This program contains confidential and trade secret information *
+* of Cadence Design Systems, Inc. and is protected by copyright   *
+* law and international treaties.  Any reproduction, use,         *
+* distribution or disclosure of this program or any portion of it,*
+* or any attempt to obtain a human-readable version of this       *
+* program, without the express, prior written consent of          *
+* Cadence Design Systems, Inc., is strictly prohibited.           *
+*                                                                 *
+*                 Cadence Design Systems, Inc.                    *
+*                    2655 Seely Avenue                            *
+*                   San Jose, CA 95134,  USA                      *
+*                                                                 *
+*                                                                 *
+*******************************************************************
+
+@(#)CDS: Encounter v13.13-s017_1 (64bit) 07/30/2013 13:03 (Linux 2.6)
+@(#)CDS: NanoRoute v13.13-s005 NR130716-1135/13_10-UB (database version 2.30, 190.4.1) {superthreading v1.19}
+@(#)CDS: CeltIC v13.13-s001_1 (64bit) 07/19/2013 04:50:05 (Linux 2.6.18-194.el5)
+@(#)CDS: AAE 13.13-e003 (64bit) 07/30/2013 (Linux 2.6.18-194.el5)
+@(#)CDS: CTE 13.13-s004_1 (64bit) Jul 30 2013 05:44:27 (Linux 2.6.18-194.el5)
+@(#)CDS: CPE v13.13-s001
+@(#)CDS: IQRC/TQRC 12.1.1-s225 (64bit) Wed Jun 12 20:28:41 PDT 2013 (Linux 2.6.18-194.el5)
+--- Starting "Encounter v13.13-s017_1" on Mon Nov 25 17:58:26 2024 (mem=78.7M) ---
+--- Running on 24p105-06 (x86_64 w/Linux 5.14.0-362.8.1.el9_3.x86_64) ---
+This version was compiled on Tue Jul 30 13:03:02 PDT 2013.
+Set DBUPerIGU to 1000.
+Set net toggle Scale Factor to 1.00
+Set Shrink Factor to 1.00000
+
+**INFO:  MMMC transition support version v31-84 
+
+<CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+<CMD> suppressMessage ENCEXT-2799
+<CMD> win
+<CMD> setDesignMode -process 130 -flowEffort high
+Applying the recommended capacitance filtering threshold values for 130nm process node: total_c_th=0, relative_c_th=1 and coupling_c_th=0.4.
+	These values will be used by all post-route extraction engines, including TQRC, IQRC and QRC extraction.
+	Capacitance filtering mode(-capFilterMode option of the setExtractRCMode) is 'relAndCoup' for all engines.
+	The accuracy mode for postRoute effortLevel low extraction will be set to 'standard'.
+	Default value for EffortLevel(-effortLevel option of the setExtractRCMode) in postRoute extraction mode is 'low'.
+<CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+<CMD> set defHierChar /
+<CMD> set init_verilog ../../syn
+<CMD> set init_design_settop 1
+<CMD> set init_design_netlisttype Verilog
+<CMD> set init_lef_file {/opt/ams/cds/HK_C35/LEF/c35b3/c35b3.lef  /opt/ams/cds/HK_C35/LEF/c35b3/CORELIB.lef  /opt/ams/cds/HK_C35/LEF/c35b3/IOLIB_3B_3M.lef}
+<CMD> set init_mmmc_file ../mmmc_definition.tcl
+<CMD> set init_cpf_file {}
+<CMD> set init_import_mode {-treatUndefinedCellAsBbox 0 -keepEmptyModule 1}
+<CMD> set init_assign_buffer 0
+<CMD> set init_pwr_net vdd!
+<CMD> set init_gnd_net gnd!
+<CMD> set init_oa_search_lib {}
+<CMD> init_design
+**ERROR: (ENCSYT-6284):	Failed to open file ../mmmc_definition.tcl for read.
+
+Loading LEF file /opt/ams/cds/HK_C35/LEF/c35b3/c35b3.lef...
+**WARN: (ENCLF-228):	 ANTENNAOUTPUTDIFFAREA is specified and will be
+applied to any OUTPUT PIN or INOUT PIN without ANTENNADIFFAREA. This often
+causes a mismatch between process antenna violations found in Encounter
+(during routing or verification) and violations found by external physical
+verification tools. This global defaulting mechanism is obsolete in LEF
+5.5. The recommended solution is to remove ANTENNAOUTPUTDIFFAREA and add
+ANTENNADIFFAREA to all OUTPUT or INOUT PINS in the MACROS in order to
+avoid a mismatch in violations.
+**WARN: (ENCLF-230):	 ANTENNAINOUTDIFFAREA is specified and will be
+applied to any INOUT PIN without ANTENNADIFFAREA. This often causes a
+mismatch between process antenna violations found in Encounter (during
+routing or verification) and violations found by external physical
+verification tools. This global defaulting mechanism is obsolete in
+LEF 5.5. The recommended solution is to remove ANTENNAINOUTDIFFAREA
+and add ANTENNADIFFAREA to all INOUT PINS in the MACROS in order to
+avoid a mismatch in violations.
+
+Loading LEF file /opt/ams/cds/HK_C35/LEF/c35b3/CORELIB.lef...
+Set DBUPerIGU to M2 pitch 1400.
+
+Loading LEF file /opt/ams/cds/HK_C35/LEF/c35b3/IOLIB_3B_3M.lef...
+**WARN: (ENCLF-201):	Pin 'Y' in macro 'BBC16P_3B' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man ENCLF-201' for more detail.
+**WARN: (ENCLF-201):	Pin 'PAD' in macro 'BBC16P_3B' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man ENCLF-201' for more detail.
+**WARN: (ENCLF-200):	Pin 'PAD' in macro 'BBC16P_3B' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man ENCLF-200' for more detail.
+**WARN: (ENCLF-201):	Pin 'Y' in macro 'BBC16SMP_3B' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man ENCLF-201' for more detail.
+**WARN: (ENCLF-201):	Pin 'PAD' in macro 'BBC16SMP_3B' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man ENCLF-201' for more detail.
+**WARN: (ENCLF-200):	Pin 'PAD' in macro 'BBC16SMP_3B' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man ENCLF-200' for more detail.
+**WARN: (ENCLF-201):	Pin 'Y' in macro 'BBC16SP_3B' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man ENCLF-201' for more detail.
+**WARN: (ENCLF-201):	Pin 'PAD' in macro 'BBC16SP_3B' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man ENCLF-201' for more detail.
+**WARN: (ENCLF-200):	Pin 'PAD' in macro 'BBC16SP_3B' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man ENCLF-200' for more detail.
+**WARN: (ENCLF-201):	Pin 'Y' in macro 'BBC1P_3B' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man ENCLF-201' for more detail.
+**WARN: (ENCLF-201):	Pin 'PAD' in macro 'BBC1P_3B' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man ENCLF-201' for more detail.
+**WARN: (ENCLF-200):	Pin 'PAD' in macro 'BBC1P_3B' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man ENCLF-200' for more detail.
+**WARN: (ENCLF-201):	Pin 'Y' in macro 'BBC24P_3B' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man ENCLF-201' for more detail.
+**WARN: (ENCLF-201):	Pin 'PAD' in macro 'BBC24P_3B' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man ENCLF-201' for more detail.
+**WARN: (ENCLF-200):	Pin 'PAD' in macro 'BBC24P_3B' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man ENCLF-200' for more detail.
+**WARN: (ENCLF-201):	Pin 'Y' in macro 'BBC24SMP_3B' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man ENCLF-201' for more detail.
+**WARN: (ENCLF-201):	Pin 'PAD' in macro 'BBC24SMP_3B' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man ENCLF-201' for more detail.
+**WARN: (ENCLF-200):	Pin 'PAD' in macro 'BBC24SMP_3B' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man ENCLF-200' for more detail.
+**WARN: (ENCLF-201):	Pin 'Y' in macro 'BBC24SP_3B' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man ENCLF-201' for more detail.
+**WARN: (ENCLF-201):	Pin 'PAD' in macro 'BBC24SP_3B' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man ENCLF-201' for more detail.
+**WARN: (ENCLF-200):	Pin 'PAD' in macro 'BBC24SP_3B' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man ENCLF-200' for more detail.
+**WARN: (ENCLF-201):	Pin 'Y' in macro 'BBC4P_3B' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man ENCLF-201' for more detail.
+**WARN: (ENCLF-201):	Pin 'PAD' in macro 'BBC4P_3B' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man ENCLF-201' for more detail.
+**WARN: (ENCLF-200):	Pin 'PAD' in macro 'BBC4P_3B' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man ENCLF-200' for more detail.
+**WARN: (ENCLF-201):	Pin 'Y' in macro 'BBC4SMP_3B' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man ENCLF-201' for more detail.
+**WARN: (ENCLF-201):	Pin 'PAD' in macro 'BBC4SMP_3B' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man ENCLF-201' for more detail.
+**WARN: (ENCLF-200):	Pin 'PAD' in macro 'BBC4SMP_3B' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man ENCLF-200' for more detail.
+**WARN: (ENCLF-201):	Pin 'Y' in macro 'BBC8P_3B' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man ENCLF-201' for more detail.
+**WARN: (ENCLF-201):	Pin 'PAD' in macro 'BBC8P_3B' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man ENCLF-201' for more detail.
+**WARN: (ENCLF-200):	Pin 'PAD' in macro 'BBC8P_3B' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man ENCLF-200' for more detail.
+**WARN: (EMS-63):	Message <ENCLF-201> has exceeded the default message display limit of 20.
+To avoid this warning, increase the display limit per unique message
+by using the setMessageLimit <number> command.
+The message limit can be removed by using the unsetMessageLimit command.
+Note that setting a very large number using the setMessageLimit command
+or removing the message limit using the unsetMessageLimit command can
+significantly increase the log file size.
+To suppress a message, use the suppressMessage command.
+**WARN: (ENCLF-200):	Pin 'PAD' in macro 'BBC8SMP_3B' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man ENCLF-200' for more detail.
+**WARN: (ENCLF-200):	Pin 'PAD' in macro 'BBC8SP_3B' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man ENCLF-200' for more detail.
+**WARN: (ENCLF-200):	Pin 'PAD' in macro 'BBCD16P_3B' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man ENCLF-200' for more detail.
+**WARN: (ENCLF-200):	Pin 'PAD' in macro 'BBCD16SMP_3B' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man ENCLF-200' for more detail.
+**WARN: (ENCLF-200):	Pin 'PAD' in macro 'BBCD16SP_3B' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man ENCLF-200' for more detail.
+**WARN: (ENCLF-200):	Pin 'PAD' in macro 'BBCD1P_3B' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man ENCLF-200' for more detail.
+**WARN: (ENCLF-200):	Pin 'PAD' in macro 'BBCD24P_3B' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man ENCLF-200' for more detail.
+**WARN: (ENCLF-200):	Pin 'PAD' in macro 'BBCD24SMP_3B' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man ENCLF-200' for more detail.
+**WARN: (ENCLF-200):	Pin 'PAD' in macro 'BBCD24SP_3B' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man ENCLF-200' for more detail.
+**WARN: (ENCLF-200):	Pin 'PAD' in macro 'BBCD4P_3B' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man ENCLF-200' for more detail.
+**WARN: (EMS-63):	Message <ENCLF-200> has exceeded the default message display limit of 20.
+To avoid this warning, increase the display limit per unique message
+by using the setMessageLimit <number> command.
+The message limit can be removed by using the unsetMessageLimit command.
+Note that setting a very large number using the setMessageLimit command
+or removing the message limit using the unsetMessageLimit command can
+significantly increase the log file size.
+To suppress a message, use the suppressMessage command.
+
+viaInitial starts at Mon Nov 25 17:58:32 2024
+viaInitial ends at Mon Nov 25 17:58:32 2024
+Reading netlist ...
+Backslashed names will retain backslash and a trailing blank character.
+Reading verilog netlist '../../syn/VGA_syn.v'
+Inserting temporary buffers to remove assignment statements.
+
+*** Memory Usage v#1 (Current mem = 304.633M, initial mem = 78.707M) ***
+*** End netlist parsing (cpu=0:00:00.1, real=0:00:01.0, mem=304.6M) ***
+Top level cell is VGA.
+*** End library_loading (cpu=0.00min, mem=0.0M, fe_cpu=0.03min, fe_real=0.15min, fe_mem=304.6M) ***
+
+{DETAILMESSAGE}Starting recursive module instantiation check.
+No recursion found.
+Building hierarchical netlist for Cell VGA ...
+*** Netlist is unique.
+** info: there are 494 modules.
+** info: there are 16849 stdCell insts.
+
+*** Memory Usage v#1 (Current mem = 326.398M, initial mem = 78.707M) ***
+*info - Done with setDoAssign with 8 assigns removed and 0 assigns could not be removed.
+**WARN: (ENCFP-3961):	techSite 'corner_P_3B' has no related Cells, So Cannnot calculated VDDonbotom attributes. Need correct LEF file
+**WARN: (ENCFP-3961):	techSite 'ioSite_P_3B' has no related Cells, So Cannnot calculated VDDonbotom attributes. Need correct LEF file
+**WARN: (ENCFP-3961):	techSite 'corner_P' has no related Cells, So Cannnot calculated VDDonbotom attributes. Need correct LEF file
+**WARN: (ENCFP-3961):	techSite 'ioSite_P' has no related Cells, So Cannnot calculated VDDonbotom attributes. Need correct LEF file
+**WARN: (ENCFP-3961):	techSite 'blockSite' has no related Cells, So Cannnot calculated VDDonbotom attributes. Need correct LEF file
+**WARN: (ENCFP-3961):	techSite 'portCellSite' has no related Cells, So Cannnot calculated VDDonbotom attributes. Need correct LEF file
+Set Using Default Delay Limit as 1000.
+Set Default Net Delay as 1000 ps.
+Set Default Net Load as 0.5 pF. 
+Set Input Pin Transition Delay as 0.1 ps.
+Set XCapacitance Thresholds: total_c_threshold to 5.00 [fF], and relative_c_threshold to 0.03
+**ERROR: (ENCSYT-7327):	Active setup and hold analysis views were not provided in either file ../mmmc_definition.tcl or by the -setup and -hold arguments to initDesign. The system requires at least one active setup and hold analysis view to be declared before the design can be initialized. You must add a set_analysis_view command to your script, or add the -setup and -hold options to your init_design invocation. You can use the all_analysis_view command to identify the currently available views.
+
+<CMD> redraw
+<CMD> setPreference ConstraintUserXGrid 0.1
+<CMD> setPreference ConstraintUserXOffset 0.1
+<CMD> setPreference ConstraintUserYGrid 0.1
+<CMD> setPreference ConstraintUserYOffset 0.1
+<CMD> setPreference SnapAllCorners 1
+<CMD> setPreference BlockSnapRule 2
+<CMD> snapFPlanIO -usergrid
+<CMD> floorPlan -site standard -r 0.377358490566 0.699887 20.0 20.0 20.0 20.0
+Adjusting Core to Left to: 21.0000. Core to Bottom to: 20.8000.
+**WARN: (ENCFP-325):	Floorplan of the design is resized. All current floorplan objects are automatically derived based on specified new floorplan. This may change blocks, fixed standard cells, existing routes and blockages.
+<CMD> redraw
+<CMD> saveDesign ./VGA.fp.enc
+Writing Netlist "./VGA.fp.enc.dat/VGA.v.gz" ...
+Saving configuration ...
+Saving preference file ./VGA.fp.enc.dat/enc.pref.tcl ...
+Saving floorplan ...
+Saving Drc markers ...
+... No Drc file written since there is no markers found.
+Saving placement ...
+*** Completed savePlace (cpu=0:00:00.0 real=0:00:00.0 mem=330.6M) ***
+Saving route ...
+*** Completed saveRoute (cpu=0:00:00.0 real=0:00:00.0 mem=331.6M) ***
+Writing DEF file './VGA.fp.enc.dat/VGA.def.gz', current time is Mon Nov 25 17:58:33 2024 ...
+unitPerMicron=1000, dbgMicronPerDBU=0.001000, unitPerDBU=1.000000
+DEF file './VGA.fp.enc.dat/VGA.def.gz' is written, current time is Mon Nov 25 17:58:33 2024 ...
+No integration constraint in the design.
+<CMD> addRing -stacked_via_top_layer MET3 -around core -jog_distance 1.7 -threshold 1.7 -nets {gnd! vdd!} -stacked_via_bottom_layer MET1 -layer {bottom MET1 top MET1 right MET2 left MET2} -width 1.6 -spacing 1.6 -offset 1.7
+**WARN: (ENCPP-4022):	Option "-stacked_via_top_layer" is obsolete and has been replaced by "setAddRingMode -stacked_via_top_layer". The obsolete option still works in this release, but to avoid this warning and to ensure compatibility with future releases, update your script to use "setAddRingMode -stacked_via_top_layer layerName"..
+**WARN: (ENCPP-4022):	Option "-stacked_via_bottom_layer" is obsolete and has been replaced by "setAddRingMode -stacked_via_bottom_layer". The obsolete option still works in this release, but to avoid this warning and to ensure compatibility with future releases, update your script to use "setAddRingMode -stacked_via_bottom_layer layerName"..
+
+The power planner created 8 wires.
+*** Ending Ring Generation (totcpu: 0:00:00.0,real: 0:00:00.0, mem: 331.6M) ***
+<CMD> verifyGeometry
+ *** Starting Verify Geometry (MEM: 331.6) ***
+
+  VERIFY GEOMETRY ...... Starting Verification
+  VERIFY GEOMETRY ...... Initializing
+  VERIFY GEOMETRY ...... Deleting Existing Violations
+  VERIFY GEOMETRY ...... Creating Sub-Areas
+                  ...... bin size: 5600
+  VERIFY GEOMETRY ...... SubArea : 1 of 3
+  VERIFY GEOMETRY ...... Cells          :  0 Viols.
+  VERIFY GEOMETRY ...... SameNet        :  0 Viols.
+  VERIFY GEOMETRY ...... Wiring         :  0 Viols.
+  VERIFY GEOMETRY ...... Antenna        :  0 Viols.
+  VERIFY GEOMETRY ...... Sub-Area : 1 complete 0 Viols. 0 Wrngs.
+  VERIFY GEOMETRY ...... SubArea : 2 of 3
+  VERIFY GEOMETRY ...... Cells          :  0 Viols.
+  VERIFY GEOMETRY ...... SameNet        :  0 Viols.
+  VERIFY GEOMETRY ...... Wiring         :  0 Viols.
+  VERIFY GEOMETRY ...... Antenna        :  0 Viols.
+  VERIFY GEOMETRY ...... Sub-Area : 2 complete 0 Viols. 0 Wrngs.
+  VERIFY GEOMETRY ...... SubArea : 3 of 3
+  VERIFY GEOMETRY ...... Cells          :  0 Viols.
+  VERIFY GEOMETRY ...... SameNet        :  0 Viols.
+  VERIFY GEOMETRY ...... Wiring         :  0 Viols.
+  VERIFY GEOMETRY ...... Antenna        :  0 Viols.
+  VERIFY GEOMETRY ...... Sub-Area : 3 complete 0 Viols. 0 Wrngs.
+VG: elapsed time: 0.00
+Begin Summary ...
+  Cells       : 0
+  SameNet     : 0
+  Wiring      : 0
+  Antenna     : 0
+  Short       : 0
+  Overlap     : 0
+End Summary
+
+  Verification Complete : 0 Viols.  0 Wrngs.
+
+**********End: VERIFY GEOMETRY**********
+ *** verify geometry (CPU: 0:00:00.0  MEM: 46.3M)
+
+<CMD> verify_drc
+ *** Starting Verify DRC (MEM: 377.9) ***
+
+  VERIFY DRC ...... Starting Verification
+  VERIFY DRC ...... Initializing
+  VERIFY DRC ...... Deleting Existing Violations
+  VERIFY DRC ...... Creating Sub-Areas
+  VERIFY DRC ...... Sub-Area : 1 of 3
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 377.00 (Mb)
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 386.00 (Mb)
+#WARNING (NREX-28) The height of the first routing layer MET1 is 0.000000. It should be larger than 0.000000.
+#WARNING (NREX-30) Please also check the height and metal thickness values for the routing layers higher than routing layer MET1.
+  VERIFY DRC ...... Sub-Area : 1 complete 0 Viols.
+  VERIFY DRC ...... Sub-Area : 2 of 3
+  VERIFY DRC ...... Sub-Area : 2 complete 0 Viols.
+  VERIFY DRC ...... Sub-Area : 3 of 3
+  VERIFY DRC ...... Sub-Area : 3 complete 0 Viols.
+
+  Verification Complete : 0 Viols.
+
+ *** End Verify DRC (CPU: 0:00:00.2  ELAPSED TIME: 0.00  MEM: 8.1M) ***
+
+<CMD> verifyConnectivity
+VERIFY_CONNECTIVITY use new engine.
+
+******** Start: VERIFY CONNECTIVITY ********
+Start Time: Mon Nov 25 17:58:33 2024
+
+Design Name: VGA
+Database Units: 1000
+Design Boundary: (0.0000, 0.0000) (3498.3750, 1340.8000)
+Error Limit = 1000; Warning Limit = 50
+Check all nets
+**** 17:58:33 **** Processed 5000 nets.
+**** 17:58:33 **** Processed 10000 nets.
+**** 17:58:33 **** Processed 15000 nets.
+
+Begin Summary 
+  Found no problems or warnings.
+End Summary
+
+End Time: Mon Nov 25 17:58:33 2024
+Time Elapsed: 0:00:00.0
+
+******** End: VERIFY CONNECTIVITY ********
+  Verification Complete : 0 Viols.  0 Wrngs.
+  (CPU Time: 0:00:00.0  MEM: 0.000M)
+
+<CMD> clearDrc
+<CMD> saveDesign ./PAD_VGA_fp_pow.enc
+Writing Netlist "./PAD_VGA_fp_pow.enc.dat/VGA.v.gz" ...
+Saving configuration ...
+Saving preference file ./PAD_VGA_fp_pow.enc.dat/enc.pref.tcl ...
+Saving floorplan ...
+Saving Drc markers ...
+... No Drc file written since there is no markers found.
+Saving placement ...
+*** Completed savePlace (cpu=0:00:00.0 real=0:00:00.0 mem=386.0M) ***
+Saving route ...
+*** Completed saveRoute (cpu=0:00:00.0 real=0:00:00.0 mem=386.0M) ***
+Writing DEF file './PAD_VGA_fp_pow.enc.dat/VGA.def.gz', current time is Mon Nov 25 17:58:33 2024 ...
+unitPerMicron=1000, dbgMicronPerDBU=0.001000, unitPerDBU=1.000000
+DEF file './PAD_VGA_fp_pow.enc.dat/VGA.def.gz' is written, current time is Mon Nov 25 17:58:33 2024 ...
+No integration constraint in the design.
+<CMD> setMultiCpuUsage -localCpu 2 -cpuPerRemoteHost 1 -remoteHost 0 -keepLicense true
+Setting releaseMultiCpuLicenseMode to false.
+<CMD> setDistributeHost -local
+The timeout for a remote job to respond is 30 seconds.
+Submit command for slave runs will be: local
+<CMD> setPlaceMode -congEffort medium -timingDriven 0 -modulePlan 0 -clkGateAware 0 -powerDriven 0 -ignoreScan 0 -reorderScan 0 -ignoreSpare 0 -placeIOPins 0 -moduleAwareSpare 0 -preserveRouting 0 -rmAffectedRouting 0 -checkRoute 0 -swapEEQ 0
+<CMD> setPlaceMode -fp false
+<CMD> placeDesign -prePlaceOpt
+*** Starting placeDesign default flow ***
+*** Start deleteBufferTree ***
+Info: Detect buffers to remove automatically.
+Analyzing netlist ...
+Updating netlist
+
+*summary: 0 instances (buffers/inverters) removed
+*** Finish deleteBufferTree (0:00:00.0) ***
+*** ThreeLayerMode is automatically turned on for small designs with less than 4 layers.
+Total CPU(s) requested: 2
+CPU(s) enabled with current License(s): 1
+No more licenses are available for multi-cpu acceleration.
+Total CPU(s) now enabled: 1
+Extracting standard cell pins and blockage ...... 
+Pin and blockage extraction finished
+Extracting macro/IO cell pins and blockage ...... 
+Pin and blockage extraction finished
+*** Starting "NanoPlace(TM) placement v#1 (mem=386.0M)" ...
+Options: pinGuide congEffort=medium gpeffort=medium 
+#std cell=16849 #block=0 (0 floating + 0 preplaced) #ioInst=0 #net=17061 #term=66843 #term/net=3.92, #fixedIo=0, #floatIo=0, #fixedPin=0, #floatPin=181
+stdCell: 16849 single + 0 double + 0 multi
+Total standard cell length = 241.9760 (mm), area = 3.1457 (mm^2)
+Core basic site is standard
+Apply auto density screen in pre-place stage.
+Average module density = 0.700.
+Density for the design = 0.700.
+       = stdcell_area 172840 sites (3145688 um^2) / alloc_area 246900 sites (4493580 um^2).
+Pin Density = 0.387.
+            = total # of pins 66843 / total Instance area 172840.
+Identified 2 spare or floating instances, with no clusters.
+*Internal placement parameters: * | 13 | 0x0002ab
+Iteration  1: Total net bbox = 8.816e+05 (7.62e+05 1.19e+05)
+              Est.  stn bbox = 1.122e+06 (9.84e+05 1.38e+05)
+              cpu = 0:00:00.1 real = 0:00:00.0 mem = 387.8M
+Iteration  2: Total net bbox = 1.157e+06 (1.04e+06 1.19e+05)
+              Est.  stn bbox = 1.561e+06 (1.42e+06 1.38e+05)
+              cpu = 0:00:00.2 real = 0:00:00.0 mem = 388.1M
+Iteration  3: Total net bbox = 1.482e+06 (1.03e+06 4.53e+05)
+              Est.  stn bbox = 2.084e+06 (1.41e+06 6.70e+05)
+              cpu = 0:00:00.3 real = 0:00:00.0 mem = 388.1M
+Iteration  4: Total net bbox = 1.654e+06 (1.20e+06 4.51e+05)
+              Est.  stn bbox = 2.318e+06 (1.65e+06 6.68e+05)
+              cpu = 0:00:00.4 real = 0:00:01.0 mem = 388.1M
+Iteration  5: Total net bbox = 2.046e+06 (1.30e+06 7.42e+05)
+              Est.  stn bbox = 2.840e+06 (1.78e+06 1.06e+06)
+              cpu = 0:00:00.5 real = 0:00:00.0 mem = 388.1M
+Iteration  6: Total net bbox = 2.166e+06 (1.42e+06 7.42e+05)
+              Est.  stn bbox = 2.987e+06 (1.93e+06 1.06e+06)
+              cpu = 0:00:00.2 real = 0:00:00.0 mem = 388.1M
+Iteration  7: Total net bbox = 2.316e+06 (1.42e+06 8.91e+05)
+              Est.  stn bbox = 3.187e+06 (1.93e+06 1.26e+06)
+              cpu = 0:00:00.2 real = 0:00:00.0 mem = 388.1M
+Iteration  8: Total net bbox = 2.471e+06 (1.54e+06 9.29e+05)
+              Est.  stn bbox = 3.392e+06 (2.08e+06 1.31e+06)
+              cpu = 0:00:00.3 real = 0:00:01.0 mem = 393.3M
+Iteration  9: Total net bbox = 2.576e+06 (1.55e+06 1.02e+06)
+              Est.  stn bbox = 3.527e+06 (2.10e+06 1.43e+06)
+              cpu = 0:00:00.5 real = 0:00:00.0 mem = 393.3M
+Iteration 10: Total net bbox = 2.639e+06 (1.61e+06 1.03e+06)
+              Est.  stn bbox = 3.599e+06 (2.16e+06 1.44e+06)
+              cpu = 0:00:00.7 real = 0:00:01.0 mem = 395.6M
+Iteration 11: Total net bbox = 2.733e+06 (1.63e+06 1.11e+06)
+              Est.  stn bbox = 3.711e+06 (2.18e+06 1.53e+06)
+              cpu = 0:00:00.9 real = 0:00:01.0 mem = 396.6M
+Iteration 12: Total net bbox = 2.874e+06 (1.73e+06 1.15e+06)
+              Est.  stn bbox = 3.868e+06 (2.30e+06 1.57e+06)
+              cpu = 0:00:01.0 real = 0:00:01.0 mem = 388.4M
+Iteration 13: Total net bbox = 2.880e+06 (1.76e+06 1.12e+06)
+              Est.  stn bbox = 3.874e+06 (2.34e+06 1.53e+06)
+              cpu = 0:00:00.9 real = 0:00:01.0 mem = 388.4M
+Iteration 14: Total net bbox = 3.035e+06 (1.90e+06 1.13e+06)
+              Est.  stn bbox = 4.030e+06 (2.48e+06 1.55e+06)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 388.4M
+*** cost = 3.035e+06 (1.90e+06 1.13e+06) (cpu for global=0:00:06.0) real=0:00:06.0***
+Core basic site is standard
+Starting refinePlace ...
+move report: placeLevelShifters moves 0 insts, mean move: 0.00 um, max move: 0.00 um
+  Spread Effort: high, pre-route mode.
+[CPU] RefinePlace/preRPlace (cpu=0:00:00.5, real=0:00:00.0, mem=397.1MB) @(0:00:08.2 - 0:00:08.6).
+move report: preRPlace moves 15232 insts, mean move: 9.05 um, max move: 46.60 um
+	max move on inst (u4/mem/mem_reg_5][19): (422.80, 111.80) --> (456.40, 124.80)
+wireLenOptFixPriorityInst 0 inst fixed
+Placement tweakage begins.
+wire length = 2.392e+06 = 1.352e+06 H + 1.040e+06 V
+wire length = 2.218e+06 = 1.204e+06 H + 1.014e+06 V
+Placement tweakage ends.
+move report: tweak moves 10673 insts, mean move: 33.23 um, max move: 3079.80 um
+	max move on inst (u1/U91): (3082.80, 683.80) --> (42.00, 644.80)
+[CPU] RefinePlace/TweakPlacement (cpu=0:00:00.3, real=0:00:00.0, mem=397.1MB) @(0:00:08.6 - 0:00:08.9).
+Wire length optimization begins.
+Wire length optimization ends. (0:00:00.0)
+move report: xdp moves 8164 insts, mean move: 34.59 um, max move: 405.40 um
+	max move on inst (u4/mem/U271): (1387.40, 982.80) --> (1008.00, 956.80)
+[CPU] RefinePlace/WireLenOpt (cpu=0:00:00.7, real=0:00:01.0, mem=401.2MB) @(0:00:08.9 - 0:00:09.6).
+[CPU] RefinePlace/Legalization (cpu=0:00:00.0, real=0:00:00.0, mem=401.2MB) @(0:00:09.6 - 0:00:09.6).
+move report: rPlace moves 0 insts, mean move: 0.00 um, max move: 0.00 um
+move report: overall moves 16203 insts, mean move: 32.86 um, max move: 3065.80 um
+	max move on inst (u1/U91): (3068.80, 683.80) --> (42.00, 644.80)
+Statistics of distance of Instance movement in detailed placement:
+  maximum (X+Y) =      3065.80 um
+  inst (u1/U91) with max move: (3068.8, 683.8) -> (42, 644.8)
+  mean    (X+Y) =        32.86 um
+Total instances flipped for WireLenOpt: 10007
+Total instances flipped, including legalization: 548
+Total instances moved : 16203
+*** cpu=0:00:01.4   mem=401.2M  mem(used)=12.7M***
+[CPU] RefinePlace/total (cpu=0:00:01.4, real=0:00:01.0, mem=401.2MB) @(0:00:08.2 - 0:00:09.6).
+Total net length = 2.112e+06 (1.145e+06 9.672e+05) (ext = 2.614e+04)
+*** End of Placement (cpu=0:00:07.5, real=0:00:07.0, mem=401.2M) ***
+Core basic site is standard
+default core: bins with density >  0.75 = 34.8 % ( 94 / 270 )
+*** Finishing placeDesign default flow ***
+**placeDesign ... cpu = 0: 0: 8, real = 0: 0: 8, mem = 401.2M **
+<CMD> checkPlace VGA.checkPlace
+Core basic site is standard
+Begin checking placement ... (start mem=401.2M, init mem=401.2M)
+*info: Placed = 16849
+*info: Unplaced = 0
+Placement Density:70.00%(3145688/4493580)
+Finished checkPlace (cpu: total=0:00:00.0, vio checks=0:00:00.0; mem=401.2M)
+<CMD> setDrawView place
+<CMD> refinePlace
+*** ThreeLayerMode is automatically turned on for small designs with less than 4 layers.
+Core basic site is standard
+Starting refinePlace ...
+  Spread Effort: high, standalone mode.
+[CPU] RefinePlace/preRPlace (cpu=0:00:00.0, real=0:00:00.0, mem=402.4MB) @(0:00:09.7 - 0:00:09.7).
+move report: preRPlace moves 0 insts, mean move: 0.00 um, max move: 0.00 um
+wireLenOptFixPriorityInst 0 inst fixed
+[CPU] RefinePlace/Legalization (cpu=0:00:00.0, real=0:00:00.0, mem=402.4MB) @(0:00:09.7 - 0:00:09.7).
+move report: rPlace moves 0 insts, mean move: 0.00 um, max move: 0.00 um
+move report: overall moves 0 insts, mean move: 0.00 um, max move: 0.00 um
+Statistics of distance of Instance movement in detailed placement:
+  maximum (X+Y) =         0.00 um
+  mean    (X+Y) =         0.00 um
+Total instances moved : 0
+*** cpu=0:00:00.0   mem=402.4M  mem(used)=1.3M***
+[CPU] RefinePlace/total (cpu=0:00:00.0, real=0:00:00.0, mem=402.4MB) @(0:00:09.7 - 0:00:09.7).
+Total net length = 2.112e+06 (1.145e+06 9.672e+05) (ext = 2.614e+04)
+Core basic site is standard
+default core: bins with density >  0.75 = 34.8 % ( 94 / 270 )
+<CMD> checkPlace VGA.checkPlace
+Core basic site is standard
+Begin checking placement ... (start mem=402.4M, init mem=402.4M)
+*info: Placed = 16849
+*info: Unplaced = 0
+Placement Density:70.00%(3145688/4493580)
+Finished checkPlace (cpu: total=0:00:00.0, vio checks=0:00:00.0; mem=402.4M)
+<CMD> setDrawView place
+<CMD> saveDesign ./PAD_VGA.placed.enc
+Writing Netlist "./PAD_VGA.placed.enc.dat/VGA.v.gz" ...
+Saving configuration ...
+Saving preference file ./PAD_VGA.placed.enc.dat/enc.pref.tcl ...
+Saving floorplan ...
+Saving Drc markers ...
+... No Drc file written since there is no markers found.
+Saving placement ...
+*** Completed savePlace (cpu=0:00:00.0 real=0:00:00.0 mem=402.4M) ***
+Saving route ...
+*** Completed saveRoute (cpu=0:00:00.0 real=0:00:01.0 mem=402.4M) ***
+Writing DEF file './PAD_VGA.placed.enc.dat/VGA.def.gz', current time is Mon Nov 25 17:58:42 2024 ...
+unitPerMicron=1000, dbgMicronPerDBU=0.001000, unitPerDBU=1.000000
+DEF file './PAD_VGA.placed.enc.dat/VGA.def.gz' is written, current time is Mon Nov 25 17:58:42 2024 ...
+No integration constraint in the design.
+<CMD> fit
+<CMD> setOptMode -fixFanoutLoad true
+<CMD> optDesign -preCTS
+**WARN: (ENCOPT-576):	178 nets have unplaced terms.
+**INFO: setDesignMode -flowEffort high -> setting 'setOptMode -effort high' for the duration of this command.
+**INFO: setDesignMode -flowEffort high -> setting 'setOptMode -allEndPoints true' for the duration of this command.
+**INFO: setDesignMode -flowEffort high -> setting 'setOptMode -useTimingFluxHotSpotTNSAllEndPoints true' for the duration of this command.
+Total CPU(s) requested: 2
+CPU(s) enabled with current License(s): 1
+No more licenses are available for multi-cpu acceleration.
+Total CPU(s) now enabled: 1
+#CPUs are reduced from 2 to 1 due to license limit
+GigaOpt running with 1 threads.
+**DIAG[lsInit.c:2165:lsiInitFootPrintForSynthesis]: Assert "lsInvFootPrint() || lsBufferFootPrint()"
+**WARN: (ENCOPT-3000):	Buffer footprint is not defined or is an invalid buffer footprint.
+**WARN: (ENCOPT-3001):	Inverter footprint is not defined or is an invalid inverter footprint.
+**DIAG[opUtil.c:10601:update]: Assert "powerView != tocDefaultView"
+**DIAG[opUtil.c:10606:update]: Assert "powerViewTlc"
+**DIAG[opUtil.c:10601:update]: Assert "powerView != tocDefaultView"
+**DIAG[opUtil.c:10606:update]: Assert "powerViewTlc"
+**WARN: (ENCOPT-665):	 CLK_I : Net has unplaced terms or connected to uplaced instances in design. 
+**WARN: (ENCOPT-665):	 RST_I : Net has unplaced terms or connected to uplaced instances in design. 
+**WARN: (ENCOPT-665):	 NRESET : Net has unplaced terms or connected to uplaced instances in design. 
+**WARN: (ENCOPT-665):	 ADR_I_4 : Net has unplaced terms or connected to uplaced instances in design. 
+**WARN: (ENCOPT-665):	 ADR_I_3 : Net has unplaced terms or connected to uplaced instances in design. 
+**WARN: (ENCOPT-665):	 ADR_I_2 : Net has unplaced terms or connected to uplaced instances in design. 
+**WARN: (ENCOPT-665):	 SDAT_I_31 : Net has unplaced terms or connected to uplaced instances in design. 
+**WARN: (ENCOPT-665):	 SDAT_I_30 : Net has unplaced terms or connected to uplaced instances in design. 
+**WARN: (ENCOPT-665):	 SDAT_I_29 : Net has unplaced terms or connected to uplaced instances in design. 
+**WARN: (ENCOPT-665):	 SDAT_I_28 : Net has unplaced terms or connected to uplaced instances in design. 
+**WARN: (ENCOPT-665):	 SDAT_I_27 : Net has unplaced terms or connected to uplaced instances in design. 
+**WARN: (ENCOPT-665):	 SDAT_I_26 : Net has unplaced terms or connected to uplaced instances in design. 
+**WARN: (ENCOPT-665):	 SDAT_I_25 : Net has unplaced terms or connected to uplaced instances in design. 
+**WARN: (ENCOPT-665):	 SDAT_I_24 : Net has unplaced terms or connected to uplaced instances in design. 
+**WARN: (ENCOPT-665):	 SDAT_I_23 : Net has unplaced terms or connected to uplaced instances in design. 
+**WARN: (ENCOPT-665):	 SDAT_I_22 : Net has unplaced terms or connected to uplaced instances in design. 
+**WARN: (ENCOPT-665):	 SDAT_I_21 : Net has unplaced terms or connected to uplaced instances in design. 
+**WARN: (ENCOPT-665):	 SDAT_I_20 : Net has unplaced terms or connected to uplaced instances in design. 
+**WARN: (ENCOPT-665):	 SDAT_I_19 : Net has unplaced terms or connected to uplaced instances in design. 
+**WARN: (ENCOPT-665):	 SDAT_I_18 : Net has unplaced terms or connected to uplaced instances in design. 
+**WARN: (EMS-63):	Message <ENCOPT-665> has exceeded the default message display limit of 20.
+To avoid this warning, increase the display limit per unique message
+by using the setMessageLimit <number> command.
+The message limit can be removed by using the unsetMessageLimit command.
+Note that setting a very large number using the setMessageLimit command
+or removing the message limit using the unsetMessageLimit command can
+significantly increase the log file size.
+To suppress a message, use the suppressMessage command.
+**optDesign ... cpu = 0:00:00, real = 0:00:00, mem = 405.2M, totSessionCpu=0:00:10 **
+**ERROR: (ENCOPT-6029):	Timing Library is not loaded yet
+<CMD> cleanupSpecifyClockTree
+<CMD> specifyClockTree -file ../Clock.ctstch
+Checking spec file integrity...
+
+Reading clock tree spec file '../Clock.ctstch' ...
+
+**ERROR: (ENCSYUTIL-96):	Cannot open (for read) Clock Synthesis Technology File file: '../Clock.ctstch'. The reason is: No such file or directory
+Type 'man ENCSYUTIL-96' for more detail.
+**ERROR: (ENCCK-430):	CTS was unable to open the file ../Clock.ctstch.
+
+Usage: specifyClockTree [-help] [-dont_use]
+                        [-clkfile <string> | -file <string> | -specFile <string>]
+                        [-create <string> | -delete <string> | -update <string> | -file <string> | -template ]
+
+-help                                 # Prints out the command usage
+-create <string>                      # (string, optional)
+-delete <string>                      # (string, optional)
+-dont_use                             # Excludes buffers from CTS file defined
+                                      # as dont_use : true in the .lib file.
+                                      # (bool, optional)
+-file <string>                        # Specifies the name of the clock tree
+                                      # specification file. (string, optional)
+-template                             # Creates a sample CTS template file
+                                      # template.ctstch. (bool, optional)
+-update <string>                      # (string, optional)
+
+
+**ERROR: (ENCSYC-194):	Incorrect usage for command 'specifyClockTree'.
+
+<CMD> clockDesign -specFile ../Clock.ctstch -outDir clock_report
+-engine ck                              # enums={ck ccopt}, default=ck
+**clockDesign ... cpu = 0:00:00, real = 0:00:00, mem = 405.2M **
+<clockDesign INFO> 'setCTSMode -routeClkNet true' is set inside clockDesign.
+
+**ERROR: (ENCCK-2002):	Cannot open ../Clock.ctstch: couldn't open "../Clock.ctstch": no such file or directory
+  clockDesign
+    [-specFile {filename1 filename2 ...}]
+    [-genSpecOnly filename]
+    [-outDir dirname]
+    [-clk clockname]
+    [-macromodel filename]
+    [-check]
+    [-fixedInstBeforeCTS | -unfixedInstBeforeCTS]
+    [-noDeleteClockTree]
+    [-postCTSsdcFile filename]
+    [-incrPostCTSsdcFile filename]
+    [-pulsedLatch]
+    [-honorSDCDontTouch]
+    [-preserveAssertion]
+    [-skipTimeDesign]
+    [-noSkipTimeDesign]
+  
+**clockDesign ... cpu = 0:00:00, real = 0:00:00, mem = 405.2M **
+<CMD_INTERNAL> deleteTrialRoute
+<CMD> saveDesign ./PAD_VGA.CTS.enc
+Writing Netlist "./PAD_VGA.CTS.enc.dat/VGA.v.gz" ...
+Saving configuration ...
+Saving preference file ./PAD_VGA.CTS.enc.dat/enc.pref.tcl ...
+Saving floorplan ...
+Saving Drc markers ...
+... No Drc file written since there is no markers found.
+Saving placement ...
+*** Completed savePlace (cpu=0:00:00.0 real=0:00:00.0 mem=405.2M) ***
+Saving route ...
+*** Completed saveRoute (cpu=0:00:00.0 real=0:00:00.0 mem=405.2M) ***
+Writing DEF file './PAD_VGA.CTS.enc.dat/VGA.def.gz', current time is Mon Nov 25 17:58:42 2024 ...
+unitPerMicron=1000, dbgMicronPerDBU=0.001000, unitPerDBU=1.000000
+DEF file './PAD_VGA.CTS.enc.dat/VGA.def.gz' is written, current time is Mon Nov 25 17:58:42 2024 ...
+No integration constraint in the design.
+<CMD> optDesign -postCTS
+**WARN: (ENCOPT-576):	178 nets have unplaced terms.
+**INFO: setDesignMode -flowEffort high -> setting 'setOptMode -effort high' for the duration of this command.
+**INFO: setDesignMode -flowEffort high -> setting 'setOptMode -allEndPoints true' for the duration of this command.
+**INFO: setDesignMode -flowEffort high -> setting 'setOptMode -useTimingFluxHotSpotTNSAllEndPoints true' for the duration of this command.
+**INFO: setDesignMode -flowEffort high -> setting 'setOptMode -postCtsClkGateCloning true' for the duration of this command.
+Total CPU(s) requested: 2
+CPU(s) enabled with current License(s): 1
+No more licenses are available for multi-cpu acceleration.
+Total CPU(s) now enabled: 1
+#CPUs are reduced from 2 to 1 due to license limit
+GigaOpt running with 1 threads.
+**DIAG[opUtil.c:10601:update]: Assert "powerView != tocDefaultView"
+**DIAG[opUtil.c:10606:update]: Assert "powerViewTlc"
+**WARN: (ENCOPT-665):	 CLK_I : Net has unplaced terms or connected to uplaced instances in design. 
+**WARN: (ENCOPT-665):	 RST_I : Net has unplaced terms or connected to uplaced instances in design. 
+**WARN: (ENCOPT-665):	 NRESET : Net has unplaced terms or connected to uplaced instances in design. 
+**WARN: (ENCOPT-665):	 ADR_I_4 : Net has unplaced terms or connected to uplaced instances in design. 
+**WARN: (ENCOPT-665):	 ADR_I_3 : Net has unplaced terms or connected to uplaced instances in design. 
+**WARN: (ENCOPT-665):	 ADR_I_2 : Net has unplaced terms or connected to uplaced instances in design. 
+**WARN: (ENCOPT-665):	 SDAT_I_31 : Net has unplaced terms or connected to uplaced instances in design. 
+**WARN: (ENCOPT-665):	 SDAT_I_30 : Net has unplaced terms or connected to uplaced instances in design. 
+**WARN: (ENCOPT-665):	 SDAT_I_29 : Net has unplaced terms or connected to uplaced instances in design. 
+**WARN: (ENCOPT-665):	 SDAT_I_28 : Net has unplaced terms or connected to uplaced instances in design. 
+**WARN: (ENCOPT-665):	 SDAT_I_27 : Net has unplaced terms or connected to uplaced instances in design. 
+**WARN: (ENCOPT-665):	 SDAT_I_26 : Net has unplaced terms or connected to uplaced instances in design. 
+**WARN: (ENCOPT-665):	 SDAT_I_25 : Net has unplaced terms or connected to uplaced instances in design. 
+**WARN: (ENCOPT-665):	 SDAT_I_24 : Net has unplaced terms or connected to uplaced instances in design. 
+**WARN: (ENCOPT-665):	 SDAT_I_23 : Net has unplaced terms or connected to uplaced instances in design. 
+**WARN: (ENCOPT-665):	 SDAT_I_22 : Net has unplaced terms or connected to uplaced instances in design. 
+**WARN: (ENCOPT-665):	 SDAT_I_21 : Net has unplaced terms or connected to uplaced instances in design. 
+**WARN: (ENCOPT-665):	 SDAT_I_20 : Net has unplaced terms or connected to uplaced instances in design. 
+**WARN: (ENCOPT-665):	 SDAT_I_19 : Net has unplaced terms or connected to uplaced instances in design. 
+**WARN: (ENCOPT-665):	 SDAT_I_18 : Net has unplaced terms or connected to uplaced instances in design. 
+**optDesign ... cpu = 0:00:00, real = 0:00:00, mem = 405.2M, totSessionCpu=0:00:10 **
+**ERROR: (ENCOPT-6029):	Timing Library is not loaded yet
+<CMD> globalNetConnect gnd! -type tielo -verbose
+0 new tie-lo connection was made to global net 'gnd!'.
+<CMD> globalNetConnect vdd! -type tiehi -verbose
+0 new tie-hi connection was made to global net 'vdd!'.
+<CMD> globalNetConnect vdd! -type pgpin -pin vdd! -inst * -verbose
+16849 new pwr-pin connections were made to global net 'vdd!'.
+<CMD> globalNetConnect vdd! -type pgpin -pin A -inst * -verbose
+**WARN: (ENCDB-1261):	No PG pin 'A' in instances with basename '*' in the design.
+<CMD> globalNetConnect gnd! -type pgpin -pin gnd! -inst * -verbose
+16849 new gnd-pin connections were made to global net 'gnd!'.
+<CMD> globalNetConnect gnd! -type pgpin -pin A -inst * -verbose
+**WARN: (ENCDB-1261):	No PG pin 'A' in instances with basename '*' in the design.
+<CMD> applyGlobalNets
+*** Checked 6 GNC rules.
+*** Applying global-net connections...
+0 new tie-lo connection was made to global net 'gnd!'.
+0 new tie-hi connection was made to global net 'vdd!'.
+16849 new pwr-pin connections were made to global net 'vdd!'.
+**WARN: (ENCDB-1261):	No PG pin 'A' in instances with basename '*' in the design.
+16849 new gnd-pin connections were made to global net 'gnd!'.
+**WARN: (ENCDB-1261):	No PG pin 'A' in instances with basename '*' in the design.
+*** Applied 6 GNC rules (cpu = 0:00:00.0)
+<CMD> saveDesign ./PAD_VGA.filler.enc
+Writing Netlist "./PAD_VGA.filler.enc.dat/VGA.v.gz" ...
+Saving configuration ...
+Saving preference file ./PAD_VGA.filler.enc.dat/enc.pref.tcl ...
+Saving floorplan ...
+Saving Drc markers ...
+... No Drc file written since there is no markers found.
+Saving placement ...
+*** Completed savePlace (cpu=0:00:00.0 real=0:00:00.0 mem=405.2M) ***
+Saving route ...
+*** Completed saveRoute (cpu=0:00:00.0 real=0:00:00.0 mem=405.2M) ***
+Writing DEF file './PAD_VGA.filler.enc.dat/VGA.def.gz', current time is Mon Nov 25 17:58:42 2024 ...
+unitPerMicron=1000, dbgMicronPerDBU=0.001000, unitPerDBU=1.000000
+DEF file './PAD_VGA.filler.enc.dat/VGA.def.gz' is written, current time is Mon Nov 25 17:58:42 2024 ...
+No integration constraint in the design.
+<CMD> sroute -connect { blockPin padPin corePin floatingStripe }
+*** Begin SPECIAL ROUTE on Mon Nov 25 17:58:43 2024 ***
+SPECIAL ROUTE ran on directory: /net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/par/work
+SPECIAL ROUTE ran on machine: 24p105-06 (Linux 5.14.0-362.8.1.el9_3.x86_64 x86_64 2.10Ghz)
+
+Begin option processing ...
+srouteConnectPowerBump set to false
+routeSpecial set to true
+srouteFollowCorePinEnd set to 3
+srouteJogControl set to "preferWithChanges differentLayer"
+sroutePadPinAllPorts set to true
+sroutePreserveExistingRoutes set to true
+End option processing: cpu: 0:00:00, real: 0:00:00, peak: 968.00 megs.
+
+Reading DB technology information...
+Finished reading DB technology information.
+Reading floorplan and netlist information...
+Finished reading floorplan and netlist information.
+Read in 8 layers, 3 routing layers, 1 overlap layer
+Read in 460 macros, 76 used
+Read in 16849 components
+  16849 core components: 0 unplaced, 16849 placed, 0 fixed
+Read in 181 logical pins
+Read in 178 nets
+Read in 2 special nets, 2 routed
+Read in 33698 terminals
+Begin power routing ...
+**WARN: (ENCSR-1254):	Cannot find any block pin of net vdd!. Check net list, or change option to include pin in given range.
+**WARN: (ENCSR-1256):	Cannot find any CORE class pad pin of net vdd!. Change routing area or layer to include the expected pin, or check netlist, or change port class in LEF file.
+Cannot find any AREAIO class pad pin of net vdd!. Check net list, or change port class in LEF file, or change option to include pin in given range.
+**WARN: (ENCSR-1254):	Cannot find any block pin of net gnd!. Check net list, or change option to include pin in given range.
+**WARN: (ENCSR-1256):	Cannot find any CORE class pad pin of net gnd!. Change routing area or layer to include the expected pin, or check netlist, or change port class in LEF file.
+Cannot find any AREAIO class pad pin of net gnd!. Check net list, or change port class in LEF file, or change option to include pin in given range.
+CPU time for FollowPin 0 seconds
+CPU time for FollowPin 0 seconds
+  Number of IO ports routed: 0
+  Number of Block ports routed: 0
+  Number of Stripe ports routed: 0
+  Number of Core ports routed: 202
+  Number of Power Bump ports routed: 0
+  Number of Followpin connections: 101
+End power routing: cpu: 0:00:00, real: 0:00:00, peak: 993.00 megs.
+
+
+
+ Begin updating DB with routing results ...
+ Updating DB with 5 via definition ...
+
+sroute post-processing starts at Mon Nov 25 17:58:43 2024
+The viaGen is rebuilding shadow vias for net gnd!.
+sroute post-processing ends at Mon Nov 25 17:58:43 2024
+
+sroute post-processing starts at Mon Nov 25 17:58:43 2024
+The viaGen is rebuilding shadow vias for net vdd!.
+sroute post-processing ends at Mon Nov 25 17:58:43 2024
+sroute: Total CPU time used = 0:0:0
+sroute: Total Real time used = 0:0:0
+sroute: Total Memory used = -2.00 megs
+sroute: Total Peak Memory used = 403.16 megs
+<CMD> verifyGeometry
+ *** Starting Verify Geometry (MEM: 403.2) ***
+
+  VERIFY GEOMETRY ...... Starting Verification
+  VERIFY GEOMETRY ...... Initializing
+  VERIFY GEOMETRY ...... Deleting Existing Violations
+  VERIFY GEOMETRY ...... Creating Sub-Areas
+                  ...... bin size: 5600
+Total CPU(s) requested: 2
+CPU(s) enabled with current License(s): 1
+No more licenses are available for multi-cpu acceleration.
+Total CPU(s) now enabled: 1
+**WARN: (PRL-222):	Multi-CPU acceleration using 1 CPU(s).
+Saving Drc markers ...
+... No Drc file written since there is no markers found.
+  VERIFY GEOMETRY ...... SubArea : 1 of 3  Thread : 0
+  VERIFY GEOMETRY ...... SubArea : 3 of 3  Thread : 0
+  VERIFY GEOMETRY ...... SubArea : 2 of 3  Thread : 1
+VG: elapsed time: 5.00
+Begin Summary ...
+  Cells       : 0
+  SameNet     : 0
+  Wiring      : 0
+  Antenna     : 0
+  Short       : 0
+  Overlap     : 0
+End Summary
+
+  Verification Complete : 0 Viols.  0 Wrngs.
+
+**********End: VERIFY GEOMETRY**********
+ *** verify geometry (CPU: 0:00:04.0  MEM: 1119.0M)
+
+<CMD> verify_drc
+ *** Starting Verify DRC (MEM: 404.2) ***
+
+  VERIFY DRC ...... Starting Verification
+  VERIFY DRC ...... Initializing
+  VERIFY DRC ...... Deleting Existing Violations
+  VERIFY DRC ...... Creating Sub-Areas
+Total CPU(s) requested: 2
+CPU(s) enabled with current License(s): 1
+No more licenses are available for multi-cpu acceleration.
+Total CPU(s) now enabled: 1
+**WARN: (PRL-222):	Multi-CPU acceleration using 1 CPU(s).
+Saving Drc markers ...
+... No Drc file written since there is no markers found.
+ VERIFY DRC ...... Sub-Area : 1 of 3  Thread : 0
+ VERIFY DRC ...... Sub-Area : 3 of 3  Thread : 0
+ VERIFY DRC ...... Sub-Area : 2 of 3  Thread : 1
+
+  Verification Complete : 0 Viols.
+
+ *** End Verify DRC (CPU: 0:00:11.0  ELAPSED TIME: 12.00  MEM: 538.0M) ***
+
+<CMD> clearDrc
+<CMD> saveDesign ./PAD_VGA.preroute.enc
+Writing Netlist "./PAD_VGA.preroute.enc.dat/VGA.v.gz" ...
+Saving configuration ...
+Saving preference file ./PAD_VGA.preroute.enc.dat/enc.pref.tcl ...
+Saving floorplan ...
+Saving Drc markers ...
+... No Drc file written since there is no markers found.
+Saving placement ...
+*** Completed savePlace (cpu=0:00:00.0 real=0:00:00.0 mem=404.2M) ***
+Saving route ...
+*** Completed saveRoute (cpu=0:00:00.0 real=0:00:00.0 mem=404.2M) ***
+Writing DEF file './PAD_VGA.preroute.enc.dat/VGA.def.gz', current time is Mon Nov 25 17:59:01 2024 ...
+unitPerMicron=1000, dbgMicronPerDBU=0.001000, unitPerDBU=1.000000
+DEF file './PAD_VGA.preroute.enc.dat/VGA.def.gz' is written, current time is Mon Nov 25 17:59:01 2024 ...
+No integration constraint in the design.
+<CMD> routeDesign -globalDetail
+#WARNING (NRIG-96) Selected single pass global detail route "-globalDetail". Clock eco and post optimizations will not be run. See "man NRIG-96" for more details.
+#**INFO: setDesignMode -flowEffort high
+#**INFO:  mulit-cut via swapping is disabled by user.
+#**INFO:  wire spreading is disabled by the user.
+#**INFO: auto set of routeReserveSpaceForMultiCut to true
+#**INFO: auto set of routeConcurrentMinimizeViaCountEffort to high
+Core basic site is standard
+Begin checking placement ... (start mem=404.2M, init mem=404.2M)
+*info: Placed = 16849
+*info: Unplaced = 0
+Placement Density:70.00%(3145688/4493580)
+Finished checkPlace (cpu: total=0:00:00.0, vio checks=0:00:00.0; mem=404.2M)
+#**INFO: auto set of routeWithTimingDriven to true
+#**INFO: auto set of routeWithSiDriven to true
+
+changeUseClockNetStatus Option :  -noFixedNetWires 
+*** Changed status on (0) nets in Clock.
+*** End changeUseClockNetStatus (cpu=0:00:00.0, real=0:00:00.0, mem=404.2M) ***
+
+globalDetailRoute
+
+#Start globalDetailRoute on Mon Nov 25 17:59:01 2024
+#
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 404.00 (Mb)
+#Generating timing graph information, please wait...
+#17065 total nets, 0 already routed, 0 will ignore in trialRoute
+**WARN: (ENCTR-7102):	There are 181 unplaced pins or pins without metal layer geometry or M0 terms without V01 and there will be no connection to these pins.
+**WARN: (ENCTR-7103):	There were 181 unplaced pins or pins without metal layer geometry and there is no connection to these pins.
+#Dump tif for version 2.1
+**WARN: (ENCEXT-6197):	Capacitance table file not specified. This will result in lower parasitic accuracy using preRoute extraction or postRoute extraction with effort level 'low'. It is recommended to generate the capacitance table file using 'generateCapTbl' command and specify it before extraction.
+Total CPU(s) requested: 2
+CPU(s) enabled with current License(s): 1
+No more licenses are available for multi-cpu acceleration.
+Total CPU(s) now enabled: 1
+**ERROR: (ENCDC-634):	Timing library is not loaded yet.....
+AAE_INFO: All RC in memory mode is on.
+*** Memory pool thread-safe mode activated.
+**WARN: (ENCESI-3014):	RC network is broken. Use lumped model for net  RST_I.
+**WARN: (ENCESI-3014):	RC network is broken. Use lumped model for net  NRESET.
+**WARN: (ENCESI-3014):	RC network is broken. Use lumped model for net  MDAT_I_31.
+**WARN: (ENCESI-3014):	RC network is broken. Use lumped model for net  MDAT_I_30.
+**WARN: (ENCESI-3014):	RC network is broken. Use lumped model for net  MDAT_I_29.
+**WARN: (ENCESI-3014):	RC network is broken. Use lumped model for net  MDAT_I_28.
+**WARN: (ENCESI-3014):	RC network is broken. Use lumped model for net  MDAT_I_27.
+**WARN: (ENCESI-3014):	RC network is broken. Use lumped model for net  MDAT_I_26.
+**WARN: (ENCESI-3014):	RC network is broken. Use lumped model for net  MDAT_I_25.
+**WARN: (ENCESI-3014):	RC network is broken. Use lumped model for net  MDAT_I_24.
+**WARN: (ENCESI-3014):	RC network is broken. Use lumped model for net  MDAT_I_23.
+**WARN: (ENCESI-3014):	RC network is broken. Use lumped model for net  MDAT_I_22.
+**WARN: (ENCESI-3014):	RC network is broken. Use lumped model for net  MDAT_I_21.
+**WARN: (ENCESI-3014):	RC network is broken. Use lumped model for net  MDAT_I_20.
+**WARN: (ENCESI-3014):	RC network is broken. Use lumped model for net  MDAT_I_19.
+**WARN: (ENCESI-3014):	RC network is broken. Use lumped model for net  MDAT_I_18.
+**WARN: (ENCESI-3014):	RC network is broken. Use lumped model for net  MDAT_I_17.
+**WARN: (ENCESI-3014):	RC network is broken. Use lumped model for net  MDAT_I_16.
+**WARN: (ENCESI-3014):	RC network is broken. Use lumped model for net  MDAT_I_15.
+**WARN: (ENCESI-3014):	RC network is broken. Use lumped model for net  MDAT_I_14.
+**WARN: (ENCESI-3014):	RC network is broken. Use lumped model for net  MDAT_I_13.
+**WARN: (ENCESI-3014):	RC network is broken. Use lumped model for net  MDAT_I_12.
+**WARN: (ENCESI-3014):	RC network is broken. Use lumped model for net  MDAT_I_11.
+**WARN: (ENCESI-3014):	RC network is broken. Use lumped model for net  MDAT_I_10.
+**WARN: (ENCESI-3014):	RC network is broken. Use lumped model for net  MDAT_I_9.
+**WARN: (ENCESI-3014):	RC network is broken. Use lumped model for net  MDAT_I_8.
+**WARN: (ENCESI-3014):	RC network is broken. Use lumped model for net  MDAT_I_7.
+**WARN: (ENCESI-3014):	RC network is broken. Use lumped model for net  MDAT_I_6.
+**WARN: (ENCESI-3014):	RC network is broken. Use lumped model for net  MDAT_I_5.
+**WARN: (ENCESI-3014):	RC network is broken. Use lumped model for net  MDAT_I_4.
+**WARN: (ENCESI-3014):	RC network is broken. Use lumped model for net  MDAT_I_3.
+**WARN: (ENCESI-3014):	RC network is broken. Use lumped model for net  MDAT_I_2.
+**WARN: (ENCESI-3014):	RC network is broken. Use lumped model for net  MDAT_I_1.
+**WARN: (ENCESI-3014):	RC network is broken. Use lumped model for net  MDAT_I_0.
+**WARN: (ENCESI-3014):	RC network is broken. Use lumped model for net  PCLK.
+AAE_THRD: End delay calculation. (MEM=519.664 CPU=0:00:00.8 REAL=0:00:00.0)
+Total CPU(s) requested: 2
+CPU(s) enabled with current License(s): 1
+No more licenses are available for multi-cpu acceleration.
+Total CPU(s) now enabled: 1
+#Write timing file took: cpu time = 00:00:01, elapsed time = 00:00:02, memory = 516.00 (Mb)
+#Done generating timing graph information.
+#WARNING (NRIG-39) NanoRoute cannot route to pin CLK_I because it might be a logical pin and does not have physical shapes. To fix the problem, check the pin connection in the netlist and ensure the pin shapes exist in the floorplan.
+#WARNING (NRIG-39) NanoRoute cannot route to pin RST_I because it might be a logical pin and does not have physical shapes. To fix the problem, check the pin connection in the netlist and ensure the pin shapes exist in the floorplan.
+#WARNING (NRIG-39) NanoRoute cannot route to pin NRESET because it might be a logical pin and does not have physical shapes. To fix the problem, check the pin connection in the netlist and ensure the pin shapes exist in the floorplan.
+#WARNING (NRIG-39) NanoRoute cannot route to pin ADR_I[2] because it might be a logical pin and does not have physical shapes. To fix the problem, check the pin connection in the netlist and ensure the pin shapes exist in the floorplan.
+#WARNING (NRIG-39) NanoRoute cannot route to pin ADR_I[1] because it might be a logical pin and does not have physical shapes. To fix the problem, check the pin connection in the netlist and ensure the pin shapes exist in the floorplan.
+#WARNING (NRIG-39) NanoRoute cannot route to pin ADR_I[0] because it might be a logical pin and does not have physical shapes. To fix the problem, check the pin connection in the netlist and ensure the pin shapes exist in the floorplan.
+#WARNING (NRIG-39) NanoRoute cannot route to pin SDAT_I[31] because it might be a logical pin and does not have physical shapes. To fix the problem, check the pin connection in the netlist and ensure the pin shapes exist in the floorplan.
+#WARNING (NRIG-39) NanoRoute cannot route to pin SDAT_I[30] because it might be a logical pin and does not have physical shapes. To fix the problem, check the pin connection in the netlist and ensure the pin shapes exist in the floorplan.
+#WARNING (NRIG-39) NanoRoute cannot route to pin SDAT_I[29] because it might be a logical pin and does not have physical shapes. To fix the problem, check the pin connection in the netlist and ensure the pin shapes exist in the floorplan.
+#WARNING (NRIG-39) NanoRoute cannot route to pin SDAT_I[28] because it might be a logical pin and does not have physical shapes. To fix the problem, check the pin connection in the netlist and ensure the pin shapes exist in the floorplan.
+#WARNING (NRIG-39) NanoRoute cannot route to pin SDAT_I[27] because it might be a logical pin and does not have physical shapes. To fix the problem, check the pin connection in the netlist and ensure the pin shapes exist in the floorplan.
+#WARNING (NRIG-39) NanoRoute cannot route to pin SDAT_I[26] because it might be a logical pin and does not have physical shapes. To fix the problem, check the pin connection in the netlist and ensure the pin shapes exist in the floorplan.
+#WARNING (NRIG-39) NanoRoute cannot route to pin SDAT_I[25] because it might be a logical pin and does not have physical shapes. To fix the problem, check the pin connection in the netlist and ensure the pin shapes exist in the floorplan.
+#WARNING (NRIG-39) NanoRoute cannot route to pin SDAT_I[24] because it might be a logical pin and does not have physical shapes. To fix the problem, check the pin connection in the netlist and ensure the pin shapes exist in the floorplan.
+#WARNING (NRIG-39) NanoRoute cannot route to pin SDAT_I[23] because it might be a logical pin and does not have physical shapes. To fix the problem, check the pin connection in the netlist and ensure the pin shapes exist in the floorplan.
+#WARNING (NRIG-39) NanoRoute cannot route to pin SDAT_I[22] because it might be a logical pin and does not have physical shapes. To fix the problem, check the pin connection in the netlist and ensure the pin shapes exist in the floorplan.
+#WARNING (NRIG-39) NanoRoute cannot route to pin SDAT_I[21] because it might be a logical pin and does not have physical shapes. To fix the problem, check the pin connection in the netlist and ensure the pin shapes exist in the floorplan.
+#WARNING (NRIG-39) NanoRoute cannot route to pin SDAT_I[20] because it might be a logical pin and does not have physical shapes. To fix the problem, check the pin connection in the netlist and ensure the pin shapes exist in the floorplan.
+#WARNING (NRIG-39) NanoRoute cannot route to pin SDAT_I[19] because it might be a logical pin and does not have physical shapes. To fix the problem, check the pin connection in the netlist and ensure the pin shapes exist in the floorplan.
+#WARNING (NRIG-39 Repeated 20 times. Will be suppressed.) NanoRoute cannot route to pin SDAT_I[18] because it might be a logical pin and does not have physical shapes. To fix the problem, check the pin connection in the netlist and ensure the pin shapes exist in the floorplan.
+#WARNING (EMS-27) Message (NRIG-39) has exceeded the current message display limit of 20.
+#To increase the message display limit, refer to the product command reference manual.
+#ERROR (NRDB-631) NET SEL_O_0 has more than one top-level logical pin which has no physical port (pin geometries) or has not been placed. Correct the pins before continue.
+#Cpu time = 00:00:02
+#Elapsed time = 00:00:02
+#Increased memory = 122.00 (Mb)
+#Total memory = 526.00 (Mb)
+#Peak memory = 526.00 (Mb)
+#WARNING (NRIF-19) Failed to complete globalDetailRoute on Mon Nov 25 17:59:03 2024
+#
+
+<CMD> setOptMode -fixFanoutLoad true
+<CMD> setAnalysisMode -analysisType onChipVariation -cppr both
+<CMD> optDesign -postRoute -hold
+**WARN: (ENCOPT-576):	178 nets have unplaced terms.
+Disable merging buffers from different footprints for postRoute code for non-MSV designs
+Total CPU(s) requested: 2
+CPU(s) enabled with current License(s): 1
+No more licenses are available for multi-cpu acceleration.
+Total CPU(s) now enabled: 1
+#CPUs are reduced from 2 to 1 due to license limit
+GigaOpt running with 1 threads.
+Switching SI Aware to true by default in postroute mode   
+**DIAG[opUtil.c:10601:update]: Assert "powerView != tocDefaultView"
+**DIAG[opUtil.c:10606:update]: Assert "powerViewTlc"
+**WARN: (ENCOPT-665):	 CLK_I : Net has unplaced terms or connected to uplaced instances in design. 
+**WARN: (ENCOPT-665):	 RST_I : Net has unplaced terms or connected to uplaced instances in design. 
+**WARN: (ENCOPT-665):	 NRESET : Net has unplaced terms or connected to uplaced instances in design. 
+**WARN: (ENCOPT-665):	 ADR_I_4 : Net has unplaced terms or connected to uplaced instances in design. 
+**WARN: (ENCOPT-665):	 ADR_I_3 : Net has unplaced terms or connected to uplaced instances in design. 
+**WARN: (ENCOPT-665):	 ADR_I_2 : Net has unplaced terms or connected to uplaced instances in design. 
+**WARN: (ENCOPT-665):	 SDAT_I_31 : Net has unplaced terms or connected to uplaced instances in design. 
+**WARN: (ENCOPT-665):	 SDAT_I_30 : Net has unplaced terms or connected to uplaced instances in design. 
+**WARN: (ENCOPT-665):	 SDAT_I_29 : Net has unplaced terms or connected to uplaced instances in design. 
+**WARN: (ENCOPT-665):	 SDAT_I_28 : Net has unplaced terms or connected to uplaced instances in design. 
+**WARN: (ENCOPT-665):	 SDAT_I_27 : Net has unplaced terms or connected to uplaced instances in design. 
+**WARN: (ENCOPT-665):	 SDAT_I_26 : Net has unplaced terms or connected to uplaced instances in design. 
+**WARN: (ENCOPT-665):	 SDAT_I_25 : Net has unplaced terms or connected to uplaced instances in design. 
+**WARN: (ENCOPT-665):	 SDAT_I_24 : Net has unplaced terms or connected to uplaced instances in design. 
+**WARN: (ENCOPT-665):	 SDAT_I_23 : Net has unplaced terms or connected to uplaced instances in design. 
+**WARN: (ENCOPT-665):	 SDAT_I_22 : Net has unplaced terms or connected to uplaced instances in design. 
+**WARN: (ENCOPT-665):	 SDAT_I_21 : Net has unplaced terms or connected to uplaced instances in design. 
+**WARN: (ENCOPT-665):	 SDAT_I_20 : Net has unplaced terms or connected to uplaced instances in design. 
+**WARN: (ENCOPT-665):	 SDAT_I_19 : Net has unplaced terms or connected to uplaced instances in design. 
+**WARN: (ENCOPT-665):	 SDAT_I_18 : Net has unplaced terms or connected to uplaced instances in design. 
+**optDesign ... cpu = 0:00:00, real = 0:00:00, mem = 526.1M, totSessionCpu=0:00:28 **
+**ERROR: (ENCOPT-311):	Optimization will not work when the timing analysis mode is set to -ocv.
+		To run optimization while taking into account on chip variation, set the MMMC environment with the right operating condition.
+		More information can be found in the documentation.
+**ERROR: (ENCOPT-570):	Initial sanity checks failed for optDesign. Correct above errors/warnings before running optDesign.
+<CMD> saveDesign ./PAD_TOP_FIR.postroute.enc
+Writing Netlist "./PAD_TOP_FIR.postroute.enc.dat/VGA.v.gz" ...
+Saving configuration ...
+Saving preference file ./PAD_TOP_FIR.postroute.enc.dat/enc.pref.tcl ...
+Saving floorplan ...
+Saving Drc markers ...
+... No Drc file written since there is no markers found.
+Saving placement ...
+*** Completed savePlace (cpu=0:00:00.0 real=0:00:00.0 mem=526.1M) ***
+Saving route ...
+*** Completed saveRoute (cpu=0:00:00.0 real=0:00:00.0 mem=526.1M) ***
+Writing DEF file './PAD_TOP_FIR.postroute.enc.dat/VGA.def.gz', current time is Mon Nov 25 17:59:08 2024 ...
+unitPerMicron=1000, dbgMicronPerDBU=0.001000, unitPerDBU=1.000000
+DEF file './PAD_TOP_FIR.postroute.enc.dat/VGA.def.gz' is written, current time is Mon Nov 25 17:59:08 2024 ...
+No integration constraint in the design.
+<CMD> addFiller -cell FILL1 FILL2 FILL5 FILL10 -prefix FILLER
+Core basic site is standard
+*INFO: Adding fillers to top-module.
+*INFO:   Added 4643 filler insts (cell FILL10 / prefix FILLER).
+*INFO:   Added 2851 filler insts (cell FILL5 / prefix FILLER).
+*INFO:   Added 5241 filler insts (cell FILL2 / prefix FILLER).
+*INFO:   Added 2893 filler insts (cell FILL1 / prefix FILLER).
+*INFO: Total 15628 filler insts added - prefix FILLER (CPU: 0:00:00.0).
+For 15628 new insts, 15628 new pwr-pin connections were made to global net 'vdd!'.
+**WARN: (ENCDB-1261):	No PG pin 'A' in instances with basename '*' in the design.
+15628 new gnd-pin connections were made to global net 'gnd!'.
+**WARN: (ENCDB-1261):	No PG pin 'A' in instances with basename '*' in the design.
+*** Applied 4 GNC rules (cpu = 0:00:00.0)
+<CMD> verifyGeometry
+ *** Starting Verify Geometry (MEM: 526.1) ***
+
+  VERIFY GEOMETRY ...... Starting Verification
+  VERIFY GEOMETRY ...... Initializing
+  VERIFY GEOMETRY ...... Deleting Existing Violations
+  VERIFY GEOMETRY ...... Creating Sub-Areas
+                  ...... bin size: 5600
+Total CPU(s) requested: 2
+CPU(s) enabled with current License(s): 1
+No more licenses are available for multi-cpu acceleration.
+Total CPU(s) now enabled: 1
+**WARN: (PRL-222):	Multi-CPU acceleration using 1 CPU(s).
+Saving Drc markers ...
+... No Drc file written since there is no markers found.
+  VERIFY GEOMETRY ...... SubArea : 1 of 3  Thread : 0
+  VERIFY GEOMETRY ...... SubArea : 3 of 3  Thread : 0
+  VERIFY GEOMETRY ...... SubArea : 2 of 3  Thread : 1
+VG: elapsed time: 8.00
+Begin Summary ...
+  Cells       : 0
+  SameNet     : 0
+  Wiring      : 0
+  Antenna     : 0
+  Short       : 0
+  Overlap     : 0
+End Summary
+
+  Verification Complete : 0 Viols.  0 Wrngs.
+
+**********End: VERIFY GEOMETRY**********
+ *** verify geometry (CPU: 0:00:07.0  MEM: 1114.3M)
+
+<CMD> verify_drc
+ *** Starting Verify DRC (MEM: 526.1) ***
+
+  VERIFY DRC ...... Starting Verification
+  VERIFY DRC ...... Initializing
+  VERIFY DRC ...... Deleting Existing Violations
+  VERIFY DRC ...... Creating Sub-Areas
+Total CPU(s) requested: 2
+CPU(s) enabled with current License(s): 1
+No more licenses are available for multi-cpu acceleration.
+Total CPU(s) now enabled: 1
+**WARN: (PRL-222):	Multi-CPU acceleration using 1 CPU(s).
+Saving Drc markers ...
+... No Drc file written since there is no markers found.
+ VERIFY DRC ...... Sub-Area : 1 of 3  Thread : 0
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 0.00 (Mb)
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 0.00 (Mb)
+#WARNING (NREX-28) The height of the first routing layer MET1 is 0.000000. It should be larger than 0.000000.
+#WARNING (NREX-30) Please also check the height and metal thickness values for the routing layers higher than routing layer MET1.
+ VERIFY DRC ...... Sub-Area : 3 of 3  Thread : 0
+ VERIFY DRC ...... Sub-Area : 2 of 3  Thread : 1
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 0.00 (Mb)
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 0.00 (Mb)
+#WARNING (NREX-28) The height of the first routing layer MET1 is 0.000000. It should be larger than 0.000000.
+#WARNING (NREX-30) Please also check the height and metal thickness values for the routing layers higher than routing layer MET1.
+
+  Verification Complete : 0 Viols.
+
+ *** End Verify DRC (CPU: 0:00:12.0  ELAPSED TIME: 14.00  MEM: 646.8M) ***
+
+<CMD> verifyConnectivity -type regular -error 1000 -warning 50
+VERIFY_CONNECTIVITY use new engine.
+
+******** Start: VERIFY CONNECTIVITY ********
+Start Time: Mon Nov 25 17:59:31 2024
+
+Design Name: VGA
+Database Units: 1000
+Design Boundary: (0.0000, 0.0000) (3498.3750, 1340.8000)
+Error Limit = 1000; Warning Limit = 50
+Check specified nets
+Total CPU(s) requested: 2
+CPU(s) enabled with current License(s): 1
+No more licenses are available for multi-cpu acceleration.
+Total CPU(s) now enabled: 1
+**WARN: (PRL-222):	Multi-CPU acceleration using 1 CPU(s).
+**WARN: (ENCVFC-3):	Verify Connectivity stopped: Number of errors exceeds the limit 1000
+**WARN: (ENCVFC-3):	Verify Connectivity stopped: Number of errors exceeds the limit 1000
+
+Begin Summary 
+    1000 Problem(s) (ENCVFC-98): Net has no global routing and no special routing.
+    1000 total info(s) created.
+End Summary
+
+End Time: Mon Nov 25 17:59:31 2024
+Time Elapsed: 0:00:00.0
+
+******** End: VERIFY CONNECTIVITY ********
+  Verification Complete : 1000 Viols.  0 Wrngs.
+  (CPU Time: 0:00:00.0  MEM: 0.258M)
+
+<CMD> verifyProcessAntenna
+
+******* START VERIFY ANTENNA ********
+Report File: VGA.antenna.rpt
+LEF Macro File: VGA.antenna.lef
+5000 nets processed: 0 violations
+10000 nets processed: 0 violations
+15000 nets processed: 0 violations
+Verification Complete: 0 Violations
+******* DONE VERIFY ANTENNA ********
+(CPU Time: 0:00:01.1  MEM: 4.438M)
+
+<CMD> clearDrc
+<CMD> setAnalysisMode -checkType setup
+<CMD> report_timing
+#################################################################################
+# Design Stage: PreRoute
+# Design Mode: 130nm
+# Analysis Mode: non-MMMC OCV
+# Extraction Mode: default
+# Delay Calculation Options: engine=aae signOff=true SIAware=true(opt)
+# Switching Delay Calculation Engine to AAE
+#################################################################################
+Total CPU(s) requested: 2
+CPU(s) enabled with current License(s): 1
+No more licenses are available for multi-cpu acceleration.
+Total CPU(s) now enabled: 1
+Calculate early delays in OCV mode...
+**ERROR: (ENCDC-634):	Timing library is not loaded yet.....
+Type 'man ENCDC-634' for more detail.
+Topological Sorting (CPU = 0:00:00.0, MEM = 529.6M, InitMEM = 529.6M)
+AAE_INFO: All RC in memory mode is on.
+AAE_THRD: End delay calculation. (MEM=544.73 CPU=0:00:00.5 REAL=0:00:00.0)
+Calculate late delays in OCV mode...
+**ERROR: (ENCDC-634):	Timing library is not loaded yet.....
+Type 'man ENCDC-634' for more detail.
+Topological Sorting (CPU = 0:00:00.0, MEM = 544.7M, InitMEM = 544.7M)
+AAE_INFO: All RC in memory mode is on.
+AAE_THRD: End delay calculation. (MEM=544.73 CPU=0:00:00.7 REAL=0:00:01.0)
+*** CDM Built up (cpu=0:00:01.4  real=0:00:01.0  mem= 544.7M) ***
+Total CPU(s) requested: 2
+CPU(s) enabled with current License(s): 1
+No more licenses are available for multi-cpu acceleration.
+Total CPU(s) now enabled: 1
+<CMD> setAnalysisMode -checkType hold
+<CMD> report_timing
+#################################################################################
+# Design Stage: PreRoute
+# Design Mode: 130nm
+# Analysis Mode: non-MMMC OCV
+# Extraction Mode: default
+# Delay Calculation Options: engine=aae signOff=true SIAware=true(opt)
+# Switching Delay Calculation Engine to AAE
+#################################################################################
+AAE_INFO: 1 threads acquired from CTE. No license checked out.
+Calculate late delays in OCV mode...
+**ERROR: (ENCDC-634):	Timing library is not loaded yet.....
+Type 'man ENCDC-634' for more detail.
+Topological Sorting (CPU = 0:00:00.0, MEM = 539.6M, InitMEM = 539.6M)
+AAE_INFO: All RC in memory mode is on.
+AAE_THRD: End delay calculation. (MEM=546.164 CPU=0:00:00.5 REAL=0:00:01.0)
+Calculate early delays in OCV mode...
+**ERROR: (ENCDC-634):	Timing library is not loaded yet.....
+Type 'man ENCDC-634' for more detail.
+Topological Sorting (CPU = 0:00:00.0, MEM = 546.2M, InitMEM = 546.2M)
+AAE_INFO: All RC in memory mode is on.
+AAE_THRD: End delay calculation. (MEM=546.164 CPU=0:00:00.7 REAL=0:00:01.0)
+*** CDM Built up (cpu=0:00:01.3  real=0:00:02.0  mem= 546.2M) ***
+Total CPU(s) requested: 2
+CPU(s) enabled with current License(s): 1
+No more licenses are available for multi-cpu acceleration.
+Total CPU(s) now enabled: 1
+<CMD> report_power
+CPE found ground net: gnd!
+CPE found power net: vdd!  voltage: 0V
+**ERROR: (ENCCTE-348):	Timing library is not loaded yet.
+**ERROR: (ENCCTE-348):	Timing library is not loaded yet.
+**ERROR: (ENCCTE-348):	Timing library is not loaded yet.
+**ERROR: (ENCCTE-348):	Timing library is not loaded yet.
+<CMD> saveNetlist ../Results/VGA_routed.v -excludeLeafCell -excludeCellInst CORNERP_3B
+Writing Netlist "../Results/VGA_routed.v" ...
+<CMD> rcOut -setload VGA.setload -rc_corner rc_corner_worst
+
+<CMD> rcOut -setres VGA.setres -rc_corner rc_corner_worst
+
+<CMD> rcOut -spf VGA.spf -rc_corner rc_corner_worst
+
+<CMD> rcOut -spef VGA.spef -rc_corner rc_corner_worst
+
+<CMD> redirect -quiet {set honorDomain [getAnalysisMode -honorClockDomains]} > /dev/null
+<CMD> timeDesign -reportOnly -pathReports -drvReports -slackReports -numPaths 50 -prefix PAD_TOP_FIR -outDir timingReports
+**ERROR: (ENCOPT-6029):	Timing Library is not loaded yet
+<CMD> write_sdf ../Results/$DESIGN_NAME\_routed.sdf
+#################################################################################
+# Design Stage: PreRoute
+# Design Mode: 130nm
+# Analysis Mode: non-MMMC OCV
+# Extraction Mode: default
+# Delay Calculation Options: engine=aae signOff=true SIAware=true(opt)
+# Switching Delay Calculation Engine to AAE
+#################################################################################
+AAE_INFO: 1 threads acquired from CTE. No license checked out.
+**ERROR: (ENCDC-634):	Timing library is not loaded yet.....
+Type 'man ENCDC-634' for more detail.
+Topological Sorting (CPU = 0:00:00.0, MEM = 541.0M, InitMEM = 541.0M)
+AAE_INFO: All RC in memory mode is on.
+AAE_THRD: End delay calculation. (MEM=548.93 CPU=0:00:00.7 REAL=0:00:01.0)
+**ERROR: (ENCDC-634):	Timing library is not loaded yet.....
+Type 'man ENCDC-634' for more detail.
+Topological Sorting (CPU = 0:00:00.0, MEM = 548.9M, InitMEM = 548.9M)
+AAE_INFO: All RC in memory mode is on.
+AAE_THRD: End delay calculation. (MEM=548.93 CPU=0:00:00.7 REAL=0:00:01.0)
+*** CDM Built up (cpu=0:00:01.5  real=0:00:02.0  mem= 548.9M) ***
+<CMD> selectInst u3/vtgen/hor_gen/len_cnt/cnt/U162
+couldn't read file "par.tcl": no such file or directory
+<CMD> setDesignMode -process 130 -flowEffort high
+Applying the recommended capacitance filtering threshold values for 130nm process node: total_c_th=0, relative_c_th=1 and coupling_c_th=0.4.
+	These values will be used by all post-route extraction engines, including TQRC, IQRC and QRC extraction.
+	Capacitance filtering mode(-capFilterMode option of the setExtractRCMode) is 'relAndCoup' for all engines.
+	The accuracy mode for postRoute effortLevel low extraction will be set to 'standard'.
+	Default value for EffortLevel(-effortLevel option of the setExtractRCMode) in postRoute extraction mode is 'low'.
+<CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+<CMD> set defHierChar /
+<CMD> set init_verilog ../../syn/VGA_syn.v
+<CMD> set init_design_settop 1
+<CMD> set init_design_netlisttype Verilog
+<CMD> set init_lef_file {/opt/ams/cds/HK_C35/LEF/c35b3/c35b3.lef  /opt/ams/cds/HK_C35/LEF/c35b3/CORELIB.lef  /opt/ams/cds/HK_C35/LEF/c35b3/IOLIB_3B_3M.lef}
+<CMD> set init_mmmc_file ../mmmc_definition.tcl
+<CMD> set init_cpf_file {}
+<CMD> set init_import_mode {-treatUndefinedCellAsBbox 0 -keepEmptyModule 1}
+<CMD> set init_assign_buffer 0
+<CMD> set init_pwr_net vdd!
+<CMD> set init_gnd_net gnd!
+<CMD> set init_oa_search_lib {}
+<CMD> init_design
+**WARN: (ENCSYT-7329):	Cannot load design with init_design, after design is already in memory.  This command is skipped.
+<CMD> redraw
+<CMD> setPreference ConstraintUserXGrid 0.1
+<CMD> setPreference ConstraintUserXOffset 0.1
+<CMD> setPreference ConstraintUserYGrid 0.1
+<CMD> setPreference ConstraintUserYOffset 0.1
+<CMD> setPreference SnapAllCorners 1
+<CMD> setPreference BlockSnapRule 2
+<CMD> snapFPlanIO -usergrid
+<CMD> floorPlan -site standard -r 0.377358490566 0.699887 20.0 20.0 20.0 20.0
+Adjusting Core to Left to: 21.0000. Core to Bottom to: 20.8000.
+**WARN: (ENCFP-325):	Floorplan of the design is resized. All current floorplan objects are automatically derived based on specified new floorplan. This may change blocks, fixed standard cells, existing routes and blockages.
+<CMD> redraw
+<CMD> saveDesign ./VGA.fp.enc
+**WARN: (ENCSYT-3036):	Design directory ./VGA.fp.enc.dat exists, rename it to ./VGA.fp.enc.dat.tmp.
+If saveDesign succeeds, it will be deleted.
+Writing Netlist "./VGA.fp.enc.dat/VGA.v.gz" ...
+Saving configuration ...
+Saving preference file ./VGA.fp.enc.dat/enc.pref.tcl ...
+Saving floorplan ...
+Saving Drc markers ...
+... No Drc file written since there is no markers found.
+Saving placement ...
+*** Completed savePlace (cpu=0:00:00.0 real=0:00:00.0 mem=544.7M) ***
+Saving route ...
+*** Completed saveRoute (cpu=0:00:00.0 real=0:00:00.0 mem=544.7M) ***
+Writing DEF file './VGA.fp.enc.dat/VGA.def.gz', current time is Mon Nov 25 18:12:28 2024 ...
+unitPerMicron=1000, dbgMicronPerDBU=0.001000, unitPerDBU=1.000000
+DEF file './VGA.fp.enc.dat/VGA.def.gz' is written, current time is Mon Nov 25 18:12:28 2024 ...
+No integration constraint in the design.
+<CMD> addRing -stacked_via_top_layer MET3 -around core -jog_distance 1.7 -threshold 1.7 -nets {gnd! vdd!} -stacked_via_bottom_layer MET1 -layer {bottom MET1 top MET1 right MET2 left MET2} -width 1.6 -spacing 1.6 -offset 1.7
+**WARN: (ENCPP-4022):	Option "-stacked_via_top_layer" is obsolete and has been replaced by "setAddRingMode -stacked_via_top_layer". The obsolete option still works in this release, but to avoid this warning and to ensure compatibility with future releases, update your script to use "setAddRingMode -stacked_via_top_layer layerName"..
+**WARN: (ENCPP-4022):	Option "-stacked_via_bottom_layer" is obsolete and has been replaced by "setAddRingMode -stacked_via_bottom_layer". The obsolete option still works in this release, but to avoid this warning and to ensure compatibility with future releases, update your script to use "setAddRingMode -stacked_via_bottom_layer layerName"..
+
+The power planner created 8 wires.
+*** Ending Ring Generation (totcpu: 0:00:00.2,real: 0:00:01.0, mem: 660.9M) ***
+<CMD> verifyGeometry
+ *** Starting Verify Geometry (MEM: 660.9) ***
+
+  VERIFY GEOMETRY ...... Starting Verification
+  VERIFY GEOMETRY ...... Initializing
+  VERIFY GEOMETRY ...... Deleting Existing Violations
+  VERIFY GEOMETRY ...... Creating Sub-Areas
+                  ...... bin size: 5600
+Total CPU(s) requested: 2
+CPU(s) enabled with current License(s): 1
+No more licenses are available for multi-cpu acceleration.
+Total CPU(s) now enabled: 1
+**WARN: (PRL-222):	Multi-CPU acceleration using 1 CPU(s).
+Saving Drc markers ...
+... No Drc file written since there is no markers found.
+  VERIFY GEOMETRY ...... SubArea : 1 of 6  Thread : 0
+  VERIFY GEOMETRY ...... SubArea : 3 of 6  Thread : 0
+  VERIFY GEOMETRY ...... SubArea : 5 of 6  Thread : 0
+  VERIFY GEOMETRY ...... SubArea : 2 of 6  Thread : 1
+  VERIFY GEOMETRY ...... SubArea : 4 of 6  Thread : 1
+  VERIFY GEOMETRY ...... SubArea : 6 of 6  Thread : 1
+VG: elapsed time: 8.00
+Begin Summary ...
+  Cells       : 0
+  SameNet     : 0
+  Wiring      : 0
+  Antenna     : 0
+  Short       : 0
+  Overlap     : 0
+End Summary
+
+  Verification Complete : 0 Viols.  0 Wrngs.
+
+**********End: VERIFY GEOMETRY**********
+ *** verify geometry (CPU: 0:00:06.0  MEM: 832.2M)
+
+<CMD> verify_drc
+ *** Starting Verify DRC (MEM: 661.8) ***
+
+  VERIFY DRC ...... Starting Verification
+  VERIFY DRC ...... Initializing
+  VERIFY DRC ...... Deleting Existing Violations
+  VERIFY DRC ...... Creating Sub-Areas
+Total CPU(s) requested: 2
+CPU(s) enabled with current License(s): 1
+No more licenses are available for multi-cpu acceleration.
+Total CPU(s) now enabled: 1
+**WARN: (PRL-222):	Multi-CPU acceleration using 1 CPU(s).
+Saving Drc markers ...
+... No Drc file written since there is no markers found.
+ VERIFY DRC ...... Sub-Area : 1 of 6  Thread : 0
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 0.00 (Mb)
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 17.00 (Mb)
+#WARNING (NREX-28) The height of the first routing layer MET1 is 0.000000. It should be larger than 0.000000.
+#WARNING (NREX-30) Please also check the height and metal thickness values for the routing layers higher than routing layer MET1.
+ VERIFY DRC ...... Sub-Area : 3 of 6  Thread : 0
+ VERIFY DRC ...... Sub-Area : 5 of 6  Thread : 0
+ VERIFY DRC ...... Sub-Area : 2 of 6  Thread : 1
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 0.00 (Mb)
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 17.00 (Mb)
+#WARNING (NREX-28) The height of the first routing layer MET1 is 0.000000. It should be larger than 0.000000.
+#WARNING (NREX-30) Please also check the height and metal thickness values for the routing layers higher than routing layer MET1.
+ VERIFY DRC ...... Sub-Area : 4 of 6  Thread : 1
+ VERIFY DRC ...... Sub-Area : 6 of 6  Thread : 1
+
+  Verification Complete : 0 Viols.
+
+ *** End Verify DRC (CPU: 0:00:10.0  ELAPSED TIME: 12.00  MEM: 261.5M) ***
+
+<CMD> verifyConnectivity
+VERIFY_CONNECTIVITY use new engine.
+
+******** Start: VERIFY CONNECTIVITY ********
+Start Time: Mon Nov 25 18:12:49 2024
+
+Design Name: VGA
+Database Units: 1000
+Design Boundary: (0.0000, 0.0000) (4191.2500, 1587.8000)
+Error Limit = 1000; Warning Limit = 50
+Check all nets
+Total CPU(s) requested: 2
+CPU(s) enabled with current License(s): 1
+No more licenses are available for multi-cpu acceleration.
+Total CPU(s) now enabled: 1
+**WARN: (PRL-222):	Multi-CPU acceleration using 1 CPU(s).
+**WARN: (ENCVFC-3):	Verify Connectivity stopped: Number of errors exceeds the limit 1000
+**WARN: (ENCVFC-3):	Verify Connectivity stopped: Number of errors exceeds the limit 1000
+
+Begin Summary 
+    897 Problem(s) (ENCVFC-98): Net has no global routing and no special routing.
+    2 Problem(s) (ENCVFC-200): Special Wires: Pieces of the net are not connected together.
+    101 Problem(s) (ENCVFC-92): Pieces of the net are not connected together.
+    1000 total info(s) created.
+End Summary
+
+End Time: Mon Nov 25 18:12:49 2024
+Time Elapsed: 0:00:00.0
+
+******** End: VERIFY CONNECTIVITY ********
+  Verification Complete : 1000 Viols.  0 Wrngs.
+  (CPU Time: 0:00:00.0  MEM: 1.508M)
+
+<CMD> clearDrc
+<CMD> saveDesign ./PAD_VGA_fp_pow.enc
+**WARN: (ENCSYT-3036):	Design directory ./PAD_VGA_fp_pow.enc.dat exists, rename it to ./PAD_VGA_fp_pow.enc.dat.tmp.
+If saveDesign succeeds, it will be deleted.
+Writing Netlist "./PAD_VGA_fp_pow.enc.dat/VGA.v.gz" ...
+Saving configuration ...
+Saving preference file ./PAD_VGA_fp_pow.enc.dat/enc.pref.tcl ...
+Saving floorplan ...
+Saving Drc markers ...
+... No Drc file written since there is no markers found.
+Saving placement ...
+*** Completed savePlace (cpu=0:00:00.0 real=0:00:00.0 mem=661.8M) ***
+Saving route ...
+*** Completed saveRoute (cpu=0:00:00.0 real=0:00:00.0 mem=662.0M) ***
+Writing DEF file './PAD_VGA_fp_pow.enc.dat/VGA.def.gz', current time is Mon Nov 25 18:12:49 2024 ...
+unitPerMicron=1000, dbgMicronPerDBU=0.001000, unitPerDBU=1.000000
+DEF file './PAD_VGA_fp_pow.enc.dat/VGA.def.gz' is written, current time is Mon Nov 25 18:12:49 2024 ...
+No integration constraint in the design.
+<CMD> setMultiCpuUsage -localCpu 2 -cpuPerRemoteHost 1 -remoteHost 0 -keepLicense true
+Setting releaseMultiCpuLicenseMode to false.
+<CMD> setDistributeHost -local
+The timeout for a remote job to respond is 30 seconds.
+Submit command for slave runs will be: local
+<CMD> setPlaceMode -congEffort medium -timingDriven 0 -modulePlan 0 -clkGateAware 0 -powerDriven 0 -ignoreScan 0 -reorderScan 0 -ignoreSpare 0 -placeIOPins 0 -moduleAwareSpare 0 -preserveRouting 0 -rmAffectedRouting 0 -checkRoute 0 -swapEEQ 0
+<CMD> setPlaceMode -fp false
+<CMD> placeDesign -prePlaceOpt
+**WARN: (ENCEXT-3493):	Design extraction status is reset when the setExtractRCMode command is called. Either re-generate the parasitic data by calling the extractRC command or run the spefIn command to read the parasitic data.
+Type 'man ENCEXT-3493' for more detail.
+*** Starting placeDesign default flow ***
+*** Start deleteBufferTree ***
+Info: Detect buffers to remove automatically.
+Analyzing netlist ...
+Updating netlist
+
+*summary: 0 instances (buffers/inverters) removed
+*** Finish deleteBufferTree (0:00:00.1) ***
+*** ThreeLayerMode is automatically turned on for small designs with less than 4 layers.
+Total CPU(s) requested: 2
+CPU(s) enabled with current License(s): 1
+No more licenses are available for multi-cpu acceleration.
+Total CPU(s) now enabled: 1
+*** Starting "NanoPlace(TM) placement v#1 (mem=662.0M)" ...
+**ERROR: The -siAware option for delay calculation cannot be set to true when feDC is currently the delay calculator engine.Options: pinGuide congEffort=medium gpeffort=medium 
+#std cell=32477 #block=0 (0 floating + 0 preplaced) #ioInst=0 #net=17061 #term=66843 #term/net=3.92, #fixedIo=0, #floatIo=0, #fixedPin=0, #floatPin=181
+stdCell: 32477 single + 0 double + 0 multi
+Total standard cell length = 345.6600 (mm), area = 4.4936 (mm^2)
+Core basic site is standard
+Apply auto density screen in pre-place stage.
+Average module density = 0.700.
+Density for the design = 0.700.
+       = stdcell_area 246900 sites (4493580 um^2) / alloc_area 352716 sites (6419431 um^2).
+Pin Density = 0.271.
+            = total # of pins 66843 / total Instance area 246900.
+Identified 15630 spare or floating instances, with no clusters.
+*Internal placement parameters: * | 14 | 0x000aab
+Iteration  1: Total net bbox = 9.467e+05 (8.06e+05 1.40e+05)
+              Est.  stn bbox = 1.171e+06 (1.01e+06 1.62e+05)
+              cpu = 0:00:00.1 real = 0:00:00.0 mem = 670.6M
+Iteration  2: Total net bbox = 1.365e+06 (1.23e+06 1.40e+05)
+              Est.  stn bbox = 1.785e+06 (1.62e+06 1.62e+05)
+              cpu = 0:00:00.2 real = 0:00:00.0 mem = 670.6M
+Iteration  3: Total net bbox = 1.826e+06 (1.25e+06 5.72e+05)
+              Est.  stn bbox = 2.440e+06 (1.65e+06 7.88e+05)
+              cpu = 0:00:00.3 real = 0:00:00.0 mem = 670.6M
+Iteration  4: Total net bbox = 1.919e+06 (1.36e+06 5.58e+05)
+              Est.  stn bbox = 2.598e+06 (1.84e+06 7.62e+05)
+              cpu = 0:00:00.5 real = 0:00:01.0 mem = 670.6M
+Iteration  5: Total net bbox = 2.297e+06 (1.43e+06 8.72e+05)
+              Est.  stn bbox = 3.115e+06 (1.92e+06 1.20e+06)
+              cpu = 0:00:00.6 real = 0:00:00.0 mem = 670.6M
+Iteration  6: Total net bbox = 2.459e+06 (1.56e+06 8.99e+05)
+              Est.  stn bbox = 3.320e+06 (2.10e+06 1.22e+06)
+              cpu = 0:00:00.5 real = 0:00:01.0 mem = 670.6M
+Iteration  7: Total net bbox = 2.604e+06 (1.58e+06 1.03e+06)
+              Est.  stn bbox = 3.522e+06 (2.11e+06 1.41e+06)
+              cpu = 0:00:00.4 real = 0:00:00.0 mem = 670.6M
+Iteration  8: Total net bbox = 2.701e+06 (1.67e+06 1.03e+06)
+              Est.  stn bbox = 3.643e+06 (2.23e+06 1.41e+06)
+              cpu = 0:00:00.1 real = 0:00:00.0 mem = 670.6M
+Iteration  9: Total net bbox = 3.015e+06 (1.80e+06 1.21e+06)
+              Est.  stn bbox = 4.024e+06 (2.39e+06 1.64e+06)
+              cpu = 0:00:00.3 real = 0:00:01.0 mem = 670.6M
+Iteration 10: Total net bbox = 3.064e+06 (1.82e+06 1.24e+06)
+              Est.  stn bbox = 4.088e+06 (2.41e+06 1.67e+06)
+              cpu = 0:00:00.7 real = 0:00:00.0 mem = 670.6M
+Iteration 11: Total net bbox = 3.152e+06 (1.86e+06 1.30e+06)
+              Est.  stn bbox = 4.190e+06 (2.45e+06 1.74e+06)
+              cpu = 0:00:01.0 real = 0:00:01.0 mem = 670.6M
+Iteration 12: Total net bbox = 3.216e+06 (1.87e+06 1.35e+06)
+              Est.  stn bbox = 4.262e+06 (2.46e+06 1.80e+06)
+              cpu = 0:00:01.2 real = 0:00:01.0 mem = 670.6M
+Iteration 13: Total net bbox = 3.317e+06 (1.94e+06 1.38e+06)
+              Est.  stn bbox = 4.368e+06 (2.54e+06 1.83e+06)
+              cpu = 0:00:01.5 real = 0:00:02.0 mem = 670.6M
+Iteration 14: Total net bbox = 3.264e+06 (1.95e+06 1.32e+06)
+              Est.  stn bbox = 4.310e+06 (2.55e+06 1.76e+06)
+              cpu = 0:00:01.2 real = 0:00:01.0 mem = 670.6M
+Iteration 15: Total net bbox = 3.378e+06 (2.04e+06 1.34e+06)
+              Est.  stn bbox = 4.426e+06 (2.65e+06 1.78e+06)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 670.6M
+*** cost = 3.378e+06 (2.04e+06 1.34e+06) (cpu for global=0:00:08.4) real=0:00:08.0***
+Core basic site is standard
+Starting refinePlace ...
+move report: placeLevelShifters moves 0 insts, mean move: 0.00 um, max move: 0.00 um
+  Spread Effort: high, pre-route mode.
+[CPU] RefinePlace/preRPlace (cpu=0:00:01.1, real=0:00:01.0, mem=670.6MB) @(0:01:56 - 0:01:57).
+move report: preRPlace moves 27895 insts, mean move: 6.36 um, max move: 53.60 um
+	max move on inst (FILLER_7430): (649.60, 1294.80) --> (690.20, 1307.80)
+wireLenOptFixPriorityInst 0 inst fixed
+Placement tweakage begins.
+wire length = 2.540e+06 = 1.385e+06 H + 1.155e+06 V
+wire length = 2.346e+06 = 1.230e+06 H + 1.116e+06 V
+Placement tweakage ends.
+move report: tweak moves 19715 insts, mean move: 32.02 um, max move: 3149.40 um
+	max move on inst (u1/U91): (3178.00, 1528.80) --> (236.60, 1320.80)
+[CPU] RefinePlace/TweakPlacement (cpu=0:00:00.3, real=0:00:00.0, mem=670.6MB) @(0:01:57 - 0:01:57).
+Wire length optimization begins.
+Wire length optimization ends. (0:00:00.0)
+move report: xdp moves 14503 insts, mean move: 36.34 um, max move: 249.60 um
+	max move on inst (FILLER_9520): (1786.40, 1060.80) --> (1932.00, 1164.80)
+[CPU] RefinePlace/WireLenOpt (cpu=0:00:00.9, real=0:00:01.0, mem=670.6MB) @(0:01:57 - 0:01:58).
+[CPU] RefinePlace/Legalization (cpu=0:00:00.0, real=0:00:00.0, mem=670.6MB) @(0:01:58 - 0:01:58).
+move report: rPlace moves 0 insts, mean move: 0.00 um, max move: 0.00 um
+move report: overall moves 30972 insts, mean move: 33.98 um, max move: 3149.40 um
+	max move on inst (u1/U91): (3178.00, 1528.80) --> (236.60, 1320.80)
+Statistics of distance of Instance movement in detailed placement:
+  maximum (X+Y) =      3149.40 um
+  inst (u1/U91) with max move: (3178, 1528.8) -> (236.6, 1320.8)
+  mean    (X+Y) =        32.17 um
+Total instances flipped for WireLenOpt: 9252
+Total instances flipped, including legalization: 470
+Total instances moved : 16246
+*** cpu=0:00:02.3   mem=670.6M  mem(used)=0.0M***
+[CPU] RefinePlace/total (cpu=0:00:02.3, real=0:00:02.0, mem=670.6MB) @(0:01:56 - 0:01:58).
+Total net length = 2.243e+06 (1.195e+06 1.048e+06) (ext = 3.214e+04)
+*** End of Placement (cpu=0:00:10.9, real=0:00:10.0, mem=670.6M) ***
+Core basic site is standard
+default core: bins with density >  0.75 = 38.3 % ( 147 / 384 )
+*** Finishing placeDesign default flow ***
+**placeDesign ... cpu = 0: 0:11, real = 0: 0:11, mem = 670.6M **
+<CMD> checkPlace VGA.checkPlace
+Core basic site is standard
+Begin checking placement ... (start mem=670.6M, init mem=670.6M)
+*info: Placed = 32477
+*info: Unplaced = 0
+Placement Density:70.00%(4493580/6419431)
+Finished checkPlace (cpu: total=0:00:00.0, vio checks=0:00:00.0; mem=670.6M)
+<CMD> setDrawView place
+<CMD> refinePlace
+*** ThreeLayerMode is automatically turned on for small designs with less than 4 layers.
+Core basic site is standard
+Starting refinePlace ...
+  Spread Effort: high, standalone mode.
+[CPU] RefinePlace/preRPlace (cpu=0:00:00.0, real=0:00:01.0, mem=670.6MB) @(0:01:58 - 0:01:58).
+move report: preRPlace moves 0 insts, mean move: 0.00 um, max move: 0.00 um
+wireLenOptFixPriorityInst 0 inst fixed
+[CPU] RefinePlace/Legalization (cpu=0:00:00.0, real=0:00:00.0, mem=670.6MB) @(0:01:58 - 0:01:58).
+move report: rPlace moves 0 insts, mean move: 0.00 um, max move: 0.00 um
+move report: overall moves 0 insts, mean move: 0.00 um, max move: 0.00 um
+Statistics of distance of Instance movement in detailed placement:
+  maximum (X+Y) =         0.00 um
+  mean    (X+Y) =         0.00 um
+Total instances moved : 0
+*** cpu=0:00:00.1   mem=670.6M  mem(used)=0.0M***
+[CPU] RefinePlace/total (cpu=0:00:00.1, real=0:00:01.0, mem=670.6MB) @(0:01:58 - 0:01:58).
+Total net length = 2.243e+06 (1.195e+06 1.048e+06) (ext = 3.214e+04)
+Core basic site is standard
+default core: bins with density >  0.75 = 38.3 % ( 147 / 384 )
+<CMD> checkPlace VGA.checkPlace
+Core basic site is standard
+Begin checking placement ... (start mem=670.6M, init mem=670.6M)
+*info: Placed = 32477
+*info: Unplaced = 0
+Placement Density:70.00%(4493580/6419431)
+Finished checkPlace (cpu: total=0:00:00.0, vio checks=0:00:00.0; mem=670.6M)
+<CMD> setDrawView place
+<CMD> saveDesign ./PAD_VGA.placed.enc
+**WARN: (ENCSYT-3036):	Design directory ./PAD_VGA.placed.enc.dat exists, rename it to ./PAD_VGA.placed.enc.dat.tmp.
+If saveDesign succeeds, it will be deleted.
+Writing Netlist "./PAD_VGA.placed.enc.dat/VGA.v.gz" ...
+Saving configuration ...
+Saving preference file ./PAD_VGA.placed.enc.dat/enc.pref.tcl ...
+Saving floorplan ...
+Saving Drc markers ...
+... No Drc file written since there is no markers found.
+Saving placement ...
+*** Completed savePlace (cpu=0:00:00.0 real=0:00:00.0 mem=670.6M) ***
+Saving route ...
+*** Completed saveRoute (cpu=0:00:00.0 real=0:00:00.0 mem=670.6M) ***
+Writing DEF file './PAD_VGA.placed.enc.dat/VGA.def.gz', current time is Mon Nov 25 18:13:01 2024 ...
+unitPerMicron=1000, dbgMicronPerDBU=0.001000, unitPerDBU=1.000000
+DEF file './PAD_VGA.placed.enc.dat/VGA.def.gz' is written, current time is Mon Nov 25 18:13:01 2024 ...
+No integration constraint in the design.
+<CMD> fit
+<CMD> setOptMode -fixFanoutLoad true
+<CMD> optDesign -preCTS
+**WARN: (ENCOPT-576):	178 nets have unplaced terms.
+**INFO: setDesignMode -flowEffort high -> setting 'setOptMode -effort high' for the duration of this command.
+**INFO: setDesignMode -flowEffort high -> setting 'setOptMode -allEndPoints true' for the duration of this command.
+**INFO: setDesignMode -flowEffort high -> setting 'setOptMode -useTimingFluxHotSpotTNSAllEndPoints true' for the duration of this command.
+Total CPU(s) requested: 2
+CPU(s) enabled with current License(s): 1
+No more licenses are available for multi-cpu acceleration.
+Total CPU(s) now enabled: 1
+#CPUs are reduced from 2 to 1 due to license limit
+GigaOpt running with 1 threads.
+**WARN: (ENCOPT-3000):	Buffer footprint is not defined or is an invalid buffer footprint.
+**WARN: (ENCOPT-3001):	Inverter footprint is not defined or is an invalid inverter footprint.
+**DIAG[opUtil.c:10601:update]: Assert "powerView != tocDefaultView"
+**DIAG[opUtil.c:10606:update]: Assert "powerViewTlc"
+**WARN: (ENCOPT-665):	 CLK_I : Net has unplaced terms or connected to uplaced instances in design. 
+**WARN: (ENCOPT-665):	 RST_I : Net has unplaced terms or connected to uplaced instances in design. 
+**WARN: (ENCOPT-665):	 NRESET : Net has unplaced terms or connected to uplaced instances in design. 
+**WARN: (ENCOPT-665):	 ADR_I_4 : Net has unplaced terms or connected to uplaced instances in design. 
+**WARN: (ENCOPT-665):	 ADR_I_3 : Net has unplaced terms or connected to uplaced instances in design. 
+**WARN: (ENCOPT-665):	 ADR_I_2 : Net has unplaced terms or connected to uplaced instances in design. 
+**WARN: (ENCOPT-665):	 SDAT_I_31 : Net has unplaced terms or connected to uplaced instances in design. 
+**WARN: (ENCOPT-665):	 SDAT_I_30 : Net has unplaced terms or connected to uplaced instances in design. 
+**WARN: (ENCOPT-665):	 SDAT_I_29 : Net has unplaced terms or connected to uplaced instances in design. 
+**WARN: (ENCOPT-665):	 SDAT_I_28 : Net has unplaced terms or connected to uplaced instances in design. 
+**WARN: (ENCOPT-665):	 SDAT_I_27 : Net has unplaced terms or connected to uplaced instances in design. 
+**WARN: (ENCOPT-665):	 SDAT_I_26 : Net has unplaced terms or connected to uplaced instances in design. 
+**WARN: (ENCOPT-665):	 SDAT_I_25 : Net has unplaced terms or connected to uplaced instances in design. 
+**WARN: (ENCOPT-665):	 SDAT_I_24 : Net has unplaced terms or connected to uplaced instances in design. 
+**WARN: (ENCOPT-665):	 SDAT_I_23 : Net has unplaced terms or connected to uplaced instances in design. 
+**WARN: (ENCOPT-665):	 SDAT_I_22 : Net has unplaced terms or connected to uplaced instances in design. 
+**WARN: (ENCOPT-665):	 SDAT_I_21 : Net has unplaced terms or connected to uplaced instances in design. 
+**WARN: (ENCOPT-665):	 SDAT_I_20 : Net has unplaced terms or connected to uplaced instances in design. 
+**WARN: (ENCOPT-665):	 SDAT_I_19 : Net has unplaced terms or connected to uplaced instances in design. 
+**WARN: (ENCOPT-665):	 SDAT_I_18 : Net has unplaced terms or connected to uplaced instances in design. 
+**optDesign ... cpu = 0:00:00, real = 0:00:00, mem = 670.6M, totSessionCpu=0:01:58 **
+**ERROR: (ENCOPT-311):	Optimization will not work when the timing analysis mode is set to -ocv.
+		To run optimization while taking into account on chip variation, set the MMMC environment with the right operating condition.
+		More information can be found in the documentation.
+**ERROR: (ENCOPT-570):	Initial sanity checks failed for optDesign. Correct above errors/warnings before running optDesign.
+<CMD> cleanupSpecifyClockTree
+<CMD> specifyClockTree -file ../Clock.ctstch
+Checking spec file integrity...
+
+Reading clock tree spec file '../Clock.ctstch' ...
+
+**ERROR: (ENCSYUTIL-96):	Cannot open (for read) Clock Synthesis Technology File file: '../Clock.ctstch'. The reason is: No such file or directory
+Type 'man ENCSYUTIL-96' for more detail.
+**ERROR: (ENCCK-430):	CTS was unable to open the file ../Clock.ctstch.
+
+Usage: specifyClockTree [-help] [-dont_use]
+                        [-clkfile <string> | -file <string> | -specFile <string>]
+                        [-create <string> | -delete <string> | -update <string> | -file <string> | -template ]
+
+-help                                 # Prints out the command usage
+-create <string>                      # (string, optional)
+-delete <string>                      # (string, optional)
+-dont_use                             # Excludes buffers from CTS file defined
+                                      # as dont_use : true in the .lib file.
+                                      # (bool, optional)
+-file <string>                        # Specifies the name of the clock tree
+                                      # specification file. (string, optional)
+-template                             # Creates a sample CTS template file
+                                      # template.ctstch. (bool, optional)
+-update <string>                      # (string, optional)
+
+
+**ERROR: (ENCSYC-194):	Incorrect usage for command 'specifyClockTree'.
+
+<CMD> setDesignMode -process 130 -flowEffort high
+Applying the recommended capacitance filtering threshold values for 130nm process node: total_c_th=0, relative_c_th=1 and coupling_c_th=0.4.
+	These values will be used by all post-route extraction engines, including TQRC, IQRC and QRC extraction.
+	Capacitance filtering mode(-capFilterMode option of the setExtractRCMode) is 'relAndCoup' for all engines.
+	The accuracy mode for postRoute effortLevel low extraction will be set to 'standard'.
+	Default value for EffortLevel(-effortLevel option of the setExtractRCMode) in postRoute extraction mode is 'low'.
+<CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+<CMD> set defHierChar /
+<CMD> set init_verilog ../../syn/VGA_syn.v
+<CMD> set init_design_settop 1
+<CMD> set init_design_netlisttype Verilog
+<CMD> set init_lef_file {/opt/ams/cds/HK_C35/LEF/c35b3/c35b3.lef  /opt/ams/cds/HK_C35/LEF/c35b3/CORELIB.lef  /opt/ams/cds/HK_C35/LEF/c35b3/IOLIB_3B_3M.lef}
+<CMD> set init_mmmc_file ../mmmc_definition.tcl
+<CMD> set init_cpf_file {}
+<CMD> set init_import_mode {-treatUndefinedCellAsBbox 0 -keepEmptyModule 1}
+<CMD> set init_assign_buffer 0
+<CMD> set init_pwr_net vdd!
+<CMD> set init_gnd_net gnd!
+<CMD> set init_oa_search_lib {}
+<CMD> init_design
+**WARN: (ENCSYT-7329):	Cannot load design with init_design, after design is already in memory.  This command is skipped.
+<CMD> redraw
+<CMD> setPreference ConstraintUserXGrid 0.1
+<CMD> setPreference ConstraintUserXOffset 0.1
+<CMD> setPreference ConstraintUserYGrid 0.1
+<CMD> setPreference ConstraintUserYOffset 0.1
+<CMD> setPreference SnapAllCorners 1
+<CMD> setPreference BlockSnapRule 2
+<CMD> snapFPlanIO -usergrid
+<CMD> floorPlan -site standard -r 0.377358490566 0.699887 20.0 20.0 20.0 20.0
+Adjusting Core to Left to: 21.0000. Core to Bottom to: 20.8000.
+<CMD> redraw
+<CMD> saveDesign ./VGA.fp.enc
+**WARN: (ENCSYT-3036):	Design directory ./VGA.fp.enc.dat exists, rename it to ./VGA.fp.enc.dat.tmp.
+If saveDesign succeeds, it will be deleted.
+Writing Netlist "./VGA.fp.enc.dat/VGA.v.gz" ...
+Saving configuration ...
+Saving preference file ./VGA.fp.enc.dat/enc.pref.tcl ...
+Saving floorplan ...
+Saving Drc markers ...
+... No Drc file written since there is no markers found.
+Saving placement ...
+*** Completed savePlace (cpu=0:00:00.0 real=0:00:00.0 mem=670.6M) ***
+Saving route ...
+*** Completed saveRoute (cpu=0:00:00.0 real=0:00:00.0 mem=670.6M) ***
+Writing DEF file './VGA.fp.enc.dat/VGA.def.gz', current time is Mon Nov 25 18:13:38 2024 ...
+unitPerMicron=1000, dbgMicronPerDBU=0.001000, unitPerDBU=1.000000
+DEF file './VGA.fp.enc.dat/VGA.def.gz' is written, current time is Mon Nov 25 18:13:38 2024 ...
+No integration constraint in the design.
+<CMD> addRing -stacked_via_top_layer MET3 -around core -jog_distance 1.7 -threshold 1.7 -nets {gnd! vdd!} -stacked_via_bottom_layer MET1 -layer {bottom MET1 top MET1 right MET2 left MET2} -width 1.6 -spacing 1.6 -offset 1.7
+**WARN: (ENCPP-4022):	Option "-stacked_via_top_layer" is obsolete and has been replaced by "setAddRingMode -stacked_via_top_layer". The obsolete option still works in this release, but to avoid this warning and to ensure compatibility with future releases, update your script to use "setAddRingMode -stacked_via_top_layer layerName"..
+**WARN: (ENCPP-4022):	Option "-stacked_via_bottom_layer" is obsolete and has been replaced by "setAddRingMode -stacked_via_bottom_layer". The obsolete option still works in this release, but to avoid this warning and to ensure compatibility with future releases, update your script to use "setAddRingMode -stacked_via_bottom_layer layerName"..
+
+*** Ending Ring Generation (totcpu: 0:00:00.2,real: 0:00:00.0, mem: 687.9M) ***
+<CMD> verifyGeometry
+ *** Starting Verify Geometry (MEM: 687.9) ***
+
+  VERIFY GEOMETRY ...... Starting Verification
+  VERIFY GEOMETRY ...... Initializing
+  VERIFY GEOMETRY ...... Deleting Existing Violations
+  VERIFY GEOMETRY ...... Creating Sub-Areas
+                  ...... bin size: 5600
+Total CPU(s) requested: 2
+CPU(s) enabled with current License(s): 1
+No more licenses are available for multi-cpu acceleration.
+Total CPU(s) now enabled: 1
+**WARN: (PRL-222):	Multi-CPU acceleration using 1 CPU(s).
+Saving Drc markers ...
+... No Drc file written since there is no markers found.
+  VERIFY GEOMETRY ...... SubArea : 1 of 6  Thread : 0
+  VERIFY GEOMETRY ...... SubArea : 3 of 6  Thread : 0
+  VERIFY GEOMETRY ...... SubArea : 5 of 6  Thread : 0
+  VERIFY GEOMETRY ...... SubArea : 2 of 6  Thread : 1
+  VERIFY GEOMETRY ...... SubArea : 4 of 6  Thread : 1
+  VERIFY GEOMETRY ...... SubArea : 6 of 6  Thread : 1
+VG: elapsed time: 5.00
+Begin Summary ...
+  Cells       : 0
+  SameNet     : 0
+  Wiring      : 0
+  Antenna     : 0
+  Short       : 0
+  Overlap     : 0
+End Summary
+
+  Verification Complete : 0 Viols.  0 Wrngs.
+
+**********End: VERIFY GEOMETRY**********
+ *** verify geometry (CPU: 0:00:04.0  MEM: 585.8M)
+
+<CMD> verify_drc
+ *** Starting Verify DRC (MEM: 687.9) ***
+
+  VERIFY DRC ...... Starting Verification
+  VERIFY DRC ...... Initializing
+  VERIFY DRC ...... Deleting Existing Violations
+  VERIFY DRC ...... Creating Sub-Areas
+Total CPU(s) requested: 2
+CPU(s) enabled with current License(s): 1
+No more licenses are available for multi-cpu acceleration.
+Total CPU(s) now enabled: 1
+**WARN: (PRL-222):	Multi-CPU acceleration using 1 CPU(s).
+Saving Drc markers ...
+... No Drc file written since there is no markers found.
+ VERIFY DRC ...... Sub-Area : 1 of 6  Thread : 0
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 0.00 (Mb)
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 0.00 (Mb)
+#WARNING (NREX-28) The height of the first routing layer MET1 is 0.000000. It should be larger than 0.000000.
+#WARNING (NREX-30) Please also check the height and metal thickness values for the routing layers higher than routing layer MET1.
+ VERIFY DRC ...... Sub-Area : 3 of 6  Thread : 0
+ VERIFY DRC ...... Sub-Area : 5 of 6  Thread : 0
+ VERIFY DRC ...... Sub-Area : 2 of 6  Thread : 1
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 0.00 (Mb)
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 0.00 (Mb)
+#WARNING (NREX-28) The height of the first routing layer MET1 is 0.000000. It should be larger than 0.000000.
+#WARNING (NREX-30) Please also check the height and metal thickness values for the routing layers higher than routing layer MET1.
+ VERIFY DRC ...... Sub-Area : 4 of 6  Thread : 1
+ VERIFY DRC ...... Sub-Area : 6 of 6  Thread : 1
+
+  Verification Complete : 0 Viols.
+
+ *** End Verify DRC (CPU: 0:00:10.0  ELAPSED TIME: 12.00  MEM: 186.2M) ***
+
+<CMD> verifyConnectivity
+VERIFY_CONNECTIVITY use new engine.
+
+******** Start: VERIFY CONNECTIVITY ********
+Start Time: Mon Nov 25 18:13:55 2024
+
+Design Name: VGA
+Database Units: 1000
+Design Boundary: (0.0000, 0.0000) (4191.2500, 1587.8000)
+Error Limit = 1000; Warning Limit = 50
+Check all nets
+Total CPU(s) requested: 2
+CPU(s) enabled with current License(s): 1
+No more licenses are available for multi-cpu acceleration.
+Total CPU(s) now enabled: 1
+**WARN: (PRL-222):	Multi-CPU acceleration using 1 CPU(s).
+**WARN: (ENCVFC-3):	Verify Connectivity stopped: Number of errors exceeds the limit 1000
+**WARN: (ENCVFC-3):	Verify Connectivity stopped: Number of errors exceeds the limit 1000
+
+Begin Summary 
+    650 Problem(s) (ENCVFC-96): Terminal(s) are not connected.
+    1 Problem(s) (ENCVFC-200): Special Wires: Pieces of the net are not connected together.
+    349 Problem(s) (ENCVFC-92): Pieces of the net are not connected together.
+    1000 total info(s) created.
+End Summary
+
+End Time: Mon Nov 25 18:13:55 2024
+Time Elapsed: 0:00:00.0
+
+******** End: VERIFY CONNECTIVITY ********
+  Verification Complete : 1000 Viols.  0 Wrngs.
+  (CPU Time: 0:00:00.0  MEM: 1.727M)
+
+<CMD> clearDrc
+<CMD> saveDesign ./PAD_VGA_fp_pow.enc
+**WARN: (ENCSYT-3036):	Design directory ./PAD_VGA_fp_pow.enc.dat exists, rename it to ./PAD_VGA_fp_pow.enc.dat.tmp.
+If saveDesign succeeds, it will be deleted.
+Writing Netlist "./PAD_VGA_fp_pow.enc.dat/VGA.v.gz" ...
+Saving configuration ...
+Saving preference file ./PAD_VGA_fp_pow.enc.dat/enc.pref.tcl ...
+Saving floorplan ...
+Saving Drc markers ...
+... No Drc file written since there is no markers found.
+Saving placement ...
+*** Completed savePlace (cpu=0:00:00.0 real=0:00:00.0 mem=687.9M) ***
+Saving route ...
+*** Completed saveRoute (cpu=0:00:00.0 real=0:00:00.0 mem=687.9M) ***
+Writing DEF file './PAD_VGA_fp_pow.enc.dat/VGA.def.gz', current time is Mon Nov 25 18:13:55 2024 ...
+unitPerMicron=1000, dbgMicronPerDBU=0.001000, unitPerDBU=1.000000
+DEF file './PAD_VGA_fp_pow.enc.dat/VGA.def.gz' is written, current time is Mon Nov 25 18:13:55 2024 ...
+No integration constraint in the design.
+<CMD> setMultiCpuUsage -localCpu 2 -cpuPerRemoteHost 1 -remoteHost 0 -keepLicense true
+Setting releaseMultiCpuLicenseMode to false.
+<CMD> setDistributeHost -local
+The timeout for a remote job to respond is 30 seconds.
+Submit command for slave runs will be: local
+<CMD> setPlaceMode -congEffort medium -timingDriven 0 -modulePlan 0 -clkGateAware 0 -powerDriven 0 -ignoreScan 0 -reorderScan 0 -ignoreSpare 0 -placeIOPins 0 -moduleAwareSpare 0 -preserveRouting 0 -rmAffectedRouting 0 -checkRoute 0 -swapEEQ 0
+<CMD> setPlaceMode -fp false
+<CMD> placeDesign -prePlaceOpt
+*** Starting placeDesign default flow ***
+*** Start deleteBufferTree ***
+Info: Detect buffers to remove automatically.
+Analyzing netlist ...
+Updating netlist
+
+*summary: 0 instances (buffers/inverters) removed
+*** Finish deleteBufferTree (0:00:00.1) ***
+*** ThreeLayerMode is automatically turned on for small designs with less than 4 layers.
+Total CPU(s) requested: 2
+CPU(s) enabled with current License(s): 1
+No more licenses are available for multi-cpu acceleration.
+Total CPU(s) now enabled: 1
+*** Starting "NanoPlace(TM) placement v#1 (mem=687.9M)" ...
+**ERROR: The -siAware option for delay calculation cannot be set to true when feDC is currently the delay calculator engine.Options: pinGuide congEffort=medium gpeffort=medium 
+#std cell=32477 #block=0 (0 floating + 0 preplaced) #ioInst=0 #net=17061 #term=66843 #term/net=3.92, #fixedIo=0, #floatIo=0, #fixedPin=0, #floatPin=181
+stdCell: 32477 single + 0 double + 0 multi
+Total standard cell length = 345.6600 (mm), area = 4.4936 (mm^2)
+Core basic site is standard
+Apply auto density screen in pre-place stage.
+Average module density = 0.700.
+Density for the design = 0.700.
+       = stdcell_area 246900 sites (4493580 um^2) / alloc_area 352716 sites (6419431 um^2).
+Pin Density = 0.271.
+            = total # of pins 66843 / total Instance area 246900.
+Identified 15630 spare or floating instances, with no clusters.
+*Internal placement parameters: * | 14 | 0x000aab
+Iteration  1: Total net bbox = 9.467e+05 (8.06e+05 1.40e+05)
+              Est.  stn bbox = 1.171e+06 (1.01e+06 1.62e+05)
+              cpu = 0:00:00.1 real = 0:00:00.0 mem = 687.9M
+Iteration  2: Total net bbox = 1.365e+06 (1.23e+06 1.40e+05)
+              Est.  stn bbox = 1.785e+06 (1.62e+06 1.62e+05)
+              cpu = 0:00:00.1 real = 0:00:00.0 mem = 687.9M
+Iteration  3: Total net bbox = 1.826e+06 (1.25e+06 5.72e+05)
+              Est.  stn bbox = 2.440e+06 (1.65e+06 7.88e+05)
+              cpu = 0:00:00.3 real = 0:00:00.0 mem = 687.9M
+Iteration  4: Total net bbox = 1.919e+06 (1.36e+06 5.58e+05)
+              Est.  stn bbox = 2.598e+06 (1.84e+06 7.62e+05)
+              cpu = 0:00:00.5 real = 0:00:01.0 mem = 687.9M
+Iteration  5: Total net bbox = 2.297e+06 (1.43e+06 8.72e+05)
+              Est.  stn bbox = 3.115e+06 (1.92e+06 1.20e+06)
+              cpu = 0:00:00.6 real = 0:00:01.0 mem = 687.9M
+Iteration  6: Total net bbox = 2.459e+06 (1.56e+06 8.99e+05)
+              Est.  stn bbox = 3.320e+06 (2.10e+06 1.22e+06)
+              cpu = 0:00:00.4 real = 0:00:00.0 mem = 687.9M
+Iteration  7: Total net bbox = 2.604e+06 (1.58e+06 1.03e+06)
+              Est.  stn bbox = 3.522e+06 (2.11e+06 1.41e+06)
+              cpu = 0:00:00.4 real = 0:00:00.0 mem = 687.9M
+Iteration  8: Total net bbox = 2.701e+06 (1.67e+06 1.03e+06)
+              Est.  stn bbox = 3.643e+06 (2.23e+06 1.41e+06)
+              cpu = 0:00:00.1 real = 0:00:00.0 mem = 687.9M
+Iteration  9: Total net bbox = 3.015e+06 (1.80e+06 1.21e+06)
+              Est.  stn bbox = 4.024e+06 (2.39e+06 1.64e+06)
+              cpu = 0:00:00.3 real = 0:00:01.0 mem = 687.9M
+Iteration 10: Total net bbox = 3.064e+06 (1.82e+06 1.24e+06)
+              Est.  stn bbox = 4.088e+06 (2.41e+06 1.67e+06)
+              cpu = 0:00:00.6 real = 0:00:00.0 mem = 687.9M
+Iteration 11: Total net bbox = 3.152e+06 (1.86e+06 1.30e+06)
+              Est.  stn bbox = 4.190e+06 (2.45e+06 1.74e+06)
+              cpu = 0:00:00.9 real = 0:00:01.0 mem = 687.9M
+Iteration 12: Total net bbox = 3.216e+06 (1.87e+06 1.35e+06)
+              Est.  stn bbox = 4.262e+06 (2.46e+06 1.80e+06)
+              cpu = 0:00:01.1 real = 0:00:01.0 mem = 687.9M
+Iteration 13: Total net bbox = 3.317e+06 (1.94e+06 1.38e+06)
+              Est.  stn bbox = 4.368e+06 (2.54e+06 1.83e+06)
+              cpu = 0:00:01.4 real = 0:00:02.0 mem = 687.9M
+Iteration 14: Total net bbox = 3.264e+06 (1.95e+06 1.32e+06)
+              Est.  stn bbox = 4.310e+06 (2.55e+06 1.76e+06)
+              cpu = 0:00:01.2 real = 0:00:01.0 mem = 687.9M
+Iteration 15: Total net bbox = 3.378e+06 (2.04e+06 1.34e+06)
+              Est.  stn bbox = 4.426e+06 (2.65e+06 1.78e+06)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 687.9M
+*** cost = 3.378e+06 (2.04e+06 1.34e+06) (cpu for global=0:00:08.1) real=0:00:08.0***
+Core basic site is standard
+Starting refinePlace ...
+move report: placeLevelShifters moves 0 insts, mean move: 0.00 um, max move: 0.00 um
+  Spread Effort: high, pre-route mode.
+[CPU] RefinePlace/preRPlace (cpu=0:00:01.1, real=0:00:01.0, mem=687.9MB) @(0:02:23 - 0:02:24).
+move report: preRPlace moves 27768 insts, mean move: 6.20 um, max move: 50.80 um
+	max move on inst (u4/mem/mem_reg_56][5): (554.40, 1489.80) --> (516.60, 1476.80)
+wireLenOptFixPriorityInst 0 inst fixed
+Placement tweakage begins.
+wire length = 2.539e+06 = 1.384e+06 H + 1.155e+06 V
+wire length = 2.346e+06 = 1.229e+06 H + 1.116e+06 V
+Placement tweakage ends.
+move report: tweak moves 19533 insts, mean move: 31.88 um, max move: 2763.60 um
+	max move on inst (U9): (2819.60, 1515.80) --> (56.00, 1515.80)
+[CPU] RefinePlace/TweakPlacement (cpu=0:00:00.3, real=0:00:01.0, mem=687.9MB) @(0:02:24 - 0:02:24).
+Wire length optimization begins.
+Wire length optimization ends. (0:00:00.0)
+move report: xdp moves 14302 insts, mean move: 36.25 um, max move: 246.40 um
+	max move on inst (u4/mem/mem_reg_8][4): (561.40, 1177.80) --> (807.80, 1177.80)
+[CPU] RefinePlace/WireLenOpt (cpu=0:00:00.8, real=0:00:00.0, mem=687.9MB) @(0:02:24 - 0:02:25).
+[CPU] RefinePlace/Legalization (cpu=0:00:00.0, real=0:00:00.0, mem=687.9MB) @(0:02:25 - 0:02:25).
+move report: rPlace moves 0 insts, mean move: 0.00 um, max move: 0.00 um
+move report: overall moves 30879 insts, mean move: 33.49 um, max move: 2765.00 um
+	max move on inst (U9): (2821.00, 1515.80) --> (56.00, 1515.80)
+Statistics of distance of Instance movement in detailed placement:
+  maximum (X+Y) =      2765.00 um
+  inst (U9) with max move: (2821, 1515.8) -> (56, 1515.8)
+  mean    (X+Y) =        31.76 um
+Total instances flipped for WireLenOpt: 9285
+Total instances flipped, including legalization: 491
+Total instances moved : 16223
+*** cpu=0:00:02.3   mem=687.9M  mem(used)=0.0M***
+[CPU] RefinePlace/total (cpu=0:00:02.3, real=0:00:02.0, mem=687.9MB) @(0:02:23 - 0:02:25).
+Total net length = 2.244e+06 (1.197e+06 1.047e+06) (ext = 3.194e+04)
+*** End of Placement (cpu=0:00:10.5, real=0:00:10.0, mem=687.9M) ***
+Core basic site is standard
+default core: bins with density >  0.75 = 38.8 % ( 149 / 384 )
+*** Finishing placeDesign default flow ***
+**placeDesign ... cpu = 0: 0:11, real = 0: 0:10, mem = 687.9M **
+<CMD> checkPlace VGA.checkPlace
+Core basic site is standard
+Begin checking placement ... (start mem=687.9M, init mem=687.9M)
+*info: Placed = 32477
+*info: Unplaced = 0
+Placement Density:70.00%(4493580/6419431)
+Finished checkPlace (cpu: total=0:00:00.0, vio checks=0:00:00.0; mem=687.9M)
+<CMD> setDrawView place
+<CMD> refinePlace
+*** ThreeLayerMode is automatically turned on for small designs with less than 4 layers.
+Core basic site is standard
+Starting refinePlace ...
+  Spread Effort: high, standalone mode.
+[CPU] RefinePlace/preRPlace (cpu=0:00:00.0, real=0:00:01.0, mem=687.9MB) @(0:02:25 - 0:02:25).
+move report: preRPlace moves 0 insts, mean move: 0.00 um, max move: 0.00 um
+wireLenOptFixPriorityInst 0 inst fixed
+[CPU] RefinePlace/Legalization (cpu=0:00:00.0, real=0:00:00.0, mem=687.9MB) @(0:02:25 - 0:02:25).
+move report: rPlace moves 0 insts, mean move: 0.00 um, max move: 0.00 um
+move report: overall moves 0 insts, mean move: 0.00 um, max move: 0.00 um
+Statistics of distance of Instance movement in detailed placement:
+  maximum (X+Y) =         0.00 um
+  mean    (X+Y) =         0.00 um
+Total instances moved : 0
+*** cpu=0:00:00.1   mem=687.9M  mem(used)=0.0M***
+[CPU] RefinePlace/total (cpu=0:00:00.1, real=0:00:01.0, mem=687.9MB) @(0:02:25 - 0:02:25).
+Total net length = 2.244e+06 (1.197e+06 1.047e+06) (ext = 3.194e+04)
+Core basic site is standard
+default core: bins with density >  0.75 = 38.8 % ( 149 / 384 )
+<CMD> checkPlace VGA.checkPlace
+Core basic site is standard
+Begin checking placement ... (start mem=687.9M, init mem=687.9M)
+*info: Placed = 32477
+*info: Unplaced = 0
+Placement Density:70.00%(4493580/6419431)
+Finished checkPlace (cpu: total=0:00:00.0, vio checks=0:00:00.0; mem=687.9M)
+<CMD> setDrawView place
+<CMD> saveDesign ./PAD_VGA.placed.enc
+**WARN: (ENCSYT-3036):	Design directory ./PAD_VGA.placed.enc.dat exists, rename it to ./PAD_VGA.placed.enc.dat.tmp.
+If saveDesign succeeds, it will be deleted.
+Writing Netlist "./PAD_VGA.placed.enc.dat/VGA.v.gz" ...
+Saving configuration ...
+Saving preference file ./PAD_VGA.placed.enc.dat/enc.pref.tcl ...
+Saving floorplan ...
+Saving Drc markers ...
+... No Drc file written since there is no markers found.
+Saving placement ...
+*** Completed savePlace (cpu=0:00:00.0 real=0:00:00.0 mem=687.9M) ***
+Saving route ...
+*** Completed saveRoute (cpu=0:00:00.0 real=0:00:00.0 mem=687.9M) ***
+Writing DEF file './PAD_VGA.placed.enc.dat/VGA.def.gz', current time is Mon Nov 25 18:14:07 2024 ...
+unitPerMicron=1000, dbgMicronPerDBU=0.001000, unitPerDBU=1.000000
+DEF file './PAD_VGA.placed.enc.dat/VGA.def.gz' is written, current time is Mon Nov 25 18:14:07 2024 ...
+No integration constraint in the design.
+<CMD> fit
+<CMD> setOptMode -fixFanoutLoad true
+<CMD> optDesign -preCTS
+**WARN: (ENCOPT-576):	178 nets have unplaced terms.
+**INFO: setDesignMode -flowEffort high -> setting 'setOptMode -effort high' for the duration of this command.
+**INFO: setDesignMode -flowEffort high -> setting 'setOptMode -allEndPoints true' for the duration of this command.
+**INFO: setDesignMode -flowEffort high -> setting 'setOptMode -useTimingFluxHotSpotTNSAllEndPoints true' for the duration of this command.
+Total CPU(s) requested: 2
+CPU(s) enabled with current License(s): 1
+No more licenses are available for multi-cpu acceleration.
+Total CPU(s) now enabled: 1
+#CPUs are reduced from 2 to 1 due to license limit
+GigaOpt running with 1 threads.
+**WARN: (ENCOPT-3000):	Buffer footprint is not defined or is an invalid buffer footprint.
+**WARN: (ENCOPT-3001):	Inverter footprint is not defined or is an invalid inverter footprint.
+**DIAG[opUtil.c:10601:update]: Assert "powerView != tocDefaultView"
+**DIAG[opUtil.c:10606:update]: Assert "powerViewTlc"
+**WARN: (ENCOPT-665):	 CLK_I : Net has unplaced terms or connected to uplaced instances in design. 
+**WARN: (ENCOPT-665):	 RST_I : Net has unplaced terms or connected to uplaced instances in design. 
+**WARN: (ENCOPT-665):	 NRESET : Net has unplaced terms or connected to uplaced instances in design. 
+**WARN: (ENCOPT-665):	 ADR_I_4 : Net has unplaced terms or connected to uplaced instances in design. 
+**WARN: (ENCOPT-665):	 ADR_I_3 : Net has unplaced terms or connected to uplaced instances in design. 
+**WARN: (ENCOPT-665):	 ADR_I_2 : Net has unplaced terms or connected to uplaced instances in design. 
+**WARN: (ENCOPT-665):	 SDAT_I_31 : Net has unplaced terms or connected to uplaced instances in design. 
+**WARN: (ENCOPT-665):	 SDAT_I_30 : Net has unplaced terms or connected to uplaced instances in design. 
+**WARN: (ENCOPT-665):	 SDAT_I_29 : Net has unplaced terms or connected to uplaced instances in design. 
+**WARN: (ENCOPT-665):	 SDAT_I_28 : Net has unplaced terms or connected to uplaced instances in design. 
+**WARN: (ENCOPT-665):	 SDAT_I_27 : Net has unplaced terms or connected to uplaced instances in design. 
+**WARN: (ENCOPT-665):	 SDAT_I_26 : Net has unplaced terms or connected to uplaced instances in design. 
+**WARN: (ENCOPT-665):	 SDAT_I_25 : Net has unplaced terms or connected to uplaced instances in design. 
+**WARN: (ENCOPT-665):	 SDAT_I_24 : Net has unplaced terms or connected to uplaced instances in design. 
+**WARN: (ENCOPT-665):	 SDAT_I_23 : Net has unplaced terms or connected to uplaced instances in design. 
+**WARN: (ENCOPT-665):	 SDAT_I_22 : Net has unplaced terms or connected to uplaced instances in design. 
+**WARN: (ENCOPT-665):	 SDAT_I_21 : Net has unplaced terms or connected to uplaced instances in design. 
+**WARN: (ENCOPT-665):	 SDAT_I_20 : Net has unplaced terms or connected to uplaced instances in design. 
+**WARN: (ENCOPT-665):	 SDAT_I_19 : Net has unplaced terms or connected to uplaced instances in design. 
+**WARN: (ENCOPT-665):	 SDAT_I_18 : Net has unplaced terms or connected to uplaced instances in design. 
+**optDesign ... cpu = 0:00:00, real = 0:00:00, mem = 687.9M, totSessionCpu=0:02:26 **
+**ERROR: (ENCOPT-311):	Optimization will not work when the timing analysis mode is set to -ocv.
+		To run optimization while taking into account on chip variation, set the MMMC environment with the right operating condition.
+		More information can be found in the documentation.
+**ERROR: (ENCOPT-570):	Initial sanity checks failed for optDesign. Correct above errors/warnings before running optDesign.
+<CMD> cleanupSpecifyClockTree
+<CMD> specifyClockTree -file ../Clock.ctstch
+Checking spec file integrity...
+
+Reading clock tree spec file '../Clock.ctstch' ...
+
+**ERROR: (ENCCK-657):	No cell is specified for clock CLK_I in the clock tree specification file.
+RouteType               : FE_CTS_DEFAULT
+PreferredExtraSpace     : 1
+Shield                  : NONE
+PreferLayer             : M2 M3 
+Est. Cap                : 0.157384(V=0.169251 H=0.145518) (ff/um) [0.000157384]
+Est. Res                : 0.183333(V=0.2 H=0.166667)(ohm/um) [0.000183333]
+Est. Via Res            : 3(ohm) [3]
+Est. Via Cap            : 0.27849(ff)
+M1(H) w=0.5(um) s=0.45(um) p=1.3(um) es=2.1(um) cap=0.163(ff/um) res=0.24(ohm/um) viaRes=0(ohm) viaCap=0(ff)
+M2(V) w=0.6(um) s=0.5(um) p=1.4(um) es=2.2(um) cap=0.169(ff/um) res=0.2(ohm/um) viaRes=3(ohm) viaCap=0.297023(ff)
+M3(H) w=0.6(um) s=0.6(um) p=1.3(um) es=2(um) cap=0.146(ff/um) res=0.167(ohm/um) viaRes=3(ohm) viaCap=0.27849(ff)
+
+RouteType               : FE_CTS_DEFAULT_LEAF
+PreferredExtraSpace     : 1
+Shield                  : NONE
+PreferLayer             : M2 M3 
+Est. Cap                : 0.157384(V=0.169251 H=0.145518) (ff/um) [0.000157384]
+Est. Res                : 0.183333(V=0.2 H=0.166667)(ohm/um) [0.000183333]
+Est. Via Res            : 3(ohm) [3]
+Est. Via Cap            : 0.27849(ff)
+M1(H) w=0.5(um) s=0.45(um) p=1.3(um) es=2.1(um) cap=0.163(ff/um) res=0.24(ohm/um) viaRes=0(ohm) viaCap=0(ff)
+M2(V) w=0.6(um) s=0.5(um) p=1.4(um) es=2.2(um) cap=0.169(ff/um) res=0.2(ohm/um) viaRes=3(ohm) viaCap=0.297023(ff)
+M3(H) w=0.6(um) s=0.6(um) p=1.3(um) es=2(um) cap=0.146(ff/um) res=0.167(ohm/um) viaRes=3(ohm) viaCap=0.27849(ff)
+
+**ERROR: (ENCCK-427):	Error is found in the clock specification file at line number 36:
+END
+Please correct the error, reload clock specification file, and rerun CTS.
+
+Usage: specifyClockTree [-help] [-dont_use]
+                        [-clkfile <string> | -file <string> | -specFile <string>]
+                        [-create <string> | -delete <string> | -update <string> | -file <string> | -template ]
+
+-help                                 # Prints out the command usage
+-create <string>                      # (string, optional)
+-delete <string>                      # (string, optional)
+-dont_use                             # Excludes buffers from CTS file defined
+                                      # as dont_use : true in the .lib file.
+                                      # (bool, optional)
+-file <string>                        # Specifies the name of the clock tree
+                                      # specification file. (string, optional)
+-template                             # Creates a sample CTS template file
+                                      # template.ctstch. (bool, optional)
+-update <string>                      # (string, optional)
+
+
+**ERROR: (ENCSYC-194):	Incorrect usage for command 'specifyClockTree'.
+

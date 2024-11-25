@@ -1,0 +1,32 @@
+catch { setDesignMode -flowEffort high }
+catch { setDesignMode -process 130 }
+catch { setAnalysisMode -analysisType onChipVariation }
+catch { setAnalysisMode -checkType setup }
+catch { setAnalysisMode -clkSrcPath true }
+catch { setAnalysisMode -clockPropagation sdcControl }
+catch { setAnalysisMode -cppr both }
+catch { setTrialRouteMode -fixAirConnect true }
+catch { setOptMode -drcMargin 0 }
+catch { setOptMode -fixFanoutLoad true }
+setExtractRCMode  -engine preRoute
+catch { setDelayCalMode -betaEngine sgs2 }
+catch { setDelayCalMode -enable_high_fanout false }
+catch { setDelayCalMode -engine aae }
+catch { setDelayCalMode -SIAware true }
+catch { setPlaceMode -checkRoute false }
+catch { setPlaceMode -clkGateAware false }
+catch { setPlaceMode -congEffort medium }
+catch { setPlaceMode -fp false }
+catch { setPlaceMode -getLegalMultiThread false }
+catch { setPlaceMode -ignoreScan false }
+catch { setPlaceMode -ignoreSpare false }
+catch { setPlaceMode -moduleAwareSpare false }
+catch { setPlaceMode -modulePlan false }
+catch { setPlaceMode -placeIoPins false }
+catch { setPlaceMode -powerDriven false }
+catch { setPlaceMode -preserveRouting false }
+catch { setPlaceMode -reorderScan false }
+catch { setPlaceMode -rmAffectedRouting false }
+catch { setPlaceMode -swapEEQ false }
+catch { setPlaceMode -timingDriven false }
+setIlmMode -highFanoutPort true -loopBack false 

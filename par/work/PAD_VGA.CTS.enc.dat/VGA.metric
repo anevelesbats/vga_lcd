@@ -1,0 +1,37 @@
+se::start_metric verifyGeometry {}
+se::save_metric verify.geom.cell {0}
+se::save_metric verify.geom.samenet {0}
+se::save_metric verify.geom.wiring {0}
+se::save_metric verify.geom.antenna {0}
+se::save_metric verify.geom.short {0}
+se::save_metric verify.geom.overlap {0}
+se::save_metric verify.geom.total {0}
+se::end_metric verifyGeometry {}
+se::start_metric verifyConnectivity {}
+se::save_metric verify.conn {0}
+se::end_metric verifyConnectivity {}
+se::start_metric placeDesign {}
+se::save_metric design.numStandardCell {16849}
+se::save_metric design.numNet {17061}
+se::save_metric design.numFloatBlock {0}
+se::save_metric design.numFixedBlock {0}
+se::save_metric design.numSingleRowCell {16849}
+se::save_metric design.numDoubleRowCell {0}
+se::save_metric design.numMultiRowCell {0}
+se::save_metric design.numIoInst {0}
+se::save_metric design.numFixedIo {0}
+se::save_metric design.numFloatIo {0}
+se::save_metric design.numTerm {66843}
+se::save_metric design.numTermPerNet {3.92}
+se::save_metric design.util {70.004 %}
+se::save_metric design.pinDensity {0.387}
+se::save_metric place.totalNetLength {2.11e+06 um}
+se::save_metric cputime {0:0:8}
+se::save_metric realtime {0:0:8}
+se::save_metric mem {401.2M}
+se::end_metric placeDesign {}
+se::start_metric clockDesign {-specFile ../Clock.ctstch -outDir clock_report}
+se::save_metric cputime {0:00:00}
+se::save_metric realtime {0:00:00}
+se::save_metric mem {405.2M}
+se::end_metric clockDesign {-specFile ../Clock.ctstch -outDir clock_report}

@@ -1,0 +1,30 @@
+# PPCMD 1 
+# addRing -stacked_via_top_layer MET3 -around core -jog_distance 1.7 -threshold 1.7 -nets {gnd! vdd!} -stacked_via_bottom_layer MET1 -layer {bottom MET1 top MET1 right MET2 left MET2} -width 1.6 -spacing 1.6 -offset 1.7 -layer_bottom MET1 -layer_top MET1 -layer_right MET2 -layer_left MET2 -width_top {1.6} -width_bottom {1.6} -width_left {1.6} -width_right {1.6} -spacing_top {1.6} -spacing_bottom {1.6} -spacing_left {1.6} -spacing_right {1.6} -offset_top {1.7} -offset_bottom {1.7} -offset_left {1.7} -offset_right {1.7}
+# 1 
+# 32 
+# 1 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# vdd! 1600 1 1 0 0 0 0 0 
+# RING_PT_INFO_LIST 
+# 1749300 15100 1749300 1326500 
+# END_RING_PT_INFO_LIST 
+# vdd! 1600 2 1 0 0 0 0 0 
+# RING_PT_INFO_LIST 
+# 15300 670800 3483300 670800 
+# END_RING_PT_INFO_LIST 
+# gnd! 1600 1 1 0 0 0 0 0 
+# RING_PT_INFO_LIST 
+# 1749300 18300 1749300 1323300 
+# END_RING_PT_INFO_LIST 
+# gnd! 1600 2 1 0 0 0 0 0 
+# RING_PT_INFO_LIST 
+# 18500 670800 3480100 670800 
+# END_RING_PT_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 1 
+

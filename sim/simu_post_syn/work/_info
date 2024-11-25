@@ -22,7 +22,7 @@ Z3 8/net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/syn/VGA_syn.v
 Z4 F/net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/syn/VGA_syn.v
 L0 2050
 Z5 OL;L;10.3d;59
-Z6 !s108 1732551594.190812
+Z6 !s108 1732554362.461927
 Z7 !s107 /net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/syn/VGA_syn.v|
 Z8 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|/net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/syn/VGA_syn.v|
 !i113 0
@@ -361,7 +361,7 @@ Z10 w1732540035
 F/net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/bench/verilog/sync_check.v
 L0 68
 R5
-!s108 1732551594.660112
+!s108 1732552723.036145
 !s107 /net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/bench/verilog/sync_check.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|/net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/bench/verilog/sync_check.v|
 !i113 0
@@ -381,7 +381,7 @@ F/net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/bench/verilog/test_bench_po
 F/net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/bench/verilog/tests.v
 L0 76
 R5
-!s108 1732551595.741666
+!s108 1732554362.762324
 !s107 /net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/bench/verilog/tests.v|/net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/bench/verilog/test_bench_post_syn.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|/net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/bench/verilog/test_bench_post_syn.v|
 !i113 0
@@ -638,7 +638,7 @@ R10
 F/net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/bench/verilog/wb_b3_check.v
 L0 37
 R5
-!s108 1732551595.486931
+!s108 1732552723.664912
 !s107 /net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/bench/verilog/wb_b3_check.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|/net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/bench/verilog/wb_b3_check.v|
 !i113 0
@@ -657,7 +657,7 @@ R10
 F/net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/bench/verilog/wb_mast_model.v
 L0 62
 R5
-!s108 1732551595.543063
+!s108 1732552723.762113
 !s107 /net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/bench/verilog/wb_model_defines.v|/net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/bench/verilog/wb_mast_model.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|/net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/bench/verilog/wb_mast_model.v|
 !i113 0
@@ -774,7 +774,7 @@ R10
 F/net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/bench/verilog/wb_slv_model.v
 L0 65
 R5
-!s108 1732551595.662154
+!s108 1732552723.888183
 !s107 /net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/bench/verilog/wb_model_defines.v|/net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/bench/verilog/wb_slv_model.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|/net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/bench/verilog/wb_slv_model.v|
 !i113 0

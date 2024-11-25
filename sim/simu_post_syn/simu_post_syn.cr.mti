@@ -1,16 +1,9 @@
-/net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/bench/verilog/wb_slv_model.v {1 {vlog -work work -vopt -stats=none /net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/bench/verilog/wb_slv_model.v
+/net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/bench/verilog/test_bench_post_syn.v {1 {vlog -work work -vopt -stats=none /net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/bench/verilog/test_bench_post_syn.v
 Model Technology ModelSim SE-64 vlog 10.3d Compiler 2014.10 Oct  6 2014
--- Compiling module wb_slv
+-- Compiling module test
 
 Top level modules:
-	wb_slv
-
-} {} {}} /net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/bench/verilog/wb_mast_model.v {1 {vlog -work work -vopt -stats=none /net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/bench/verilog/wb_mast_model.v
-Model Technology ModelSim SE-64 vlog 10.3d Compiler 2014.10 Oct  6 2014
--- Compiling module wb_mast
-
-Top level modules:
-	wb_mast
+	test
 
 } {} {}} /net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/syn/VGA_syn.v {1 {vlog -work work -vopt -stats=none /net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/syn/VGA_syn.v
 Model Technology ModelSim SE-64 vlog 10.3d Compiler 2014.10 Oct  6 2014
@@ -51,22 +44,5 @@ Model Technology ModelSim SE-64 vlog 10.3d Compiler 2014.10 Oct  6 2014
 
 Top level modules:
 	VGA
-
-} {} {}} /net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/bench/verilog/wb_model_defines.v {1 {vlog -work work -vopt -stats=none /net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/bench/verilog/wb_model_defines.v
-Model Technology ModelSim SE-64 vlog 10.3d Compiler 2014.10 Oct  6 2014
-
-} {} {}} /net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/bench/verilog/wb_b3_check.v {1 {vlog -work work -vopt -stats=none /net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/bench/verilog/wb_b3_check.v
-Model Technology ModelSim SE-64 vlog 10.3d Compiler 2014.10 Oct  6 2014
--- Compiling module wb_b3_check
-
-Top level modules:
-	wb_b3_check
-
-} {} {}} /net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/bench/verilog/sync_check.v {1 {vlog -work work -vopt -stats=none /net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/bench/verilog/sync_check.v
-Model Technology ModelSim SE-64 vlog 10.3d Compiler 2014.10 Oct  6 2014
--- Compiling module sync_check
-
-Top level modules:
-	sync_check
 
 } {} {}}

@@ -1,0 +1,385 @@
+# Reading pref.tcl
+# //  ModelSim SE-64 10.3d Oct  6 2014 Linux 5.14.0-362.8.1.el9_3.x86_64
+# //
+# //  Copyright 1991-2014 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+# Project file /net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/sim/rtl_sim/rtl_sim.mpf was not found.
+# Unable to open project.
+# Loading project simu_bhv_VGA_LCD
+# Compile of colproc.vhd was successful.
+# Compile of counter.vhd was successful.
+# Compile of csm_pb.vhd was successful.
+# Compile of dpm.vhd was successful.
+# Compile of fifo.vhd was successful.
+# Compile of fifo_dc.vhd was successful.
+# Compile of pgen.vhd was successful.
+# Compile of tgen.vhd was successful.
+# Compile of vga.vhd was successful.
+# Compile of vga_and_clut.vhd was successful.
+# Compile of vga_and_clut_tstbench.vhd was successful with warnings.
+# Compile of vtim.vhd failed with 1 errors.
+# Compile of wb_master.vhd failed with 1 errors.
+# Compile of wb_slave.vhd was successful.
+# 14 compiles, 2 failed with 2 errors.
+# Compile of colproc.vhd was successful.
+# Compile of counter.vhd was successful.
+# Compile of csm_pb.vhd was successful.
+# Compile of dpm.vhd was successful.
+# Compile of fifo.vhd was successful.
+# Compile of fifo_dc.vhd was successful.
+# Compile of pgen.vhd was successful.
+# Compile of tgen.vhd was successful.
+# Compile of vga.vhd was successful.
+# Compile of vga_and_clut.vhd was successful.
+# Compile of vga_and_clut_tstbench.vhd was successful with warnings.
+# Compile of wb_slave.vhd was successful.
+# 12 compiles, 0 failed with no errors.
+# Compile of colproc.vhd was successful.
+# Compile of counter.vhd was successful.
+# Compile of csm_pb.vhd was successful.
+# Compile of dpm.vhd was successful.
+# Compile of fifo.vhd was successful.
+# Compile of fifo_dc.vhd was successful.
+# Compile of pgen.vhd was successful.
+# Compile of tgen.vhd was successful.
+# Compile of vga.vhd was successful.
+# Compile of vga_and_clut.vhd was successful.
+# Compile of vga_and_clut_tstbench.vhd was successful with warnings.
+# Compile of wb_slave.vhd was successful.
+# Compile of sync_check.v failed with 1 errors.
+# Compile of test_bench_top.v was successful.
+# Compile of tests.v failed with 1 errors.
+# Compile of wb_b3_check.v was successful.
+# Compile of wb_mast_model.v was successful.
+# Compile of wb_model_defines.v was successful.
+# Compile of wb_slv_model.v was successful.
+# 19 compiles, 2 failed with 2 errors.
+# Compile of colproc.vhd was successful.
+# Compile of counter.vhd was successful.
+# Compile of csm_pb.vhd was successful.
+# Compile of dpm.vhd was successful.
+# Compile of fifo.vhd was successful.
+# Compile of fifo_dc.vhd was successful.
+# Compile of pgen.vhd was successful.
+# Compile of tgen.vhd was successful.
+# Compile of vga.vhd was successful.
+# Compile of vga_and_clut.vhd was successful.
+# Compile of vga_and_clut_tstbench.vhd was successful with warnings.
+# Compile of wb_slave.vhd was successful.
+# Compile of test_bench_top.v was successful.
+# Compile of wb_mast_model.v was successful.
+# Compile of wb_model_defines.v was successful.
+# Compile of wb_slv_model.v was successful.
+# 16 compiles, 0 failed with no errors.
+vsim -gui -novopt work.test
+# vsim -gui 
+# Start time: 17:55:18 on Nov 15,2024
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Refreshing /net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/sim/sim_bhv/work.test
+# Loading work.test
+# ** Error: (vsim-3033) /net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/bench/verilog/test_bench_top.v(495): Instantiation of 'sync_check' failed. The design unit was not found.
+#         Region: /test
+#         Searched libraries:
+#             /net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/sim/sim_bhv/work
+# Refreshing /net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/sim/sim_bhv/work.wb_b3_check
+# Loading work.wb_b3_check
+# ** Error: (vsim-3009) [TSCALE] - Module 'wb_b3_check' does not have a timeunit/timeprecision specification in effect, but other modules do.
+#         Region: /test/u_wb_check
+# ** Error: (vsim-3033) /net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/bench/verilog/test_bench_top.v(583): Instantiation of 'vga_enh_top' failed. The design unit was not found.
+#         Region: /test
+#         Searched libraries:
+#             /net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/sim/sim_bhv/work
+# Refreshing /net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/sim/sim_bhv/work.wb_mast
+# Loading work.wb_mast
+# Refreshing /net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/sim/sim_bhv/work.wb_slv
+# Loading work.wb_slv
+# Error loading design
+# Compile of colproc.vhd was successful.
+# Compile of counter.vhd was successful.
+# Compile of csm_pb.vhd was successful.
+# Compile of dpm.vhd was successful.
+# Compile of fifo.vhd was successful.
+# Compile of fifo_dc.vhd was successful.
+# Compile of pgen.vhd was successful.
+# Compile of tgen.vhd was successful.
+# Compile of vga.vhd was successful.
+# Compile of vga_and_clut.vhd was successful.
+# Compile of vga_and_clut_tstbench.vhd was successful with warnings.
+# Compile of wb_slave.vhd was successful.
+# Compile of test_bench_top.v was successful.
+# Compile of wb_mast_model.v was successful.
+# Compile of wb_model_defines.v was successful.
+# Compile of wb_slv_model.v was successful.
+# 16 compiles, 0 failed with no errors.
+# Compile of sync_check.v failed with 1 errors.
+# Compile of test_bench_top.v was successful.
+# Compile of tests.v failed with 1 errors.
+# Compile of wb_b3_check.v was successful.
+# Compile of wb_mast_model.v was successful.
+# Compile of wb_model_defines.v was successful.
+# Compile of wb_slv_model.v was successful.
+# 7 compiles, 2 failed with 2 errors.
+# Compile of sync_check.v failed with 1 errors.
+# Compile of test_bench_top.v was successful.
+# Compile of tests.v failed with 1 errors.
+# Compile of wb_b3_check.v was successful.
+# Compile of wb_mast_model.v was successful.
+# Compile of wb_model_defines.v was successful.
+# Compile of wb_slv_model.v was successful.
+# 7 compiles, 2 failed with 2 errors.
+# Compile of sync_check.v failed with 1 errors.
+# Compile of test_bench_top.v was successful.
+# Compile of tests.v failed with 1 errors.
+# Compile of wb_b3_check.v was successful.
+# Compile of wb_mast_model.v was successful.
+# Compile of wb_model_defines.v was successful.
+# Compile of wb_slv_model.v was successful.
+# 7 compiles, 2 failed with 2 errors.
+# Compile of sync_check.v failed with 1 errors.
+# Compile of test_bench_top.v was successful.
+# Compile of tests.v failed with 1 errors.
+# Compile of wb_b3_check.v was successful.
+# Compile of wb_mast_model.v was successful.
+# Compile of wb_model_defines.v was successful.
+# Compile of wb_slv_model.v was successful.
+# Compile of colproc.vhd was successful.
+# Compile of counter.vhd was successful.
+# Compile of csm_pb.vhd was successful.
+# Compile of dpm.vhd was successful.
+# Compile of fifo.vhd was successful.
+# Compile of fifo_dc.vhd was successful.
+# Compile of pgen.vhd was successful.
+# Compile of tgen.vhd was successful.
+# Compile of vga.vhd was successful.
+# Compile of vga_and_clut.vhd was successful.
+# Compile of vga_and_clut_tstbench.vhd was successful with warnings.
+# Compile of vtim.vhd failed with 1 errors.
+# Compile of wb_master.vhd failed with 1 errors.
+# Compile of wb_slave.vhd was successful.
+# 21 compiles, 4 failed with 4 errors.
+# Load canceled
+# Compile of sync_check.v failed with 1 errors.
+# Compile of test_bench_top.v was successful.
+# Compile of tests.v failed with 1 errors.
+# Compile of wb_b3_check.v was successful.
+# Compile of wb_mast_model.v was successful.
+# Compile of wb_model_defines.v was successful.
+# Compile of wb_slv_model.v was successful.
+# Compile of generic_dpram.v was successful.
+# Compile of generic_spram.v was successful.
+# Compile of timescale.v was successful.
+# Compile of vga_clkgen.v was successful.
+# Compile of vga_colproc.v was successful.
+# Compile of vga_csm_pb.v was successful.
+# Compile of vga_cur_cregs.v was successful.
+# Compile of vga_curproc.v was successful.
+# Compile of vga_defines.v was successful.
+# Compile of vga_enh_top.v was successful.
+# Compile of vga_fifo.v was successful.
+# Compile of vga_fifo_dc.v was successful.
+# Compile of vga_pgen.v was successful.
+# Compile of vga_tgen.v was successful.
+# Compile of vga_vtim.v was successful.
+# Compile of vga_wb_master.v was successful.
+# Compile of vga_wb_slave.v was successful.
+# 24 compiles, 2 failed with 2 errors.
+# Compile of sync_check.v was successful.
+# Compile of test_bench_top.v was successful.
+# Compile of wb_b3_check.v was successful.
+# Compile of wb_mast_model.v was successful.
+# Compile of wb_model_defines.v was successful.
+# Compile of wb_slv_model.v was successful.
+# Compile of generic_dpram.v was successful.
+# Compile of generic_spram.v was successful.
+# Compile of timescale.v was successful.
+# Compile of vga_clkgen.v was successful.
+# Compile of vga_colproc.v was successful.
+# Compile of vga_csm_pb.v was successful.
+# Compile of vga_cur_cregs.v was successful.
+# Compile of vga_curproc.v was successful.
+# Compile of vga_defines.v was successful.
+# Compile of vga_enh_top.v was successful.
+# Compile of vga_fifo.v was successful.
+# Compile of vga_fifo_dc.v was successful.
+# Compile of vga_pgen.v was successful.
+# Compile of vga_tgen.v was successful.
+# Compile of vga_vtim.v was successful.
+# Compile of vga_wb_master.v was successful.
+# Compile of vga_wb_slave.v was successful.
+# 23 compiles, 0 failed with no errors.
+vsim -gui -novopt work.test
+# vsim 
+# Start time: 18:04:13 on Nov 15,2024
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Refreshing /net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/sim/sim_bhv/work.test
+# Loading work.test
+# Refreshing /net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/sim/sim_bhv/work.sync_check
+# Loading work.sync_check
+# Refreshing /net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/sim/sim_bhv/work.wb_b3_check
+# Loading work.wb_b3_check
+# ** Error: (vsim-3009) [TSCALE] - Module 'wb_b3_check' does not have a timeunit/timeprecision specification in effect, but other modules do.
+#         Region: /test/u_wb_check
+# Refreshing /net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/sim/sim_bhv/work.vga_enh_top
+# Loading work.vga_enh_top
+# Refreshing /net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/sim/sim_bhv/work.vga_wb_slave
+# Loading work.vga_wb_slave
+# Refreshing /net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/sim/sim_bhv/work.vga_wb_master
+# Loading work.vga_wb_master
+# Refreshing /net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/sim/sim_bhv/work.vga_fifo
+# Loading work.vga_fifo
+# Refreshing /net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/sim/sim_bhv/work.vga_csm_pb
+# Loading work.vga_csm_pb
+# Refreshing /net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/sim/sim_bhv/work.generic_spram
+# Loading work.generic_spram
+# Refreshing /net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/sim/sim_bhv/work.vga_pgen
+# Loading work.vga_pgen
+# Refreshing /net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/sim/sim_bhv/work.vga_clkgen
+# Loading work.vga_clkgen
+# Refreshing /net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/sim/sim_bhv/work.vga_tgen
+# Loading work.vga_tgen
+# Refreshing /net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/sim/sim_bhv/work.vga_vtim
+# Loading work.vga_vtim
+# Refreshing /net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/sim/sim_bhv/work.vga_colproc
+# Loading work.vga_colproc
+# Refreshing /net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/sim/sim_bhv/work.vga_fifo_dc
+# Loading work.vga_fifo_dc
+# Refreshing /net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/sim/sim_bhv/work.generic_dpram
+# Loading work.generic_dpram
+# Refreshing /net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/sim/sim_bhv/work.wb_mast
+# Loading work.wb_mast
+# Refreshing /net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/sim/sim_bhv/work.wb_slv
+# Loading work.wb_slv
+# Error loading design
+# Compile of sync_check.v was successful.
+# Compile of test_bench_top.v was successful.
+# Compile of wb_b3_check.v was successful.
+# Compile of wb_mast_model.v was successful.
+# Compile of wb_model_defines.v was successful.
+# Compile of wb_slv_model.v was successful.
+# Compile of generic_dpram.v was successful.
+# Compile of generic_spram.v was successful.
+# Compile of timescale.v was successful.
+# Compile of vga_clkgen.v was successful.
+# Compile of vga_colproc.v was successful.
+# Compile of vga_csm_pb.v was successful.
+# Compile of vga_cur_cregs.v was successful.
+# Compile of vga_curproc.v was successful.
+# Compile of vga_defines.v was successful.
+# Compile of vga_enh_top.v was successful.
+# Compile of vga_fifo.v was successful.
+# Compile of vga_fifo_dc.v was successful.
+# Compile of vga_pgen.v was successful.
+# Compile of vga_tgen.v was successful.
+# Compile of vga_vtim.v was successful.
+# Compile of vga_wb_master.v was successful.
+# Compile of vga_wb_slave.v was successful.
+# 23 compiles, 0 failed with no errors.
+vsim -gui -novopt work.test
+# vsim 
+# Start time: 18:06:38 on Nov 15,2024
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Refreshing /net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/sim/sim_bhv/work.test
+# Loading work.test
+# Refreshing /net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/sim/sim_bhv/work.sync_check
+# Loading work.sync_check
+# Refreshing /net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/sim/sim_bhv/work.wb_b3_check
+# Loading work.wb_b3_check
+# Refreshing /net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/sim/sim_bhv/work.vga_enh_top
+# Loading work.vga_enh_top
+# Refreshing /net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/sim/sim_bhv/work.vga_wb_slave
+# Loading work.vga_wb_slave
+# Refreshing /net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/sim/sim_bhv/work.vga_wb_master
+# Loading work.vga_wb_master
+# Refreshing /net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/sim/sim_bhv/work.vga_fifo
+# Loading work.vga_fifo
+# Refreshing /net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/sim/sim_bhv/work.vga_csm_pb
+# Loading work.vga_csm_pb
+# Refreshing /net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/sim/sim_bhv/work.generic_spram
+# Loading work.generic_spram
+# Refreshing /net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/sim/sim_bhv/work.vga_pgen
+# Loading work.vga_pgen
+# Refreshing /net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/sim/sim_bhv/work.vga_clkgen
+# Loading work.vga_clkgen
+# Refreshing /net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/sim/sim_bhv/work.vga_tgen
+# Loading work.vga_tgen
+# Refreshing /net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/sim/sim_bhv/work.vga_vtim
+# Loading work.vga_vtim
+# Refreshing /net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/sim/sim_bhv/work.vga_colproc
+# Loading work.vga_colproc
+# Refreshing /net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/sim/sim_bhv/work.vga_fifo_dc
+# Loading work.vga_fifo_dc
+# Refreshing /net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/sim/sim_bhv/work.generic_dpram
+# Loading work.generic_dpram
+# Refreshing /net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/sim/sim_bhv/work.wb_mast
+# Loading work.wb_mast
+# Refreshing /net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/sim/sim_bhv/work.wb_slv
+# Loading work.wb_slv
+# ** Warning: (vsim-3017) /net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/bench/verilog/test_bench_top.v(583): [TFMPC] - Too few port connections. Expected 33, found 32.
+#         Region: /test/u0
+# ** Warning: (vsim-3722) /net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/bench/verilog/test_bench_top.v(583): [TFMPC] - Missing connection for port 'clk_p_o'.
+add wave -position end sim:/test/*
+run 10us
+# 
+# 
+# 
+# ******************************************************
+# * WISHBONE VGA/LCD Controller Simulation started ... *
+# ******************************************************
+# 
+# 
+# **********************************************
+# **                                          **
+# ** WISBONE RevB.3 sanity check instantiated **
+# ** (C) 2003 Richard Herveille               **
+# **                                          **
+# **********************************************
+# 
+# INFO: WISHBONE MASTER MODEL INSTANTIATED (test.m0)
+# 
+# 
+# INFO: WISHBONE MEMORY MODEL INSTANTIATED (test.s0)
+#       Memory Size 24 address lines 16777216 words
+# 
+# 
+# 
+# 
+# *****************************************************
+# *** Register Test                                 ***
+# *****************************************************
+# 
+# Testing Reset Values ...
+# Testing Pattern R/W ...
+# 
+# 
+# *************************************
+# 
+# WARNING: Recieved Interrupt (498.0 ns)
+# *************************************
+# 
+# 
+# 
+# 
+# 
+#      +--------------------+
+#      |  Total ERRORS: 0   |
+#      +--------------------+
+# *****************************************************
+# *** Test DONE ...                                 ***
+# *****************************************************
+# 
+# 
+# 
+# 
+# 
+# *****************************************************
+# *** Timing Test                                   ***
+# *****************************************************
+# 
+# Mode: 0
+# End time: 18:10:39 on Nov 15,2024, Elapsed time: 0:04:01
+# Errors: 0, Warnings: 3

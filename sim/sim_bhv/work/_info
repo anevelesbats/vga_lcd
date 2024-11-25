@@ -1,0 +1,1030 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/sim/sim_bhv
+Ecolproc
+Z1 w998372553
+Z2 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z4 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z5 8/net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/rtl/vhdl/colproc.vhd
+Z6 F/net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/rtl/vhdl/colproc.vhd
+l0
+L14
+V2MXkPcM`Tk^DL[j^;lJaI2
+!s100 IBFV8od7_]_1gnSlng2g<1
+Z7 OL;C;10.3d;59
+32
+Z8 !s110 1731689839
+!i10b 1
+Z9 !s108 1731689839.485755
+Z10 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|/net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/rtl/vhdl/colproc.vhd|
+Z11 !s107 /net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/rtl/vhdl/colproc.vhd|
+!i113 0
+Z12 o-work work -2002 -explicit
+Z13 tExplicit 1
+Astructural
+R2
+R3
+R4
+DEx4 work 7 colproc 0 22 2MXkPcM`Tk^DL[j^;lJaI2
+l42
+L38
+VX^clJX]HoN;]RITPQa<`F2
+!s100 kDNZm?A82V;FGmdD<^IBB0
+R7
+32
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 0
+R12
+R13
+Pcount
+R2
+R3
+R4
+R1
+R0
+Z14 8/net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/rtl/vhdl/counter.vhd
+Z15 F/net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/rtl/vhdl/counter.vhd
+l0
+L20
+VIh_azEHLZhN`lL^J4YiSD1
+!s100 O?JbK@G?J:^NbP<88UoMm3
+R7
+32
+R8
+!i10b 1
+Z16 !s108 1731689839.572819
+Z17 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|/net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/rtl/vhdl/counter.vhd|
+Z18 !s107 /net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/rtl/vhdl/counter.vhd|
+!i113 0
+R12
+R13
+Ecsm_pb
+R1
+R2
+R3
+R4
+R0
+Z19 8/net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/rtl/vhdl/csm_pb.vhd
+Z20 F/net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/rtl/vhdl/csm_pb.vhd
+l0
+L13
+VI=d`WW7iYT0[SS1UVO8;>2
+!s100 mhmhX:T7iR=`0B:hdLE7e1
+R7
+32
+R8
+!i10b 1
+Z21 !s108 1731689839.655393
+Z22 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|/net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/rtl/vhdl/csm_pb.vhd|
+Z23 !s107 /net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/rtl/vhdl/csm_pb.vhd|
+!i113 0
+R12
+R13
+Astructural
+R2
+R3
+R4
+DEx4 work 6 csm_pb 0 22 I=d`WW7iYT0[SS1UVO8;>2
+l86
+L48
+Vgk2W9?ahB0ehI=XMlWM<B2
+!s100 0DPE7TH@@`i5noO5>`]o=0
+R7
+32
+R8
+!i10b 1
+R21
+R22
+R23
+!i113 0
+R12
+R13
+Edual_ported_memory
+R1
+R2
+R3
+R4
+R0
+Z24 8/net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/rtl/vhdl/dpm.vhd
+Z25 F/net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/rtl/vhdl/dpm.vhd
+l0
+L21
+V=I`VQN;deAF;8m[1NCGK83
+!s100 VPV^lW;>gPVTR;cMQe>ZD1
+R7
+32
+R8
+!i10b 1
+Z26 !s108 1731689839.751440
+Z27 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|/net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/rtl/vhdl/dpm.vhd|
+Z28 !s107 /net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/rtl/vhdl/dpm.vhd|
+!i113 0
+R12
+R13
+Astructural
+R2
+R3
+R4
+DEx4 work 18 dual_ported_memory 0 22 =I`VQN;deAF;8m[1NCGK83
+l61
+L39
+VnDh=gY[;V=eU9[zc]=]`T1
+!s100 mJkdVGHQokUaQb6U=P=7X2
+R7
+32
+R8
+!i10b 1
+R26
+R27
+R28
+!i113 0
+R12
+R13
+Efifo
+R1
+R2
+R3
+R4
+R0
+Z29 8/net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/rtl/vhdl/fifo.vhd
+Z30 F/net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/rtl/vhdl/fifo.vhd
+l0
+L14
+VWME[j4h41Dfe7=LQ<<ZNI1
+!s100 oo=J:h[6l?8SjO]o:N5Rf1
+R7
+32
+R8
+!i10b 1
+Z31 !s108 1731689839.811053
+Z32 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|/net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/rtl/vhdl/fifo.vhd|
+Z33 !s107 /net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/rtl/vhdl/fifo.vhd|
+!i113 0
+R12
+R13
+Astructural
+R2
+R3
+R4
+DEx4 work 4 fifo 0 22 WME[j4h41Dfe7=LQ<<ZNI1
+l82
+L36
+V@1Cn;Kg3ziS3f59nd<;;c3
+!s100 n[9^a3VE>:dF4nY4:8B:n1
+R7
+32
+R8
+!i10b 1
+R31
+R32
+R33
+!i113 0
+R12
+R13
+Efifo_dc
+R1
+R2
+R3
+R4
+R0
+Z34 8/net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/rtl/vhdl/fifo_dc.vhd
+Z35 F/net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/rtl/vhdl/fifo_dc.vhd
+l0
+L17
+VFDAYXZIV]k6L5^XWP_T042
+!s100 Si<^i`VI9Le7Kf?8mHSnn0
+R7
+32
+R8
+!i10b 1
+Z36 !s108 1731689839.892419
+Z37 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|/net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/rtl/vhdl/fifo_dc.vhd|
+Z38 !s107 /net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/rtl/vhdl/fifo_dc.vhd|
+!i113 0
+R12
+R13
+Astructural
+R2
+R3
+R4
+DEx4 work 7 fifo_dc 0 22 FDAYXZIV]k6L5^XWP_T042
+l78
+L40
+V3WT]G_8k=C8EGDHaWogj52
+!s100 a@U8HSWU6cD_U5CR7FU]a2
+R7
+32
+R8
+!i10b 1
+R36
+R37
+R38
+!i113 0
+R12
+R13
+vgeneric_dpram
+Z39 V`JN@9S9cnhjKRR_L]QIcM3
+r1
+!s85 0
+31
+!i10b 1
+!s100 c6PFG[be:@j@K@0j4U6EA3
+I[R4K^NhBz[E1R2JIKf3M@3
+R0
+Z40 w1048023948
+8/net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/rtl/verilog/generic_dpram.v
+F/net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/rtl/verilog/generic_dpram.v
+L0 108
+Z41 OL;L;10.3d;59
+!s108 1731690384.842230
+!s107 /net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/rtl/verilog/timescale.v|/net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/rtl/verilog/generic_dpram.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/rtl/verilog/generic_dpram.v|
+!i113 0
+Z42 o-work work -L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+vgeneric_spram
+R39
+r1
+!s85 0
+31
+!i10b 1
+!s100 Fh0EiEJif2L1OKdYjYIW11
+I]3<9HlCQz3E?16O^zfkRa2
+R0
+R40
+8/net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/rtl/verilog/generic_spram.v
+F/net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/rtl/verilog/generic_spram.v
+L0 79
+R41
+!s108 1731690384.888553
+!s107 /net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/rtl/verilog/timescale.v|/net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/rtl/verilog/generic_spram.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/rtl/verilog/generic_spram.v|
+!i113 0
+R42
+Epgen
+R1
+R2
+R3
+R4
+R0
+Z43 8/net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/rtl/vhdl/pgen.vhd
+Z44 F/net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/rtl/vhdl/pgen.vhd
+l0
+L14
+Ve^LOPbozE9;`;CUabQ][O1
+!s100 dgc`m[30L3:bYS65?STF[3
+R7
+32
+R8
+!i10b 1
+Z45 !s108 1731689839.974445
+Z46 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|/net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/rtl/vhdl/pgen.vhd|
+Z47 !s107 /net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/rtl/vhdl/pgen.vhd|
+!i113 0
+R12
+R13
+Adataflow
+R2
+R3
+R4
+DEx4 work 4 pgen 0 22 e^LOPbozE9;`;CUabQ][O1
+l92
+L51
+VOieFaNdFLQ=5Q7Z=7KH5D3
+!s100 VkWaa>6MXabGeP<;UaZFE1
+R7
+32
+R8
+!i10b 1
+R45
+R46
+R47
+!i113 0
+R12
+R13
+Ero_cnt
+R1
+R2
+R3
+R4
+R0
+R14
+R15
+l0
+L128
+V?Af3F4cF[=NliN9TfXg[`3
+!s100 XGDjZROMZ0?28l;6cLhFD1
+R7
+32
+R8
+!i10b 1
+R16
+R17
+R18
+!i113 0
+R12
+R13
+Astructural
+R2
+R3
+R4
+DEx4 work 6 ro_cnt 0 22 ?Af3F4cF[=NliN9TfXg[`3
+l169
+L145
+VUb>=na2BbZlh9OO;6iE973
+!s100 n;WiL_nkjF0N_fD@XhX1c1
+R7
+32
+R8
+!i10b 1
+R16
+R17
+R18
+!i113 0
+R12
+R13
+vsync_check
+R39
+r1
+!s85 0
+31
+!i10b 1
+!s100 WX:9jGHoNd:eAW>_i5Sj42
+I2=>iBL3fC6QR2dI2m5K]`2
+R0
+w1731690238
+8/net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/bench/verilog/sync_check.v
+F/net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/bench/verilog/sync_check.v
+Z48 L0 68
+R41
+!s108 1731690384.398616
+!s107 /net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/bench/verilog/sync_check.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/bench/verilog/sync_check.v|
+!i113 0
+R42
+vtest
+R39
+r1
+!s85 0
+31
+!i10b 1
+!s100 i>4gJhBF^SD0lcY`@YBk21
+IF0:]SogEFRCOSBBHNh[]<2
+R0
+Z49 w1064322566
+8/net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/bench/verilog/test_bench_top.v
+F/net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/bench/verilog/test_bench_top.v
+F/net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/bench/verilog/tests.v
+Z50 L0 76
+R41
+!s108 1731690384.449203
+!s107 /net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/bench/verilog/tests.v|/net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/bench/verilog/test_bench_top.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/bench/verilog/test_bench_top.v|
+!i113 0
+R42
+Etgen
+R1
+R2
+R3
+R4
+R0
+Z51 8/net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/rtl/vhdl/tgen.vhd
+Z52 F/net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/rtl/vhdl/tgen.vhd
+l0
+L14
+VAQ>4f_h:zG3C>S=CWAHf93
+!s100 39[5CI7OWAQnJP:db^bGE0
+R7
+32
+Z53 !s110 1731689840
+!i10b 1
+Z54 !s108 1731689840.053486
+Z55 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|/net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/rtl/vhdl/tgen.vhd|
+Z56 !s107 /net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/rtl/vhdl/tgen.vhd|
+!i113 0
+R12
+R13
+Adataflow
+R2
+R3
+R4
+DEx4 work 4 tgen 0 22 AQ>4f_h:zG3C>S=CWAHf93
+l74
+L47
+VlNPBj_gO_lQlR1f@;l]C62
+!s100 :[nfB9iBg^82a28kbQEbS3
+R7
+32
+R53
+!i10b 1
+R54
+R55
+R56
+!i113 0
+R12
+R13
+Etst_bench
+R1
+R2
+R3
+R4
+R0
+Z57 8/net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/rtl/vhdl/vga_and_clut_tstbench.vhd
+Z58 F/net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/rtl/vhdl/vga_and_clut_tstbench.vhd
+l0
+L15
+VXec72iizIh??H>F7QH;_K1
+!s100 cGc2oH4W7EbKCmnBHl9em2
+R7
+32
+R53
+!i10b 1
+Z59 !s108 1731689840.261251
+Z60 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|/net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/rtl/vhdl/vga_and_clut_tstbench.vhd|
+Z61 !s107 /net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/rtl/vhdl/vga_and_clut_tstbench.vhd|
+!i113 0
+R12
+R13
+Atest
+R2
+R3
+R4
+DEx4 work 9 tst_bench 0 22 Xec72iizIh??H>F7QH;_K1
+l123
+L18
+VoQ?N;1XIJ1UfzOWnkV8K23
+!s100 d8kVNn?UQRR;K@UJ7ZZ3D0
+R7
+32
+R53
+!i10b 1
+R59
+R60
+R61
+!i113 0
+R12
+R13
+Eud_cnt
+R1
+R2
+R3
+R4
+R0
+R14
+R15
+l0
+L70
+VKfzQJQWXC43OBUzHZfGfE3
+!s100 ILinRX1he1ccm?R[WdNgQ0
+R7
+32
+R8
+!i10b 1
+R16
+R17
+R18
+!i113 0
+R12
+R13
+Astructural
+R2
+R3
+R4
+DEx4 work 6 ud_cnt 0 22 KfzQJQWXC43OBUzHZfGfE3
+l95
+L92
+V`8aOPo1b=`[SJRKT[hdLI1
+!s100 i0J2Xg:3DIn8]Uf?lGF]F2
+R7
+32
+R8
+!i10b 1
+R16
+R17
+R18
+!i113 0
+R12
+R13
+Evga
+Z62 w1731688419
+R2
+R3
+R4
+R0
+Z63 8/net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/rtl/vhdl/vga.vhd
+Z64 F/net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/rtl/vhdl/vga.vhd
+l0
+L15
+VT^IX_=@JMFL04M26cnCnJ2
+!s100 HahOzZ1;fof]<Ok:OH=7`3
+R7
+32
+R53
+!i10b 1
+Z65 !s108 1731689840.124218
+Z66 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|/net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/rtl/vhdl/vga.vhd|
+Z67 !s107 /net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/rtl/vhdl/vga.vhd|
+!i113 0
+R12
+R13
+Adataflow
+R2
+R3
+R4
+DEx4 work 3 vga 0 22 T^IX_=@JMFL04M26cnCnJ2
+l250
+L54
+VA017`K[cc8bWm@cllF3YM0
+!s100 >oNLG^OSAY7SlMm8iGECR1
+R7
+32
+R53
+!i10b 1
+R65
+R66
+R67
+!i113 0
+R12
+R13
+Evga_and_clut
+R1
+R2
+R3
+R4
+R0
+Z68 8/net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/rtl/vhdl/vga_and_clut.vhd
+Z69 F/net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/rtl/vhdl/vga_and_clut.vhd
+l0
+L14
+VGO3D6d^9G_BBE>IQC`1IS2
+!s100 YLkCe[L`cG=Q_0PzE1LZY3
+R7
+32
+R53
+!i10b 1
+Z70 !s108 1731689840.194155
+Z71 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|/net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/rtl/vhdl/vga_and_clut.vhd|
+Z72 !s107 /net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/rtl/vhdl/vga_and_clut.vhd|
+!i113 0
+R12
+R13
+Astructural
+R2
+R3
+R4
+DEx4 work 12 vga_and_clut 0 22 GO3D6d^9G_BBE>IQC`1IS2
+l152
+L54
+VS4beg2NZ3iE6;GgOzzNfn1
+!s100 >QMmXe@akE1Gm[@29zg`a3
+R7
+32
+R53
+!i10b 1
+R70
+R71
+R72
+!i113 0
+R12
+R13
+vvga_clkgen
+R39
+r1
+!s85 0
+31
+!i10b 1
+!s100 F143oKR7V`;0A6^Sz[J]63
+Inj`3YbB95QG0424M47UWZ1
+R0
+w1052318581
+8/net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/rtl/verilog/vga_clkgen.v
+F/net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/rtl/verilog/vga_clkgen.v
+Z73 L0 70
+R41
+!s108 1731690385.186210
+!s107 /net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/rtl/verilog/vga_defines.v|/net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/rtl/verilog/timescale.v|/net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/rtl/verilog/vga_clkgen.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/rtl/verilog/vga_clkgen.v|
+!i113 0
+R42
+vvga_colproc
+R39
+r1
+!s85 0
+31
+!i10b 1
+!s100 So?_h@S2_W7P[jH0[JF^R2
+ICWnV[<Kdb;]MOU2BPd?;41
+R0
+Z74 w1052300934
+8/net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/rtl/verilog/vga_colproc.v
+F/net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/rtl/verilog/vga_colproc.v
+Z75 L0 64
+R41
+!s108 1731690385.236324
+!s107 /net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/rtl/verilog/timescale.v|/net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/rtl/verilog/vga_colproc.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/rtl/verilog/vga_colproc.v|
+!i113 0
+R42
+vvga_csm_pb
+R39
+r1
+!s85 0
+31
+!i10b 1
+!s100 ;R:cH?QF2:^YYZ7J1e4??0
+IEfjcnj=M2QPOYhRl7BZLn0
+R0
+R74
+8/net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/rtl/verilog/vga_csm_pb.v
+F/net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/rtl/verilog/vga_csm_pb.v
+L0 61
+R41
+!s108 1731690385.294721
+!s107 /net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/rtl/verilog/timescale.v|/net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/rtl/verilog/vga_csm_pb.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/rtl/verilog/vga_csm_pb.v|
+!i113 0
+R42
+vvga_cur_cregs
+Z76 !s110 1731690385
+!i10b 1
+!s100 BHo?1i3jhgiMP3gBG?Mi[2
+I@]][jTLA<;iaJQ5TGR<`80
+R39
+R0
+R74
+8/net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/rtl/verilog/vga_cur_cregs.v
+F/net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/rtl/verilog/vga_cur_cregs.v
+R75
+R41
+r1
+!s85 0
+31
+!s108 1731690385.351043
+!s107 /net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/rtl/verilog/timescale.v|/net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/rtl/verilog/vga_cur_cregs.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/rtl/verilog/vga_cur_cregs.v|
+!i113 0
+R42
+vvga_curproc
+R76
+!i10b 1
+!s100 cAKo2g2af49KX6lQ^[KaQ1
+I@7P93;I;E7oSdFb<K_I`n0
+R39
+R0
+R74
+8/net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/rtl/verilog/vga_curproc.v
+F/net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/rtl/verilog/vga_curproc.v
+Z77 L0 73
+R41
+r1
+!s85 0
+31
+!s108 1731690385.400870
+!s107 /net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/rtl/verilog/timescale.v|/net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/rtl/verilog/vga_curproc.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/rtl/verilog/vga_curproc.v|
+!i113 0
+R42
+vvga_enh_top
+R39
+r1
+!s85 0
+31
+!i10b 1
+!s100 fHi7>_@<ekPP<O[F2MlG[3
+I86KD4OXIH1A=dE2K75OAz1
+R0
+w1731687772
+8/net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/rtl/verilog/vga_enh_top.v
+F/net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/rtl/verilog/vga_enh_top.v
+R50
+R41
+!s108 1731690385.483968
+!s107 /net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/rtl/verilog/vga_defines.v|/net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/rtl/verilog/timescale.v|/net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/rtl/verilog/vga_enh_top.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/rtl/verilog/vga_enh_top.v|
+!i113 0
+R42
+vvga_fifo
+R39
+r1
+!s85 0
+31
+!i10b 1
+!s100 fXP[G;OKM9jfBBd=GgCEG0
+I7ezzeji8N0H=?[7glWoV]2
+R0
+Z78 w1059738398
+8/net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/rtl/verilog/vga_fifo.v
+F/net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/rtl/verilog/vga_fifo.v
+R77
+R41
+!s108 1731690385.536169
+!s107 /net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/rtl/verilog/timescale.v|/net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/rtl/verilog/vga_fifo.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/rtl/verilog/vga_fifo.v|
+!i113 0
+R42
+vvga_fifo_dc
+R39
+r1
+!s85 0
+31
+!i10b 1
+!s100 eXeQHFNdBMf1?5I3M^ezP1
+Iz`Sc4H7l:>di1=Y1FJe3b1
+R0
+R78
+8/net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/rtl/verilog/vga_fifo_dc.v
+F/net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/rtl/verilog/vga_fifo_dc.v
+L0 82
+R41
+!s108 1731690385.604741
+!s107 /net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/rtl/verilog/timescale.v|/net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/rtl/verilog/vga_fifo_dc.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/rtl/verilog/vga_fifo_dc.v|
+!i113 0
+R42
+vvga_pgen
+R39
+r1
+!s85 0
+31
+!i10b 1
+!s100 BgOe`Q41lU8@AVn^>NEmA3
+I<W<5GKBJ<[;bn[h_lAX?@0
+R0
+R78
+8/net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/rtl/verilog/vga_pgen.v
+F/net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/rtl/verilog/vga_pgen.v
+R73
+R41
+!s108 1731690385.753295
+!s107 /net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/rtl/verilog/vga_defines.v|/net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/rtl/verilog/timescale.v|/net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/rtl/verilog/vga_pgen.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/rtl/verilog/vga_pgen.v|
+!i113 0
+R42
+vvga_tgen
+R39
+r1
+!s85 0
+31
+!i10b 1
+!s100 PCWenHmY4J?7V5cJZdW780
+IRi_<HB7B159M>O<9_c5M[0
+R0
+R74
+8/net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/rtl/verilog/vga_tgen.v
+F/net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/rtl/verilog/vga_tgen.v
+L0 60
+R41
+!s108 1731690385.801635
+!s107 /net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/rtl/verilog/timescale.v|/net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/rtl/verilog/vga_tgen.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/rtl/verilog/vga_tgen.v|
+!i113 0
+R42
+vvga_vtim
+R39
+r1
+!s85 0
+31
+!i10b 1
+!s100 0NJ03V5_DfKfmNZo^kRe^1
+IANJ;h^H2FOOQUHGXJG63_3
+R0
+R74
+8/net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/rtl/verilog/vga_vtim.v
+F/net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/rtl/verilog/vga_vtim.v
+R48
+R41
+!s108 1731690385.857494
+!s107 /net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/rtl/verilog/timescale.v|/net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/rtl/verilog/vga_vtim.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/rtl/verilog/vga_vtim.v|
+!i113 0
+R42
+vvga_wb_master
+R39
+r1
+!s85 0
+31
+!i10b 1
+!s100 fYIghJNZhE1W@jZ9e2YiP0
+IzCB9m_M>@ACBH@EP02NN]2
+R0
+R78
+8/net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/rtl/verilog/vga_wb_master.v
+F/net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/rtl/verilog/vga_wb_master.v
+L0 92
+R41
+!s108 1731690385.910168
+!s107 /net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/rtl/verilog/timescale.v|/net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/rtl/verilog/vga_wb_master.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/rtl/verilog/vga_wb_master.v|
+!i113 0
+R42
+vvga_wb_slave
+R39
+r1
+!s85 0
+31
+!i10b 1
+!s100 4MJ45W3OQbRAGD[W<o?JQ0
+INKbKNfL3mjUBEkKKj:ME`0
+R0
+R74
+8/net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/rtl/verilog/vga_wb_slave.v
+F/net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/rtl/verilog/vga_wb_slave.v
+L0 81
+R41
+!s108 1731690385.965429
+!s107 /net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/rtl/verilog/vga_defines.v|/net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/rtl/verilog/timescale.v|/net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/rtl/verilog/vga_wb_slave.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/rtl/verilog/vga_wb_slave.v|
+!i113 0
+R42
+Evid_mem
+R1
+R2
+R3
+R4
+R0
+R57
+R58
+l0
+L371
+VEKChKeJ9ln4UZQ<FHQ:d30
+!s100 jGUIGEolKlI4V[;BU_4bc2
+R7
+32
+R53
+!i10b 1
+R59
+R60
+R61
+!i113 0
+R12
+R13
+Abehavioral
+R2
+R3
+R4
+DEx4 work 7 vid_mem 0 22 EKChKeJ9ln4UZQ<FHQ:d30
+l388
+L385
+VQd]Jg<3fJ7RS9DkToJl6V0
+!s100 ==OJXlQgR[aP4?a2cOfDX1
+R7
+32
+R53
+!i10b 1
+R59
+R60
+R61
+!i113 0
+R12
+R13
+vwb_b3_check
+R39
+r1
+!s85 0
+31
+!i10b 1
+!s100 z09Bh?UKSDg2P>Cb0MiM[2
+IjZF`jIQ77G2eDl?m:5H9J3
+R0
+w1731690378
+8/net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/bench/verilog/wb_b3_check.v
+F/net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/bench/verilog/wb_b3_check.v
+L0 37
+R41
+!s108 1731690384.519389
+!s107 /net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/bench/verilog/wb_b3_check.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/bench/verilog/wb_b3_check.v|
+!i113 0
+R42
+Ewb_host
+R1
+R2
+R3
+R4
+R0
+R57
+R58
+l0
+L183
+V3ZaXK>HdoaafzR1WDdA<=1
+!s100 Z8]3bC?0F=YV6cLTNJLX13
+R7
+32
+R53
+!i10b 1
+R59
+R60
+R61
+!i113 0
+R12
+R13
+Abehavioral
+R2
+R3
+R4
+DEx4 work 7 wb_host 0 22 3ZaXK>HdoaafzR1WDdA<=1
+l273
+L203
+VOIN^k`f9h?b0]Cb=ieB>^1
+!s100 YYEF6EkFaI0`V;KN[KQZ:0
+R7
+32
+R53
+!i10b 1
+R59
+R60
+R61
+!i113 0
+R12
+R13
+vwb_mast
+R39
+r1
+!s85 0
+31
+!i10b 1
+!s100 1N;kK9?FiU5eDFXXNbDhf0
+I1HEXhLfzZfo8hEX2me0ee0
+R0
+R49
+8/net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/bench/verilog/wb_mast_model.v
+F/net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/bench/verilog/wb_mast_model.v
+L0 62
+R41
+!s108 1731690384.707405
+!s107 /net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/bench/verilog/wb_model_defines.v|/net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/bench/verilog/wb_mast_model.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/bench/verilog/wb_mast_model.v|
+!i113 0
+R42
+Ewb_slave
+R1
+R2
+R3
+R4
+R0
+Z79 8/net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/rtl/vhdl/wb_slave.vhd
+Z80 F/net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/rtl/vhdl/wb_slave.vhd
+l0
+L13
+VIkA[JzKN?TI<^1Mlk?=a@0
+!s100 JMgRO`gA=3>6U77^b1JiM0
+R7
+32
+R53
+!i10b 1
+Z81 !s108 1731689840.441048
+Z82 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|/net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/rtl/vhdl/wb_slave.vhd|
+Z83 !s107 /net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/rtl/vhdl/wb_slave.vhd|
+!i113 0
+R12
+R13
+Astructural
+R2
+R3
+R4
+DEx4 work 8 wb_slave 0 22 IkA[JzKN?TI<^1Mlk?=a@0
+l73
+L68
+VmR]3XFE]n^G]^67cg4X[G3
+!s100 [AD^=AD;eUJkMVXC3lfTJ3
+R7
+32
+R53
+!i10b 1
+R81
+R82
+R83
+!i113 0
+R12
+R13
+vwb_slv
+R39
+r1
+!s85 0
+31
+!i10b 1
+!s100 0=<WnWSXKk>2haV3G6R=63
+IliRN`Sd=z6<EQk<2B<SG11
+R0
+w1052300728
+8/net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/bench/verilog/wb_slv_model.v
+F/net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/bench/verilog/wb_slv_model.v
+L0 65
+R41
+!s108 1731690384.789247
+!s107 /net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/bench/verilog/wb_model_defines.v|/net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/bench/verilog/wb_slv_model.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/net/netud/s/anevelesbats/Second_Year/EN206/vga_lcd/bench/verilog/wb_slv_model.v|
+!i113 0
+R42

@@ -1,0 +1,3 @@
+#Timing Groups: 3
+set_timing_group { my_clock  } 
+set_timing_group { @  } 

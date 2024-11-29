@@ -1,7 +1,7 @@
 #@ # 
 #@ # Running dc_shell Version H-2013.03-SP5 for amd64 -- Oct 18, 2013
-#@ # Date:   Mon Nov 25 16:35:16 2024
-#@ # Run by: aneveles@24p105-06
+#@ # Date:   Fri Nov 29 11:16:39 2024
+#@ # Run by: aneveles@24p105-03
 #@ 
 
 source /opt/synopsys/design_vision/syn/H-2013.03-SP5/admin/setup/.synopsys_dc.setup
@@ -4805,235 +4805,9 @@ source /opt/synopsys/design_vision/syn/H-2013.03-SP5/admin/setup/.synopsys_dc.se
 
 gui_start
 gui_set_pref_value -category {SelectByNamePalette} -key {ObjectType} -value {Cells}
-# execute a script containing standard cells library path and other things
-source ./synopsys_dc.setup
-#@ # -- Starting source ./synopsys_dc.setup
-
-#@ #########
-#@ ### Define Work Library Location
-#@ #########
-#@ define_design_lib WORK -path "./work"
-#@ 
-#@ #########
-#@ ### retrieve AMS directory path and SYNOPSYS path from the environement variables
-#@ #########
-#@ puts "Owner: austriamicrosystems AG  HIT-Kit: Digital"
-#@ set AMSDIR /opt/ams
-#@ set SYNDIR [get_unix_variable SYNOPSYS]
-#@ 
-#@ #########
-#@ ### set library paths
-#@ #########
-#@ set search_path	". /opt/ams/synopsys/c35_3.3V $SYNDIR/libraries/syn $SYNDIR/dw/sim_ver ../rtl ./db ./"
-#@ set symbol_library "c35_CORELIB.sdb"
-#@ set target_library "c35_CORELIB_WC.db"
-#@ 
-#@ # set synthetic_library dw_foundation.sldb 
-#@ set link_library "* $target_library $synthetic_library"
-#@ 
-#@ #########
-#@ ### set bus naming style for compliance between .sdf and post syn .vhdl
-#@ #########
-#@ set sdfout_no_edge  true
-#@ #set verilogout_equation	false
-#@ #set verilogout_no_tri	true 
-#@ #set verilogout_single_bit  false
-#@ 
-#@ set hdlout_internal_busses true     
-#@ set vhdlout_single_bit user
-#@ set vhdlout_preserve_hierarchical_types user
-#@ set bus_inference_style "%s_%d_"  
-#@ set bus_naming_style    "%s_%d"
-#@ set write_name_nets_same_as_ports true
-#@ 
-#@ puts "USE: set_fix_multiple_port_nets -all [all_designs]"
-#@ define_design_lib WORK -path "./work"
-#@ # -- End source ./synopsys_dc.setup
-
-# define the Vdd value for report generation
-# NB: the real Vdd value is set by choosing the proper design library in the synopsys_dc.setup file
-set VDD 3V3
-# define the tol level name
-set MON_TOP_LEVEL VGA
-#define the architecture
-set MON_ARCHI dataflow
-# define the name of the clock port in the VHDL
-set CLK_PORT CLK_I
-# define the target frequency (MHz)
-set FREQ_MHZ  200
-# calculte the clock period (ns)
-set CLK_PERIOD [expr 1000.0 / $FREQ_MHZ]
-# define some timing constraints for the clock
-set CLK_SKEW 0.0
-set JITTER 0.0
-set MARGIN 0.0
-set CLK_UNCERTAINTY [expr $CLK_SKEW + $JITTER + $MARGIN]
-# define the delay values to be applied on input and output ports (except the clock port)
-set INPUT_DELAY [expr 0.1 * $CLK_PERIOD]
-set OUTPUT_DELAY [expr 0.1 * $CLK_PERIOD]
-################################################################################################
-# 2. FIRST LOGIC SYNTHESIS : NO TECHNOLOGY MAPPING
-################################################################################################
-# "Compilation " of the VHDL description
-analyze -f vhdl -autoread ../rtl/vhdl/
-# first logic synthesis without technology mapping
-elaborate $MON_TOP_LEVEL -arch $MON_ARCHI -lib WORK -update
-uniquify
-################################################################################################
-# 3. APPLY TIMING CONSTRAINTS
-################################################################################################
-# define a clock (my_clock) with a period of $CLK_PERIOD and link it to our design clock port : $CLK_PORT
-create_clock -name my_clock [get_ports $CLK_PORT] -period $CLK_PERIOD
-# tell the tool not to optimize the clock tree. This will be done during Place and Route
-set_dont_touch_network my_clock
-set_wire_load_mode segmented
-# Time budget
-set_clock_uncertainty -hold $CLK_UNCERTAINTY $CLK_PORT
-set_clock_uncertainty -setup $CLK_UNCERTAINTY $CLK_PORT
-set_input_delay $INPUT_DELAY -clock my_clock [remove_from_collection [all_inputs] [get_ports $CLK_PORT]]
-set_output_delay $OUTPUT_DELAY -clock my_clock [all_outputs]
-# check the generated design
-check_design
-change_selection [get_s VGA]
-change_selection 
-change_selection [get_s VGA]
-change_selection -remove [get_s VGA]
-compile
-change_selection [get_s VGA]
-change_selection [get_s STB_I]
-change_selection [get_s VGA]
-change_selection -remove [get_s VGA]
-write_sdf ./$MON_TOP_LEVEL\_syn.sdf
-# export the synthesized netlist in verilog format :
-write -hierarchy -format verilog -output ./$MON_TOP_LEVEL\_syn.v
-# export constraints for PAR
-write_sdc ./$MON_TOP_LEVEL\_syn.sdc
-# reports generation
-report_timing > ./report/$MON_ARCHI/$MON_TOP_LEVEL\_$FREQ_MHZ\MHz_$VDD.timing
-report_area > ./report/$MON_ARCHI/$MON_TOP_LEVEL\_$FREQ_MHZ\MHz_$VDD.area
-report_power > ./report/$MON_ARCHI/$MON_TOP_LEVEL\_$FREQ_MHZ\MHz_$VDD.power
-report_clock > ./report/$MON_ARCHI/$MON_TOP_LEVEL\_$FREQ_MHZ\MHz_$VDD.clk
-report_qor > ./report/$MON_ARCHI/$MON_TOP_LEVEL\_$FREQ_MHZ\MHz_$VDD.qor
-write_sdf ./$MON_TOP_LEVEL\_syn.sdf
-# export the synthesized netlist in verilog format :
-write -hierarchy -format verilog -output ./$MON_TOP_LEVEL\_syn.v
-# export constraints for PAR
-write_sdc ./$MON_TOP_LEVEL\_syn.sdc
-# reports generation
-report_timing > ./report/$MON_ARCHI/$MON_TOP_LEVEL\_$FREQ_MHZ\MHz_$VDD.timing
-report_area > ./report/$MON_ARCHI/$MON_TOP_LEVEL\_$FREQ_MHZ\MHz_$VDD.area
-report_power > ./report/$MON_ARCHI/$MON_TOP_LEVEL\_$FREQ_MHZ\MHz_$VDD.power
-report_clock > ./report/$MON_ARCHI/$MON_TOP_LEVEL\_$FREQ_MHZ\MHz_$VDD.clk
-report_qor > ./report/$MON_ARCHI/$MON_TOP_LEVEL\_$FREQ_MHZ\MHz_$VDD.qor
-source ./synopsys_dc.setup
-#@ # -- Starting source ./synopsys_dc.setup
-
-#@ #########
-#@ ### Define Work Library Location
-#@ #########
-#@ define_design_lib WORK -path "./work"
-#@ 
-#@ #########
-#@ ### retrieve AMS directory path and SYNOPSYS path from the environement variables
-#@ #########
-#@ puts "Owner: austriamicrosystems AG  HIT-Kit: Digital"
-#@ set AMSDIR /opt/ams
-#@ set SYNDIR [get_unix_variable SYNOPSYS]
-#@ 
-#@ #########
-#@ ### set library paths
-#@ #########
-#@ set search_path	". /opt/ams/synopsys/c35_3.3V $SYNDIR/libraries/syn $SYNDIR/dw/sim_ver ../rtl ./db ./"
-#@ set symbol_library "c35_CORELIB.sdb"
-#@ set target_library "c35_CORELIB_WC.db"
-#@ 
-#@ # set synthetic_library dw_foundation.sldb 
-#@ set link_library "* $target_library $synthetic_library"
-#@ 
-#@ #########
-#@ ### set bus naming style for compliance between .sdf and post syn .vhdl
-#@ #########
-#@ set sdfout_no_edge  true
-#@ #set verilogout_equation	false
-#@ #set verilogout_no_tri	true 
-#@ #set verilogout_single_bit  false
-#@ 
-#@ set hdlout_internal_busses true     
-#@ set vhdlout_single_bit user
-#@ set vhdlout_preserve_hierarchical_types user
-#@ set bus_inference_style "%s_%d_"  
-#@ set bus_naming_style    "%s_%d"
-#@ set write_name_nets_same_as_ports true
-#@ 
-#@ puts "USE: set_fix_multiple_port_nets -all [all_designs]"
-#@ define_design_lib WORK -path "./work"
-#@ # -- End source ./synopsys_dc.setup
-
-# define the Vdd value for report generation
-# NB: the real Vdd value is set by choosing the proper design library in the synopsys_dc.setup file
-set VDD 3V3
-# define the tol level name
-set MON_TOP_LEVEL VGA
-#define the architecture
-set MON_ARCHI dataflow
-# define the name of the clock port in the VHDL
-set CLK_PORT CLK_I
-# define the target frequency (MHz)
-set FREQ_MHZ  100
-# calculte the clock period (ns)
-set CLK_PERIOD [expr 1000.0 / $FREQ_MHZ]
-# define some timing constraints for the clock
-set CLK_SKEW 0.0
-set JITTER 0.0
-set MARGIN 0.0
-set CLK_UNCERTAINTY [expr $CLK_SKEW + $JITTER + $MARGIN]
-# define the delay values to be applied on input and output ports (except the clock port)
-set INPUT_DELAY [expr 0.1 * $CLK_PERIOD]
-set OUTPUT_DELAY [expr 0.1 * $CLK_PERIOD]
-################################################################################################
-# 2. FIRST LOGIC SYNTHESIS : NO TECHNOLOGY MAPPING
-################################################################################################
-# "Compilation " of the VHDL description
-analyze -f vhdl -autoread ../rtl/vhdl/
-# first logic synthesis without technology mapping
-elaborate $MON_TOP_LEVEL -arch $MON_ARCHI -lib WORK -update
-uniquify
-################################################################################################
-# 3. APPLY TIMING CONSTRAINTS
-################################################################################################
-# define a clock (my_clock) with a period of $CLK_PERIOD and link it to our design clock port : $CLK_PORT
-create_clock -name my_clock [get_ports $CLK_PORT] -period $CLK_PERIOD
-# tell the tool not to optimize the clock tree. This will be done during Place and Route
-set_dont_touch_network my_clock
-set_wire_load_mode segmented
-# Time budget
-set_clock_uncertainty -hold $CLK_UNCERTAINTY $CLK_PORT
-set_clock_uncertainty -setup $CLK_UNCERTAINTY $CLK_PORT
-set_input_delay $INPUT_DELAY -clock my_clock [remove_from_collection [all_inputs] [get_ports $CLK_PORT]]
-set_output_delay $OUTPUT_DELAY -clock my_clock [all_outputs]
-# check the generated design
-check_design
-################################################################################################
-# 4. SECOND LOGIC SYNTHESIS : TECHNOLOGY MAPPING + OPTIMIZATION
-################################################################################################
-# perform technology mapping + optimizations
-# options may improve the performance of the circuit
-compile
-################################################################################################
-# 5. EXPORT NETLIST, TIMING AND SYNTHESIS REPORTS
-################################################################################################
-# export timing annotations
-write_sdf ./$MON_TOP_LEVEL\_syn.sdf
-# export the synthesized netlist in verilog format :
-write -hierarchy -format verilog -output ./$MON_TOP_LEVEL\_syn.v
-# export constraints for PAR
-write_sdc ./$MON_TOP_LEVEL\_syn.sdc
-# reports generation
-report_timing > ./report/$MON_ARCHI/$MON_TOP_LEVEL\_$FREQ_MHZ\MHz_$VDD.timing
-report_area > ./report/$MON_ARCHI/$MON_TOP_LEVEL\_$FREQ_MHZ\MHz_$VDD.area
-report_power > ./report/$MON_ARCHI/$MON_TOP_LEVEL\_$FREQ_MHZ\MHz_$VDD.power
-report_clock > ./report/$MON_ARCHI/$MON_TOP_LEVEL\_$FREQ_MHZ\MHz_$VDD.clk
-report_qor > ./report/$MON_ARCHI/$MON_TOP_LEVEL\_$FREQ_MHZ\MHz_$VDD.qor
+################################################
+# 1. INITIALIZATION
+################################################
 # execute a script containing standard cells library path and other things
 source ./synopsys_dc.setup
 #@ # -- Starting source ./synopsys_dc.setup
@@ -5104,51 +4878,15 @@ set OUTPUT_DELAY [expr 0.1 * $CLK_PERIOD]
 # 2. FIRST LOGIC SYNTHESIS : NO TECHNOLOGY MAPPING
 ################################################################################################
 # "Compilation " of the VHDL description
-analyze -f vhdl -autoread ../rtl/vhdl/
+analyze -f verilog -autoread ../rtl/verilog/
 # first logic synthesis without technology mapping
 elaborate $MON_TOP_LEVEL -arch $MON_ARCHI -lib WORK -update
 uniquify
 ################################################################################################
-# 3. APPLY TIMING CONSTRAINTS
+# 2. FIRST LOGIC SYNTHESIS : NO TECHNOLOGY MAPPING
 ################################################################################################
-# define a clock (my_clock) with a period of $CLK_PERIOD and link it to our design clock port : $CLK_PORT
-create_clock -name my_clock [get_ports $CLK_PORT] -period $CLK_PERIOD
-# tell the tool not to optimize the clock tree. This will be done during Place and Route
-set_dont_touch_network my_clock
-set_wire_load_mode segmented
-# Time budget
-set_clock_uncertainty -hold $CLK_UNCERTAINTY $CLK_PORT
-set_clock_uncertainty -setup $CLK_UNCERTAINTY $CLK_PORT
-set_input_delay $INPUT_DELAY -clock my_clock [remove_from_collection [all_inputs] [get_ports $CLK_PORT]]
-set_output_delay $OUTPUT_DELAY -clock my_clock [all_outputs]
-# check the generated design
-check_design
-################################################################################################
-# 4. SECOND LOGIC SYNTHESIS : TECHNOLOGY MAPPING + OPTIMIZATION
-################################################################################################
-# perform technology mapping + optimizations
-# options may improve the performance of the circuit
-compile
-################################################################################################
-# 5. EXPORT NETLIST, TIMING AND SYNTHESIS REPORTS
-################################################################################################
-# export timing annotations
-write_sdf ./$MON_TOP_LEVEL\_syn.sdf
-# export the synthesized netlist in verilog format :
-write -hierarchy -format verilog -output ./$MON_TOP_LEVEL\_syn.v
-# export constraints for PAR
-write_sdc ./$MON_TOP_LEVEL\_syn.sdc
-# reports generation
-report_timing > ./report/$MON_ARCHI/$MON_TOP_LEVEL\_$FREQ_MHZ\MHz_$VDD.timing
-report_area > ./report/$MON_ARCHI/$MON_TOP_LEVEL\_$FREQ_MHZ\MHz_$VDD.area
-report_power > ./report/$MON_ARCHI/$MON_TOP_LEVEL\_$FREQ_MHZ\MHz_$VDD.power
-report_clock > ./report/$MON_ARCHI/$MON_TOP_LEVEL\_$FREQ_MHZ\MHz_$VDD.clk
-report_qor > ./report/$MON_ARCHI/$MON_TOP_LEVEL\_$FREQ_MHZ\MHz_$VDD.qor
-cd ../
-ls
-cd sim/
-ls
-mkdir simu_post_syn
-ls
-cd simu_post_syn/
-clear
+# "Compilation " of the VHDL description
+analyze -f verilog -autoread ../rtl/verilog/
+# first logic synthesis without technology mapping
+elaborate $MON_TOP_LEVEL -arch $MON_ARCHI -lib WORK -update
+uniquify

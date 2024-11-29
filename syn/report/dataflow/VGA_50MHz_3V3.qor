@@ -1,17 +1,18 @@
+Warning: Design 'VGA' has '2' unresolved references. For more detailed information, use the "link" command. (UID-341)
  
 ****************************************
 Report : qor
 Design : VGA
 Version: H-2013.03-SP5
-Date   : Mon Nov 25 16:43:25 2024
+Date   : Fri Nov 29 11:13:45 2024
 ****************************************
 
 
   Timing Path Group 'my_clock'
   -----------------------------------
-  Levels of Logic:              45.00
-  Critical Path Length:         19.97
-  Critical Path Slack:           0.01
+  Levels of Logic:              11.00
+  Critical Path Length:          9.98
+  Critical Path Slack:          10.01
   Critical Path Clk Period:     20.00
   Total Negative Slack:          0.00
   No. of Violating Paths:        0.00
@@ -23,53 +24,53 @@ Date   : Mon Nov 25 16:43:25 2024
 
   Cell Count
   -----------------------------------
-  Hierarchical Cell Count:         33
-  Hierarchical Port Count:       2062
-  Leaf Cell Count:              16849
-  Buf/Inv Cell Count:            2062
-  Buf Cell Count:                1172
-  Inv Cell Count:                 890
+  Hierarchical Cell Count:          8
+  Hierarchical Port Count:        677
+  Leaf Cell Count:              12084
+  Buf/Inv Cell Count:             676
+  Buf Cell Count:                 550
+  Inv Cell Count:                 126
   CT Buf/Inv Cell Count:            0
-  Combinational Cell Count:      9368
-  Sequential Cell Count:         7481
+  Combinational Cell Count:      5662
+  Sequential Cell Count:         6422
   Macro Count:                      0
   -----------------------------------
 
 
   Area
   -----------------------------------
-  Combinational Area:   702319.801720
+  Combinational Area:   460805.801949
   Noncombinational Area:
-                       2443368.240753
-  Buf/Inv Area:         100791.600113
-  Total Buffer Area:         66612.00
-  Total Inverter Area:       34179.60
+                       2105849.234833
+  Buf/Inv Area:          36945.999939
+  Total Buffer Area:         32359.60
+  Total Inverter Area:        4586.40
   Macro/Black Box Area:      0.000000
-  Net Area:             535194.308903
+  Net Area:             423592.666779
   -----------------------------------
-  Cell Area:           3145688.042473
-  Design Area:         3680882.351376
+  Cell Area:           2566655.036781
+  Design Area:         2990247.703560
 
 
   Design Rules
   -----------------------------------
-  Total Number of Nets:         17065
+  Total Number of Nets:         12258
   Nets With Violations:             0
   Max Trans Violations:             0
   Max Cap Violations:               0
   -----------------------------------
 
 
-  Hostname: 24p105-06
+  Hostname: 24p105-03
 
   Compile CPU Statistics
   -----------------------------------------
-  Resource Sharing:                    2.26
-  Logic Optimization:                  7.58
-  Mapping Optimization:               13.19
+  Resource Sharing:                    1.60
+  Logic Optimization:                  6.69
+  Mapping Optimization:               12.31
   -----------------------------------------
-  Overall Compile Time:               24.21
-  Overall Compile Wall Clock Time:    24.59
+  Overall Compile Time:               21.53
+  Overall Compile Wall Clock Time:    22.14
 
   --------------------------------------------------------------------
 

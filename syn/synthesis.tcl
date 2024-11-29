@@ -46,7 +46,7 @@ set OUTPUT_DELAY [expr 0.1 * $CLK_PERIOD]
 ################################################################################################
 
 # "Compilation " of the VHDL description
-analyze -f vhdl -autoread ../rtl/vhdl/
+analyze -f verilog -autoread ../rtl/verilog/
 
 # first logic synthesis without technology mapping
 elaborate $MON_TOP_LEVEL -arch $MON_ARCHI -lib WORK -update

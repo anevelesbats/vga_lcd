@@ -1,0 +1,735 @@
+Checking out Encounter license ...
+Virtuoso_Digital_Implem_XL 13.1 license checkout succeeded.
+	Maximum number of instance allowed (1 x 50000).
+This Encounter release has been compiled with OA version 22.43-p014.
+Cannot open libm.so, trying libm.so.6
+
+*******************************************************************
+*   Copyright (c)  Cadence Design Systems, Inc.  1996 - 2013.     *
+*                     All rights reserved.                        *
+*                                                                 *
+*                                                                 *
+*                                                                 *
+* This program contains confidential and trade secret information *
+* of Cadence Design Systems, Inc. and is protected by copyright   *
+* law and international treaties.  Any reproduction, use,         *
+* distribution or disclosure of this program or any portion of it,*
+* or any attempt to obtain a human-readable version of this       *
+* program, without the express, prior written consent of          *
+* Cadence Design Systems, Inc., is strictly prohibited.           *
+*                                                                 *
+*                 Cadence Design Systems, Inc.                    *
+*                    2655 Seely Avenue                            *
+*                   San Jose, CA 95134,  USA                      *
+*                                                                 *
+*                                                                 *
+*******************************************************************
+
+@(#)CDS: Encounter v13.13-s017_1 (64bit) 07/30/2013 13:03 (Linux 2.6)
+@(#)CDS: NanoRoute v13.13-s005 NR130716-1135/13_10-UB (database version 2.30, 190.4.1) {superthreading v1.19}
+@(#)CDS: CeltIC v13.13-s001_1 (64bit) 07/19/2013 04:50:05 (Linux 2.6.18-194.el5)
+@(#)CDS: AAE 13.13-e003 (64bit) 07/30/2013 (Linux 2.6.18-194.el5)
+@(#)CDS: CTE 13.13-s004_1 (64bit) Jul 30 2013 05:44:27 (Linux 2.6.18-194.el5)
+@(#)CDS: CPE v13.13-s001
+@(#)CDS: IQRC/TQRC 12.1.1-s225 (64bit) Wed Jun 12 20:28:41 PDT 2013 (Linux 2.6.18-194.el5)
+--- Starting "Encounter v13.13-s017_1" on Fri Nov 29 10:49:07 2024 (mem=78.7M) ---
+--- Running on 24p105-03 (x86_64 w/Linux 5.14.0-362.8.1.el9_3.x86_64) ---
+This version was compiled on Tue Jul 30 13:03:02 PDT 2013.
+Set DBUPerIGU to 1000.
+Set net toggle Scale Factor to 1.00
+Set Shrink Factor to 1.00000
+
+**INFO:  MMMC transition support version v31-84 
+
+<CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+<CMD> suppressMessage ENCEXT-2799
+<CMD> win
+<CMD> setDesignMode -process 130 -flowEffort high
+Applying the recommended capacitance filtering threshold values for 130nm process node: total_c_th=0, relative_c_th=1 and coupling_c_th=0.4.
+	These values will be used by all post-route extraction engines, including TQRC, IQRC and QRC extraction.
+	Capacitance filtering mode(-capFilterMode option of the setExtractRCMode) is 'relAndCoup' for all engines.
+	The accuracy mode for postRoute effortLevel low extraction will be set to 'standard'.
+	Default value for EffortLevel(-effortLevel option of the setExtractRCMode) in postRoute extraction mode is 'low'.
+<CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+<CMD> set defHierChar /
+<CMD> set init_verilog ../../syn/VGA_syn.v
+<CMD> set init_design_settop 1
+<CMD> set init_design_netlisttype Verilog
+<CMD> set init_lef_file {/opt/ams/cds/HK_C35/LEF/c35b3/c35b3.lef  /opt/ams/cds/HK_C35/LEF/c35b3/CORELIB.lef  /opt/ams/cds/HK_C35/LEF/c35b3/IOLIB_3B_3M.lef}
+<CMD> set init_mmmc_file ../mmmc_definition.tcl
+<CMD> set init_cpf_file {}
+<CMD> set init_import_mode {-treatUndefinedCellAsBbox 0 -keepEmptyModule 1}
+<CMD> set init_assign_buffer 0
+<CMD> set init_pwr_net vdd!
+<CMD> set init_gnd_net gnd!
+<CMD> set init_oa_search_lib {}
+<CMD> init_design
+
+Loading LEF file /opt/ams/cds/HK_C35/LEF/c35b3/c35b3.lef...
+**WARN: (ENCLF-228):	 ANTENNAOUTPUTDIFFAREA is specified and will be
+applied to any OUTPUT PIN or INOUT PIN without ANTENNADIFFAREA. This often
+causes a mismatch between process antenna violations found in Encounter
+(during routing or verification) and violations found by external physical
+verification tools. This global defaulting mechanism is obsolete in LEF
+5.5. The recommended solution is to remove ANTENNAOUTPUTDIFFAREA and add
+ANTENNADIFFAREA to all OUTPUT or INOUT PINS in the MACROS in order to
+avoid a mismatch in violations.
+**WARN: (ENCLF-230):	 ANTENNAINOUTDIFFAREA is specified and will be
+applied to any INOUT PIN without ANTENNADIFFAREA. This often causes a
+mismatch between process antenna violations found in Encounter (during
+routing or verification) and violations found by external physical
+verification tools. This global defaulting mechanism is obsolete in
+LEF 5.5. The recommended solution is to remove ANTENNAINOUTDIFFAREA
+and add ANTENNADIFFAREA to all INOUT PINS in the MACROS in order to
+avoid a mismatch in violations.
+
+Loading LEF file /opt/ams/cds/HK_C35/LEF/c35b3/CORELIB.lef...
+Set DBUPerIGU to M2 pitch 1400.
+
+Loading LEF file /opt/ams/cds/HK_C35/LEF/c35b3/IOLIB_3B_3M.lef...
+**WARN: (ENCLF-201):	Pin 'Y' in macro 'BBC16P_3B' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man ENCLF-201' for more detail.
+**WARN: (ENCLF-201):	Pin 'PAD' in macro 'BBC16P_3B' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man ENCLF-201' for more detail.
+**WARN: (ENCLF-200):	Pin 'PAD' in macro 'BBC16P_3B' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man ENCLF-200' for more detail.
+**WARN: (ENCLF-201):	Pin 'Y' in macro 'BBC16SMP_3B' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man ENCLF-201' for more detail.
+**WARN: (ENCLF-201):	Pin 'PAD' in macro 'BBC16SMP_3B' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man ENCLF-201' for more detail.
+**WARN: (ENCLF-200):	Pin 'PAD' in macro 'BBC16SMP_3B' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man ENCLF-200' for more detail.
+**WARN: (ENCLF-201):	Pin 'Y' in macro 'BBC16SP_3B' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man ENCLF-201' for more detail.
+**WARN: (ENCLF-201):	Pin 'PAD' in macro 'BBC16SP_3B' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man ENCLF-201' for more detail.
+**WARN: (ENCLF-200):	Pin 'PAD' in macro 'BBC16SP_3B' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man ENCLF-200' for more detail.
+**WARN: (ENCLF-201):	Pin 'Y' in macro 'BBC1P_3B' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man ENCLF-201' for more detail.
+**WARN: (ENCLF-201):	Pin 'PAD' in macro 'BBC1P_3B' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man ENCLF-201' for more detail.
+**WARN: (ENCLF-200):	Pin 'PAD' in macro 'BBC1P_3B' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man ENCLF-200' for more detail.
+**WARN: (ENCLF-201):	Pin 'Y' in macro 'BBC24P_3B' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man ENCLF-201' for more detail.
+**WARN: (ENCLF-201):	Pin 'PAD' in macro 'BBC24P_3B' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man ENCLF-201' for more detail.
+**WARN: (ENCLF-200):	Pin 'PAD' in macro 'BBC24P_3B' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man ENCLF-200' for more detail.
+**WARN: (ENCLF-201):	Pin 'Y' in macro 'BBC24SMP_3B' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man ENCLF-201' for more detail.
+**WARN: (ENCLF-201):	Pin 'PAD' in macro 'BBC24SMP_3B' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man ENCLF-201' for more detail.
+**WARN: (ENCLF-200):	Pin 'PAD' in macro 'BBC24SMP_3B' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man ENCLF-200' for more detail.
+**WARN: (ENCLF-201):	Pin 'Y' in macro 'BBC24SP_3B' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man ENCLF-201' for more detail.
+**WARN: (ENCLF-201):	Pin 'PAD' in macro 'BBC24SP_3B' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man ENCLF-201' for more detail.
+**WARN: (ENCLF-200):	Pin 'PAD' in macro 'BBC24SP_3B' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man ENCLF-200' for more detail.
+**WARN: (ENCLF-201):	Pin 'Y' in macro 'BBC4P_3B' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man ENCLF-201' for more detail.
+**WARN: (ENCLF-201):	Pin 'PAD' in macro 'BBC4P_3B' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man ENCLF-201' for more detail.
+**WARN: (ENCLF-200):	Pin 'PAD' in macro 'BBC4P_3B' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man ENCLF-200' for more detail.
+**WARN: (ENCLF-201):	Pin 'Y' in macro 'BBC4SMP_3B' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man ENCLF-201' for more detail.
+**WARN: (ENCLF-201):	Pin 'PAD' in macro 'BBC4SMP_3B' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man ENCLF-201' for more detail.
+**WARN: (ENCLF-200):	Pin 'PAD' in macro 'BBC4SMP_3B' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man ENCLF-200' for more detail.
+**WARN: (ENCLF-201):	Pin 'Y' in macro 'BBC8P_3B' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man ENCLF-201' for more detail.
+**WARN: (ENCLF-201):	Pin 'PAD' in macro 'BBC8P_3B' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man ENCLF-201' for more detail.
+**WARN: (ENCLF-200):	Pin 'PAD' in macro 'BBC8P_3B' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man ENCLF-200' for more detail.
+**WARN: (EMS-63):	Message <ENCLF-201> has exceeded the default message display limit of 20.
+To avoid this warning, increase the display limit per unique message
+by using the setMessageLimit <number> command.
+The message limit can be removed by using the unsetMessageLimit command.
+Note that setting a very large number using the setMessageLimit command
+or removing the message limit using the unsetMessageLimit command can
+significantly increase the log file size.
+To suppress a message, use the suppressMessage command.
+**WARN: (ENCLF-200):	Pin 'PAD' in macro 'BBC8SMP_3B' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man ENCLF-200' for more detail.
+**WARN: (ENCLF-200):	Pin 'PAD' in macro 'BBC8SP_3B' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man ENCLF-200' for more detail.
+**WARN: (ENCLF-200):	Pin 'PAD' in macro 'BBCD16P_3B' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man ENCLF-200' for more detail.
+**WARN: (ENCLF-200):	Pin 'PAD' in macro 'BBCD16SMP_3B' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man ENCLF-200' for more detail.
+**WARN: (ENCLF-200):	Pin 'PAD' in macro 'BBCD16SP_3B' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man ENCLF-200' for more detail.
+**WARN: (ENCLF-200):	Pin 'PAD' in macro 'BBCD1P_3B' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man ENCLF-200' for more detail.
+**WARN: (ENCLF-200):	Pin 'PAD' in macro 'BBCD24P_3B' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man ENCLF-200' for more detail.
+**WARN: (ENCLF-200):	Pin 'PAD' in macro 'BBCD24SMP_3B' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man ENCLF-200' for more detail.
+**WARN: (ENCLF-200):	Pin 'PAD' in macro 'BBCD24SP_3B' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man ENCLF-200' for more detail.
+**WARN: (ENCLF-200):	Pin 'PAD' in macro 'BBCD4P_3B' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man ENCLF-200' for more detail.
+**WARN: (EMS-63):	Message <ENCLF-200> has exceeded the default message display limit of 20.
+To avoid this warning, increase the display limit per unique message
+by using the setMessageLimit <number> command.
+The message limit can be removed by using the unsetMessageLimit command.
+Note that setting a very large number using the setMessageLimit command
+or removing the message limit using the unsetMessageLimit command can
+significantly increase the log file size.
+To suppress a message, use the suppressMessage command.
+
+viaInitial starts at Fri Nov 29 10:49:21 2024
+viaInitial ends at Fri Nov 29 10:49:21 2024
+Reading netlist ...
+Backslashed names will retain backslash and a trailing blank character.
+Reading verilog netlist '../../syn/VGA_syn.v'
+Inserting temporary buffers to remove assignment statements.
+
+*** Memory Usage v#1 (Current mem = 304.535M, initial mem = 78.707M) ***
+*** End netlist parsing (cpu=0:00:00.1, real=0:00:00.0, mem=304.5M) ***
+Top level cell is VGA.
+Reading libset_max timing library '/opt/ams/liberty/c35_1.8V/c35_CORELIB_WC.lib' ...
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'CO' of cell 'ADD21' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'S' of cell 'ADD21' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'CO' of cell 'ADD22' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'S' of cell 'ADD22' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'CO' of cell 'ADD31' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'S' of cell 'ADD31' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'CO' of cell 'ADD32' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'S' of cell 'ADD32' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Q' of cell 'AOI210' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Q' of cell 'AOI211' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Q' of cell 'AOI2110' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Q' of cell 'AOI2111' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Q' of cell 'AOI2112' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Q' of cell 'AOI212' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Q' of cell 'AOI220' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Q' of cell 'AOI221' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Q' of cell 'AOI222' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Q' of cell 'AOI310' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Q' of cell 'AOI311' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Q' of cell 'AOI312' is not defined in the library.
+Message <TECHLIB-436> has exceeded the message display limit of '20'. setMessageLimit/set_message_limit sets the limit. unsetMessageLimit/unset_message_limit can be used to reset this.
+Read 248 cells in library 'c35_CORELIB_WC' 
+Reading libset_max timing library '/opt/ams/liberty/c35_1.8V/c35_IOLIB_3B_WC.lib' ...
+Read 182 cells in library 'c35_IOLIB_3B_WC' 
+Reading libset_min timing library '/opt/ams/liberty/c35_1.8V/c35_CORELIB_BC.lib' ...
+Read 248 cells in library 'c35_CORELIB_BC' 
+Reading libset_min timing library '/opt/ams/liberty/c35_1.8V/c35_IOLIB_3B_BC.lib' ...
+Read 182 cells in library 'c35_IOLIB_3B_BC' 
+*** End library_loading (cpu=0.00min, mem=0.0M, fe_cpu=0.04min, fe_real=0.28min, fe_mem=351.2M) ***
+
+{DETAILMESSAGE}Starting recursive module instantiation check.
+No recursion found.
+Building hierarchical netlist for Cell VGA ...
+*** Netlist is unique.
+** info: there are 924 modules.
+** info: there are 16849 stdCell insts.
+
+*** Memory Usage v#1 (Current mem = 362.641M, initial mem = 78.707M) ***
+*info - Done with setDoAssign with 8 assigns removed and 0 assigns could not be removed.
+**WARN: (ENCFP-3961):	techSite 'corner_P_3B' has no related Cells, So Cannnot calculated VDDonbotom attributes. Need correct LEF file
+**WARN: (ENCFP-3961):	techSite 'ioSite_P_3B' has no related Cells, So Cannnot calculated VDDonbotom attributes. Need correct LEF file
+**WARN: (ENCFP-3961):	techSite 'corner_P' has no related Cells, So Cannnot calculated VDDonbotom attributes. Need correct LEF file
+**WARN: (ENCFP-3961):	techSite 'ioSite_P' has no related Cells, So Cannnot calculated VDDonbotom attributes. Need correct LEF file
+**WARN: (ENCFP-3961):	techSite 'blockSite' has no related Cells, So Cannnot calculated VDDonbotom attributes. Need correct LEF file
+**WARN: (ENCFP-3961):	techSite 'portCellSite' has no related Cells, So Cannnot calculated VDDonbotom attributes. Need correct LEF file
+Set Using Default Delay Limit as 1000.
+Set Default Net Delay as 1000 ps.
+Set Default Net Load as 0.5 pF. 
+Set Input Pin Transition Delay as 0.1 ps.
+Set XCapacitance Thresholds: total_c_threshold to 5.00 [fF], and relative_c_threshold to 0.03
+Initializing multi-corner RC extraction with 2 active RC Corners ...
+Reading Capacitance Table File /opt/ams/cds/HK_C35/LEF/encounter/c35b3-worst.capTable ...
+Cap table was created using Encounter 09.12-s159_1.
+Process name: c35b3-worst.
+Allocated an empty WireEdgeEnlargement table in rc_corner_worst [1].
+Allocated an empty WireEdgeEnlargement table in rc_corner_worst [1].
+Allocated an empty WireEdgeEnlargement table in rc_corner_worst [2].
+Allocated an empty WireEdgeEnlargement table in rc_corner_worst [3].
+Allocated an empty WireEdgeEnlargement table in rc_corner_worst [3].
+Reading Capacitance Table File /opt/ams/cds/HK_C35/LEF/encounter/c35b3-best.capTable ...
+Cap table was created using Encounter 09.12-s159_1.
+Process name: c35b3-best.
+Allocated an empty WireEdgeEnlargement table in rc_corner_best [1].
+Allocated an empty WireEdgeEnlargement table in rc_corner_best [1].
+Allocated an empty WireEdgeEnlargement table in rc_corner_best [2].
+Allocated an empty WireEdgeEnlargement table in rc_corner_best [3].
+Allocated an empty WireEdgeEnlargement table in rc_corner_best [3].
+Importing multi-corner RC tables ... 
+Summary of Active RC-Corners : 
+ 
+ Analysis View: analysis_view_setup
+    RC-Corner Name        : rc_corner_worst
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 25 Celsius
+    RC-Corner Cap Table   : '/opt/ams/cds/HK_C35/LEF/encounter/c35b3-worst.capTable'
+    RC-Corner PreRoute Res Factor         : 1
+    RC-Corner PreRoute Cap Factor         : 1
+    RC-Corner PostRoute Res Factor        : 1
+    RC-Corner PostRoute Cap Factor        : 1
+    RC-Corner PostRoute XCap Factor       : 1
+    RC-Corner PreRoute Clock Res Factor   : 1	[Derived from postRoute_res (effortLevel low)]
+    RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Cap Factor  : 1   	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Res Factor  : 1   	[Derived from postRoute_res (effortLevel low)]
+ 
+ Analysis View: analysis_view_hold
+    RC-Corner Name        : rc_corner_best
+    RC-Corner Index       : 1
+    RC-Corner Temperature : 25 Celsius
+    RC-Corner Cap Table   : '/opt/ams/cds/HK_C35/LEF/encounter/c35b3-best.capTable'
+    RC-Corner PreRoute Res Factor         : 1
+    RC-Corner PreRoute Cap Factor         : 1
+    RC-Corner PostRoute Res Factor        : 1
+    RC-Corner PostRoute Cap Factor        : 1
+    RC-Corner PostRoute XCap Factor       : 1
+    RC-Corner PreRoute Clock Res Factor   : 1	[Derived from postRoute_res (effortLevel low)]
+    RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Cap Factor  : 1   	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Res Factor  : 1   	[Derived from postRoute_res (effortLevel low)]
+*Info: initialize multi-corner CTS.
+CTE reading timing constraint file '../../syn/VGA_syn.sdc' ...
+**WARN: (TCLCMD-513):	The software could not find a matching object of the specified type for the pattern 'ADR_I_4' (File ../../syn/VGA_syn.sdc, Line 13).
+
+**ERROR: (TCLCMD-917):	Cannot find 'ports' that match 'ADR_I_4' (File ../../syn/VGA_syn.sdc, Line 13).
+
+**WARN: (TCLCMD-513):	The software could not find a matching object of the specified type for the pattern '' (File ../../syn/VGA_syn.sdc, Line 13).
+
+**ERROR: (TCLNL-312):	set_input_delay: Invalid list of pins: '' (File ../../syn/VGA_syn.sdc, Line 13).
+
+**WARN: (TCLCMD-513):	The software could not find a matching object of the specified type for the pattern 'ADR_I_3' (File ../../syn/VGA_syn.sdc, Line 14).
+
+**ERROR: (TCLCMD-917):	Cannot find 'ports' that match 'ADR_I_3' (File ../../syn/VGA_syn.sdc, Line 14).
+
+**WARN: (TCLCMD-513):	The software could not find a matching object of the specified type for the pattern '' (File ../../syn/VGA_syn.sdc, Line 14).
+
+**ERROR: (TCLNL-312):	set_input_delay: Invalid list of pins: '' (File ../../syn/VGA_syn.sdc, Line 14).
+
+**WARN: (TCLCMD-513):	The software could not find a matching object of the specified type for the pattern 'ADR_I_2' (File ../../syn/VGA_syn.sdc, Line 15).
+
+**ERROR: (TCLCMD-917):	Cannot find 'ports' that match 'ADR_I_2' (File ../../syn/VGA_syn.sdc, Line 15).
+
+**WARN: (TCLCMD-513):	The software could not find a matching object of the specified type for the pattern '' (File ../../syn/VGA_syn.sdc, Line 15).
+
+**ERROR: (TCLNL-312):	set_input_delay: Invalid list of pins: '' (File ../../syn/VGA_syn.sdc, Line 15).
+
+**WARN: (TCLCMD-513):	The software could not find a matching object of the specified type for the pattern 'SDAT_I_31' (File ../../syn/VGA_syn.sdc, Line 16).
+
+**ERROR: (TCLCMD-917):	Cannot find 'ports' that match 'SDAT_I_31' (File ../../syn/VGA_syn.sdc, Line 16).
+
+**WARN: (TCLCMD-513):	The software could not find a matching object of the specified type for the pattern '' (File ../../syn/VGA_syn.sdc, Line 16).
+
+**ERROR: (TCLNL-312):	set_input_delay: Invalid list of pins: '' (File ../../syn/VGA_syn.sdc, Line 16).
+
+**WARN: (TCLCMD-513):	The software could not find a matching object of the specified type for the pattern 'SDAT_I_30' (File ../../syn/VGA_syn.sdc, Line 17).
+
+**ERROR: (TCLCMD-917):	Cannot find 'ports' that match 'SDAT_I_30' (File ../../syn/VGA_syn.sdc, Line 17).
+
+**WARN: (TCLCMD-513):	The software could not find a matching object of the specified type for the pattern '' (File ../../syn/VGA_syn.sdc, Line 17).
+
+**ERROR: (TCLNL-312):	set_input_delay: Invalid list of pins: '' (File ../../syn/VGA_syn.sdc, Line 17).
+
+**WARN: (TCLCMD-513):	The software could not find a matching object of the specified type for the pattern 'SDAT_I_29' (File ../../syn/VGA_syn.sdc, Line 18).
+
+**ERROR: (TCLCMD-917):	Cannot find 'ports' that match 'SDAT_I_29' (File ../../syn/VGA_syn.sdc, Line 18).
+
+**WARN: (TCLCMD-513):	The software could not find a matching object of the specified type for the pattern '' (File ../../syn/VGA_syn.sdc, Line 18).
+
+**ERROR: (TCLNL-312):	set_input_delay: Invalid list of pins: '' (File ../../syn/VGA_syn.sdc, Line 18).
+
+**WARN: (TCLCMD-513):	The software could not find a matching object of the specified type for the pattern 'SDAT_I_28' (File ../../syn/VGA_syn.sdc, Line 19).
+
+**ERROR: (TCLCMD-917):	Cannot find 'ports' that match 'SDAT_I_28' (File ../../syn/VGA_syn.sdc, Line 19).
+
+**WARN: (TCLCMD-513):	The software could not find a matching object of the specified type for the pattern '' (File ../../syn/VGA_syn.sdc, Line 19).
+
+**ERROR: (TCLNL-312):	set_input_delay: Invalid list of pins: '' (File ../../syn/VGA_syn.sdc, Line 19).
+
+**WARN: (TCLCMD-513):	The software could not find a matching object of the specified type for the pattern 'SDAT_I_27' (File ../../syn/VGA_syn.sdc, Line 20).
+
+**ERROR: (TCLCMD-917):	Cannot find 'ports' that match 'SDAT_I_27' (File ../../syn/VGA_syn.sdc, Line 20).
+
+**WARN: (TCLCMD-513):	The software could not find a matching object of the specified type for the pattern '' (File ../../syn/VGA_syn.sdc, Line 20).
+
+**ERROR: (TCLNL-312):	set_input_delay: Invalid list of pins: '' (File ../../syn/VGA_syn.sdc, Line 20).
+
+**WARN: (TCLCMD-513):	The software could not find a matching object of the specified type for the pattern 'SDAT_I_26' (File ../../syn/VGA_syn.sdc, Line 21).
+
+**ERROR: (TCLCMD-917):	Cannot find 'ports' that match 'SDAT_I_26' (File ../../syn/VGA_syn.sdc, Line 21).
+
+**WARN: (TCLCMD-513):	The software could not find a matching object of the specified type for the pattern '' (File ../../syn/VGA_syn.sdc, Line 21).
+
+**ERROR: (TCLNL-312):	set_input_delay: Invalid list of pins: '' (File ../../syn/VGA_syn.sdc, Line 21).
+
+**WARN: (TCLCMD-513):	The software could not find a matching object of the specified type for the pattern 'SDAT_I_25' (File ../../syn/VGA_syn.sdc, Line 22).
+
+**ERROR: (TCLCMD-917):	Cannot find 'ports' that match 'SDAT_I_25' (File ../../syn/VGA_syn.sdc, Line 22).
+
+**WARN: (TCLCMD-513):	The software could not find a matching object of the specified type for the pattern '' (File ../../syn/VGA_syn.sdc, Line 22).
+
+**ERROR: (TCLNL-312):	set_input_delay: Invalid list of pins: '' (File ../../syn/VGA_syn.sdc, Line 22).
+
+Message <TCLCMD-513> has exceeded the message display limit of '20'. setMessageLimit/set_message_limit sets the limit. unsetMessageLimit/unset_message_limit can be used to reset this. (File ../../syn/VGA_syn.sdc, Line 23).
+
+**ERROR: (TCLCMD-917):	Cannot find 'ports' that match 'SDAT_I_24' (File ../../syn/VGA_syn.sdc, Line 23).
+
+**ERROR: (TCLNL-312):	set_input_delay: Invalid list of pins: '' (File ../../syn/VGA_syn.sdc, Line 23).
+
+**ERROR: (TCLCMD-917):	Cannot find 'ports' that match 'SDAT_I_23' (File ../../syn/VGA_syn.sdc, Line 24).
+
+**ERROR: (TCLNL-312):	set_input_delay: Invalid list of pins: '' (File ../../syn/VGA_syn.sdc, Line 24).
+
+**ERROR: (TCLCMD-917):	Cannot find 'ports' that match 'SDAT_I_22' (File ../../syn/VGA_syn.sdc, Line 25).
+
+**ERROR: (TCLNL-312):	set_input_delay: Invalid list of pins: '' (File ../../syn/VGA_syn.sdc, Line 25).
+
+**ERROR: (TCLCMD-917):	Cannot find 'ports' that match 'SDAT_I_21' (File ../../syn/VGA_syn.sdc, Line 26).
+
+**ERROR: (TCLNL-312):	set_input_delay: Invalid list of pins: '' (File ../../syn/VGA_syn.sdc, Line 26).
+
+**ERROR: (TCLCMD-917):	Cannot find 'ports' that match 'SDAT_I_20' (File ../../syn/VGA_syn.sdc, Line 27).
+
+**ERROR: (TCLNL-312):	set_input_delay: Invalid list of pins: '' (File ../../syn/VGA_syn.sdc, Line 27).
+
+**ERROR: (TCLCMD-917):	Cannot find 'ports' that match 'SDAT_I_19' (File ../../syn/VGA_syn.sdc, Line 28).
+
+**ERROR: (TCLNL-312):	set_input_delay: Invalid list of pins: '' (File ../../syn/VGA_syn.sdc, Line 28).
+
+**ERROR: (TCLCMD-917):	Cannot find 'ports' that match 'SDAT_I_18' (File ../../syn/VGA_syn.sdc, Line 29).
+
+**ERROR: (TCLNL-312):	set_input_delay: Invalid list of pins: '' (File ../../syn/VGA_syn.sdc, Line 29).
+
+**ERROR: (TCLCMD-917):	Cannot find 'ports' that match 'SDAT_I_17' (File ../../syn/VGA_syn.sdc, Line 30).
+
+**ERROR: (TCLNL-312):	set_input_delay: Invalid list of pins: '' (File ../../syn/VGA_syn.sdc, Line 30).
+
+**ERROR: (TCLCMD-917):	Cannot find 'ports' that match 'SDAT_I_16' (File ../../syn/VGA_syn.sdc, Line 31).
+
+**ERROR: (TCLNL-312):	set_input_delay: Invalid list of pins: '' (File ../../syn/VGA_syn.sdc, Line 31).
+
+**ERROR: (TCLCMD-917):	Cannot find 'ports' that match 'SDAT_I_15' (File ../../syn/VGA_syn.sdc, Line 32).
+
+**ERROR: (TCLNL-312):	set_input_delay: Invalid list of pins: '' (File ../../syn/VGA_syn.sdc, Line 32).
+
+Message <TCLCMD-917> has exceeded the message display limit of '20'. setMessageLimit/set_message_limit sets the limit. unsetMessageLimit/unset_message_limit can be used to reset this. (File ../../syn/VGA_syn.sdc, Line 33).
+
+**ERROR: (TCLNL-312):	set_input_delay: Invalid list of pins: '' (File ../../syn/VGA_syn.sdc, Line 33).
+
+**ERROR: (TCLNL-312):	set_input_delay: Invalid list of pins: '' (File ../../syn/VGA_syn.sdc, Line 34).
+
+**ERROR: (TCLNL-312):	set_input_delay: Invalid list of pins: '' (File ../../syn/VGA_syn.sdc, Line 35).
+
+**ERROR: (TCLNL-312):	set_input_delay: Invalid list of pins: '' (File ../../syn/VGA_syn.sdc, Line 36).
+
+**ERROR: (TCLNL-312):	set_input_delay: Invalid list of pins: '' (File ../../syn/VGA_syn.sdc, Line 37).
+
+**ERROR: (TCLNL-312):	set_input_delay: Invalid list of pins: '' (File ../../syn/VGA_syn.sdc, Line 38).
+
+**ERROR: (TCLNL-312):	set_input_delay: Invalid list of pins: '' (File ../../syn/VGA_syn.sdc, Line 39).
+
+**ERROR: (TCLNL-312):	set_input_delay: Invalid list of pins: '' (File ../../syn/VGA_syn.sdc, Line 40).
+
+**ERROR: (TCLNL-312):	set_input_delay: Invalid list of pins: '' (File ../../syn/VGA_syn.sdc, Line 41).
+
+**ERROR: (TCLNL-312):	set_input_delay: Invalid list of pins: '' (File ../../syn/VGA_syn.sdc, Line 42).
+
+**ERROR: (TCLNL-312):	set_input_delay: Invalid list of pins: '' (File ../../syn/VGA_syn.sdc, Line 43).
+
+**ERROR: (TCLNL-312):	set_input_delay: Invalid list of pins: '' (File ../../syn/VGA_syn.sdc, Line 44).
+
+**ERROR: (TCLNL-312):	set_input_delay: Invalid list of pins: '' (File ../../syn/VGA_syn.sdc, Line 45).
+
+**ERROR: (TCLNL-312):	set_input_delay: Invalid list of pins: '' (File ../../syn/VGA_syn.sdc, Line 46).
+
+**ERROR: (TCLNL-312):	set_input_delay: Invalid list of pins: '' (File ../../syn/VGA_syn.sdc, Line 47).
+
+**ERROR: (TCLNL-312):	set_input_delay: Invalid list of pins: '' (File ../../syn/VGA_syn.sdc, Line 48).
+
+**ERROR: (TCLNL-312):	set_input_delay: Invalid list of pins: '' (File ../../syn/VGA_syn.sdc, Line 49).
+
+**ERROR: (TCLNL-312):	set_input_delay: Invalid list of pins: '' (File ../../syn/VGA_syn.sdc, Line 50).
+
+**ERROR: (TCLNL-312):	set_input_delay: Invalid list of pins: '' (File ../../syn/VGA_syn.sdc, Line 51).
+
+**ERROR: (TCLNL-312):	set_input_delay: Invalid list of pins: '' (File ../../syn/VGA_syn.sdc, Line 55).
+
+**ERROR: (TCLNL-312):	set_input_delay: Invalid list of pins: '' (File ../../syn/VGA_syn.sdc, Line 56).
+
+**ERROR: (TCLNL-312):	set_input_delay: Invalid list of pins: '' (File ../../syn/VGA_syn.sdc, Line 57).
+
+**ERROR: (TCLNL-312):	set_input_delay: Invalid list of pins: '' (File ../../syn/VGA_syn.sdc, Line 58).
+
+**ERROR: (TCLNL-312):	set_input_delay: Invalid list of pins: '' (File ../../syn/VGA_syn.sdc, Line 59).
+
+**ERROR: (TCLNL-312):	set_input_delay: Invalid list of pins: '' (File ../../syn/VGA_syn.sdc, Line 60).
+
+**ERROR: (TCLNL-312):	set_input_delay: Invalid list of pins: '' (File ../../syn/VGA_syn.sdc, Line 61).
+
+**ERROR: (TCLNL-312):	set_input_delay: Invalid list of pins: '' (File ../../syn/VGA_syn.sdc, Line 62).
+
+**ERROR: (TCLNL-312):	set_input_delay: Invalid list of pins: '' (File ../../syn/VGA_syn.sdc, Line 63).
+
+**ERROR: (TCLNL-312):	set_input_delay: Invalid list of pins: '' (File ../../syn/VGA_syn.sdc, Line 64).
+
+**ERROR: (TCLNL-312):	set_input_delay: Invalid list of pins: '' (File ../../syn/VGA_syn.sdc, Line 65).
+
+**ERROR: (TCLNL-312):	set_input_delay: Invalid list of pins: '' (File ../../syn/VGA_syn.sdc, Line 66).
+
+**ERROR: (TCLNL-312):	set_input_delay: Invalid list of pins: '' (File ../../syn/VGA_syn.sdc, Line 67).
+
+**ERROR: (TCLNL-312):	set_input_delay: Invalid list of pins: '' (File ../../syn/VGA_syn.sdc, Line 68).
+
+**ERROR: (TCLNL-312):	set_input_delay: Invalid list of pins: '' (File ../../syn/VGA_syn.sdc, Line 69).
+
+**ERROR: (TCLNL-312):	set_input_delay: Invalid list of pins: '' (File ../../syn/VGA_syn.sdc, Line 70).
+
+**ERROR: (TCLNL-312):	set_input_delay: Invalid list of pins: '' (File ../../syn/VGA_syn.sdc, Line 71).
+
+**ERROR: (TCLNL-312):	set_input_delay: Invalid list of pins: '' (File ../../syn/VGA_syn.sdc, Line 72).
+
+**ERROR: (TCLNL-312):	set_input_delay: Invalid list of pins: '' (File ../../syn/VGA_syn.sdc, Line 73).
+
+**ERROR: (TCLNL-312):	set_input_delay: Invalid list of pins: '' (File ../../syn/VGA_syn.sdc, Line 74).
+
+**ERROR: (TCLNL-312):	set_input_delay: Invalid list of pins: '' (File ../../syn/VGA_syn.sdc, Line 75).
+
+**ERROR: (TCLNL-312):	set_input_delay: Invalid list of pins: '' (File ../../syn/VGA_syn.sdc, Line 76).
+
+**ERROR: (TCLNL-312):	set_input_delay: Invalid list of pins: '' (File ../../syn/VGA_syn.sdc, Line 77).
+
+**ERROR: (TCLNL-312):	set_input_delay: Invalid list of pins: '' (File ../../syn/VGA_syn.sdc, Line 78).
+
+**ERROR: (TCLNL-312):	set_input_delay: Invalid list of pins: '' (File ../../syn/VGA_syn.sdc, Line 79).
+
+**ERROR: (TCLNL-312):	set_input_delay: Invalid list of pins: '' (File ../../syn/VGA_syn.sdc, Line 80).
+
+**ERROR: (TCLNL-312):	set_input_delay: Invalid list of pins: '' (File ../../syn/VGA_syn.sdc, Line 81).
+
+**ERROR: (TCLNL-312):	set_input_delay: Invalid list of pins: '' (File ../../syn/VGA_syn.sdc, Line 82).
+
+**ERROR: (TCLNL-312):	set_input_delay: Invalid list of pins: '' (File ../../syn/VGA_syn.sdc, Line 83).
+
+**ERROR: (TCLNL-312):	set_input_delay: Invalid list of pins: '' (File ../../syn/VGA_syn.sdc, Line 84).
+
+**ERROR: (TCLNL-312):	set_input_delay: Invalid list of pins: '' (File ../../syn/VGA_syn.sdc, Line 85).
+
+**ERROR: (TCLNL-312):	set_input_delay: Invalid list of pins: '' (File ../../syn/VGA_syn.sdc, Line 86).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File ../../syn/VGA_syn.sdc, Line 91).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File ../../syn/VGA_syn.sdc, Line 92).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File ../../syn/VGA_syn.sdc, Line 93).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File ../../syn/VGA_syn.sdc, Line 94).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File ../../syn/VGA_syn.sdc, Line 95).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File ../../syn/VGA_syn.sdc, Line 96).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File ../../syn/VGA_syn.sdc, Line 97).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File ../../syn/VGA_syn.sdc, Line 98).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File ../../syn/VGA_syn.sdc, Line 99).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File ../../syn/VGA_syn.sdc, Line 100).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File ../../syn/VGA_syn.sdc, Line 101).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File ../../syn/VGA_syn.sdc, Line 102).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File ../../syn/VGA_syn.sdc, Line 103).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File ../../syn/VGA_syn.sdc, Line 104).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File ../../syn/VGA_syn.sdc, Line 105).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File ../../syn/VGA_syn.sdc, Line 106).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File ../../syn/VGA_syn.sdc, Line 107).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File ../../syn/VGA_syn.sdc, Line 108).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File ../../syn/VGA_syn.sdc, Line 109).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File ../../syn/VGA_syn.sdc, Line 110).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File ../../syn/VGA_syn.sdc, Line 111).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File ../../syn/VGA_syn.sdc, Line 112).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File ../../syn/VGA_syn.sdc, Line 113).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File ../../syn/VGA_syn.sdc, Line 114).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File ../../syn/VGA_syn.sdc, Line 115).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File ../../syn/VGA_syn.sdc, Line 116).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File ../../syn/VGA_syn.sdc, Line 117).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File ../../syn/VGA_syn.sdc, Line 118).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File ../../syn/VGA_syn.sdc, Line 119).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File ../../syn/VGA_syn.sdc, Line 120).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File ../../syn/VGA_syn.sdc, Line 121).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File ../../syn/VGA_syn.sdc, Line 122).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File ../../syn/VGA_syn.sdc, Line 125).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File ../../syn/VGA_syn.sdc, Line 126).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File ../../syn/VGA_syn.sdc, Line 127).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File ../../syn/VGA_syn.sdc, Line 128).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File ../../syn/VGA_syn.sdc, Line 129).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File ../../syn/VGA_syn.sdc, Line 130).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File ../../syn/VGA_syn.sdc, Line 131).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File ../../syn/VGA_syn.sdc, Line 132).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File ../../syn/VGA_syn.sdc, Line 133).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File ../../syn/VGA_syn.sdc, Line 134).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File ../../syn/VGA_syn.sdc, Line 135).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File ../../syn/VGA_syn.sdc, Line 136).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File ../../syn/VGA_syn.sdc, Line 137).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File ../../syn/VGA_syn.sdc, Line 138).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File ../../syn/VGA_syn.sdc, Line 139).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File ../../syn/VGA_syn.sdc, Line 140).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File ../../syn/VGA_syn.sdc, Line 141).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File ../../syn/VGA_syn.sdc, Line 142).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File ../../syn/VGA_syn.sdc, Line 143).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File ../../syn/VGA_syn.sdc, Line 144).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File ../../syn/VGA_syn.sdc, Line 145).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File ../../syn/VGA_syn.sdc, Line 146).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File ../../syn/VGA_syn.sdc, Line 147).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File ../../syn/VGA_syn.sdc, Line 148).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File ../../syn/VGA_syn.sdc, Line 149).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File ../../syn/VGA_syn.sdc, Line 150).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File ../../syn/VGA_syn.sdc, Line 151).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File ../../syn/VGA_syn.sdc, Line 152).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File ../../syn/VGA_syn.sdc, Line 153).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File ../../syn/VGA_syn.sdc, Line 154).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File ../../syn/VGA_syn.sdc, Line 155).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File ../../syn/VGA_syn.sdc, Line 156).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File ../../syn/VGA_syn.sdc, Line 157).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File ../../syn/VGA_syn.sdc, Line 158).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File ../../syn/VGA_syn.sdc, Line 167).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File ../../syn/VGA_syn.sdc, Line 168).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File ../../syn/VGA_syn.sdc, Line 169).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File ../../syn/VGA_syn.sdc, Line 170).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File ../../syn/VGA_syn.sdc, Line 171).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File ../../syn/VGA_syn.sdc, Line 172).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File ../../syn/VGA_syn.sdc, Line 173).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File ../../syn/VGA_syn.sdc, Line 174).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File ../../syn/VGA_syn.sdc, Line 175).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File ../../syn/VGA_syn.sdc, Line 176).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File ../../syn/VGA_syn.sdc, Line 177).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File ../../syn/VGA_syn.sdc, Line 178).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File ../../syn/VGA_syn.sdc, Line 179).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File ../../syn/VGA_syn.sdc, Line 180).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File ../../syn/VGA_syn.sdc, Line 181).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File ../../syn/VGA_syn.sdc, Line 182).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File ../../syn/VGA_syn.sdc, Line 183).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File ../../syn/VGA_syn.sdc, Line 184).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File ../../syn/VGA_syn.sdc, Line 185).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File ../../syn/VGA_syn.sdc, Line 186).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File ../../syn/VGA_syn.sdc, Line 187).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File ../../syn/VGA_syn.sdc, Line 188).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File ../../syn/VGA_syn.sdc, Line 189).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File ../../syn/VGA_syn.sdc, Line 190).
+
+INFO (CTE): read_dc_script finished with 20 WARNING and 181 ERROR.
+WARNING (CTE-25): Line: 8 of File ../../syn/VGA_syn.sdc : Skipped unsupported command: set_units
+
+
+Ending "Constraint file reading stats" (total cpu=0:00:00.0, real=0:00:00.0, peak res=317.2M, current mem=379.1M)
+Total number of combinational cells: 144
+Total number of sequential cells: 89
+Total number of tristate cells: 14
+Total number of level shifter cells: 0
+Total number of power gating cells: 0
+Total number of isolation cells: 0
+Total number of power switch cells: 0
+Total number of pulse generator cells: 0
+Total number of always on buffers: 0
+Total number of retention cells: 0
+List of usable buffers: BUF12 BUF15 BUF2 BUF6 BUF4 BUF8 CLKBU12 CLKBU15 CLKBU2 CLKBU6 CLKBU4 CLKBU8
+Total number of usable buffers: 12
+List of unusable buffers:
+Total number of unusable buffers: 0
+List of usable inverters: CLKIN1 CLKIN0 CLKIN12 CLKIN10 CLKIN15 CLKIN3 CLKIN2 CLKIN6 CLKIN4 CLKIN8 INV1 INV0 INV12 INV10 INV15 INV3 INV2 INV6 INV4 INV8
+Total number of usable inverters: 20
+List of unusable inverters:
+Total number of unusable inverters: 0
+List of identified usable delay cells: DLY12 DLY22 DLY32 DLY42
+Total number of identified usable delay cells: 4
+List of identified unusable delay cells:
+Total number of identified unusable delay cells: 0
+WARN: No Power Domain Created at this stage, default max voltage is 0
+
+*** Memory Usage v#1 (Current mem = 385.918M, initial mem = 78.707M) ***
+--- Ending "Encounter" (totcpu=0:00:11.0, real=0:03:43, mem=385.9M) ---
